@@ -1,2 +1,19 @@
 mail-config.php
 .form-submissions.log
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Environment / secrets
+.env
+
+# Mail config sensible
+mail-config.php
+
+# Dependencies
+vendor/
+
+# IDE
+.vscode/
