@@ -2,10 +2,10 @@
 return [
     'host' => 'mail.latelo.cd',
     'port' => 465,
-    'username' => 'webmaster@latelo.cd',
+    'username' => 'info@labcongo.org',
     'password' => 'c}6x!DUf90%n',
     'secure' => 'ssl',
-    'from_email' => 'webmaster@latelo.cd',
+    'from_email' => 'info@labcongo.org',
     'from_name' => 'LabCongo Website',
-    'recipient' => 'webmaster@latelo.cd',
+    'recipient' => 'info@labcongo.org',
 ];

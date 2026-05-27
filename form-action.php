@@ -1,17 +1,17 @@
 <?php
 declare(strict_types=1);
 
-const LABCONGO_RECIPIENT = 'webmaster@latelo.cd';
+const LABCONGO_RECIPIENT = 'info@labcongo.org';
 
 function mail_config(): array
 {
     $config = [
         'host' => 'mail.latelo.cd',
         'port' => 465,
-        'username' => 'webmaster@latelo.cd',
+        'username' => 'info@labcongo.org',
         'password' => getenv('c}6x!DUf90%n') ?: '',
         'secure' => 'ssl',
-        'from_email' => 'webmaster@latelo.cd',
+        'from_email' => 'info@labcongo.org',
         'from_name' => 'LabCongo Website',
         'recipient' => LABCONGO_RECIPIENT,
         'timeout' => 20,

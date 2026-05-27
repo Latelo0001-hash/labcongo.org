@@ -312,7 +312,7 @@
 }
 
 .page-header {
-    background: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3)), url(../img/testimonial.jpg) center center no-repeat;
+    background: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3)), url(../img/testimonial-mining-abstract.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -329,7 +329,7 @@
 
 /*** Features ***/
 .feature {
-    background: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3)), url(../img/feature.jpg) left center no-repeat;
+    background: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3)), url(../img/feature-mining-abstract.jpg) left center no-repeat;
     background-size: cover;
 }
 
@@ -755,7 +755,7 @@
 
 /*** Testimonial ***/
 .testimonial {
-    background: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3)), url(../img/testimonial.jpg) left center no-repeat;
+    background: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3)), url(../img/testimonial-mining-abstract.jpg) left center no-repeat;
     background-size: cover;
 }
 
