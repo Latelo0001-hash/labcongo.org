@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>LabCongo</title>
+    <title>Team Biographies - LabCongo</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -99,8 +99,8 @@
                         <a href="index.php" class="nav-item nav-link">Home</a>
                         <a href="about.php" class="nav-item nav-link">About</a>
                         <a href="service.html" class="nav-item nav-link">Services</a>
-                        <a href="team.php" class="nav-item nav-link">Our Team</a>
-                        <a href="appoinment.html" class="nav-item nav-link active">Appointment</a>
+                        <a href="team.php" class="nav-item nav-link active">Our Team</a>
+                        <a href="appoinment.html" class="nav-item nav-link">Appointment</a>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                     <div class="language-switcher ms-lg-auto my-3 my-lg-0 me-lg-3">
@@ -126,11 +126,12 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-5 mt-4">
-            <h1 class="display-2 text-white mb-3 animated slideInDown">Appointment</h1>
+            <h1 class="display-2 text-white mb-3 animated slideInDown">Team Biographies</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item" aria-current="page">Appointment</li>
+                    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                    <li class="breadcrumb-item"><a href="team.php">Our Team</a></li>
+                    <li class="breadcrumb-item" aria-current="page">Team Biographies</li>
                 </ol>
             </nav>
         </div>
@@ -138,102 +139,25 @@
     <!-- Page Header End -->
 
     
-    <!-- Appointment Start -->
+    <!-- Team Biographies Start -->
     <div class="container-fluid py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h1 class="display-6 mb-4">We Make Sure You Always Get the Best Results</h1>
-                    <p>The LabCongo mining laboratory schedules appointments to evaluate ore samples from new Congolese mining discoveries with a team of international experts.</p>
-                    <p class="mb-4">The analysis results will guide strategic decisions for sustainable mining development in Congo.</p>
-                    <div class="d-flex align-items-start wow fadeIn" data-wow-delay="0.3s">
-                        <div class="icon-box-primary">
-                            <i class="fa fa-map-marker-alt text-dark fs-1"></i>
-                        </div>
-                        <div class="ms-3">
-                            <h5>Kinshasa Office Address</h5>
-                            <span>No. 338 Avenue Mongololoa, Bandal, Kinshasa, DRC</span>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="d-flex align-items-start wow fadeIn" data-wow-delay="0.4s">
-                        <div class="icon-box-primary">
-                            <i class="fa fa-map-marker-alt text-dark fs-1"></i>
-                        </div>
-                        <div class="ms-3">
-                            <h5>USA Address</h5>
-                            <span>120 Harrisburg Avenue, Unit 13, Westbrook, ME 04092, USA</span>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="d-flex align-items-start wow fadeIn" data-wow-delay="0.5s">
-                        <div class="icon-box-primary">
-                            <i class="fa fa-clock text-dark fs-1"></i>
-                        </div>
-                        <div class="ms-3">
-                            <h5>Opening Hours</h5>
-                            <span>Monday-Friday 8:00am-4:00pm, Saturday-Sunday Closed</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <h2 class="mb-4">Online Appointment</h2>
-                    <form action="form-action.php" method="post" class="row g-3">
-                        <input type="hidden" name="form_type" value="appointment">
-                        <input type="hidden" name="_redirect" value="appoinment.html">
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
-                                <label for="name">Your Name</label>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                                <input type="email" class="form-control" id="mail" name="email" placeholder="Your Email">
-                                <label for="mail">Your Email</label>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Your Mobile">
-                                <label for="mobile">Your Mobile</label>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                                <select class="form-select" id="service" name="service">
-                                    <option value="Geochemical Analysis" selected>Geochemical Analysis</option>
-                                    <option value="Mineralogical Analysis">Mineralogical Analysis</option>
-                                    <option value="Metallurgical Testing">Metallurgical Testing</option>
-                                    <option value="Spectrometric Analysis">Spectrometric Analysis</option>
-                                    <option value="Sample Preparation">Sample Preparation</option>
-                                    <option value="Precious Metals Analysis">Precious Metals Analysis</option>
-                                    <option value="Quality Control (QA/QC)">Quality Control (QA/QC)</option>
-                                    <option value="Environmental Analysis">Environmental Analysis</option>
-                                </select>
-                                <label for="service">Choose a Service</label>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-floating">
-                                <textarea class="form-control" placeholder="Leave a message here" id="message" name="message"
-                                    style="height: 130px"></textarea>
-                                <label for="message">Message</label>
-                            </div>
-                        </div>
-                        <div class="col-12 text-center">
-                            <button class="btn btn-primary w-100 py-3" type="submit">Submit Now</button>
-                        </div>
-                    </form>
-                </div>
+        <div class="container py-5">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 720px;">
+                <h1 class="display-6 mb-3">Biographies and Profiles</h1>
+                <p class="mb-0">Meet the people supporting LabCongo's mission: reliable mining analysis, disciplined laboratory work, and trusted service for mining-sector partners.</p>
+            </div>
+            <div class="team-bio-list">
+                <?php
+                require_once __DIR__ . '/inc/team-render.php';
+                lc_team_render_biographies(lc_team_profiles());
+                ?>
             </div>
         </div>
     </div>
-    <!-- Appointment Start -->
-
+    <!-- Team Biographies End -->
 
     <!-- Footer Start -->
-    <div class="container-fluid footer position-relative bg-dark text-white-50 py-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid footer position-relative bg-dark text-white-50 py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container">
             <div class="row g-5 py-5">
                 <div class="col-lg-6 pe-lg-5">
@@ -274,7 +198,7 @@
                             <div class="w-100">
                                 <form action="form-action.php" method="post" class="input-group">
                                     <input type="hidden" name="form_type" value="newsletter">
-                                    <input type="hidden" name="_redirect" value="appoinment.html">
+                                    <input type="hidden" name="_redirect" value="team-biographies.php">
                                     <input type="email" name="email" class="form-control border-0 py-3 px-4" style="background: rgba(255, 255, 255, .1);" placeholder="Your Email Address" required><button class="btn btn-primary px-4" type="submit">Sign Up</button>
                                 </form>
                             </div>

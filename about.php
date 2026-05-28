@@ -15,8 +15,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Red+Rose:wght@600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Red+Rose:wght@600;700&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -34,8 +33,7 @@
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
     <!-- Spinner End -->
@@ -90,17 +88,16 @@
                 <a href="index.php" class="navbar-brand d-lg-none logo-link" aria-label="LabCongo">
                     <img src="img/Logo/PNG/LabCongo%20-%20logo-02.png" alt="LabCongo" class="brand-logo brand-logo-mobile">
                 </a>
-                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse">
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
                         <a href="index.php" class="nav-item nav-link">Home</a>
-                        <a href="about.php" class="nav-item nav-link">About</a>
+                        <a href="about.php" class="nav-item nav-link active">About</a>
                         <a href="service.html" class="nav-item nav-link">Services</a>
                         <a href="team.php" class="nav-item nav-link">Our Team</a>
-                        <a href="appoinment.html" class="nav-item nav-link active">Appointment</a>
+                        <a href="appoinment.html" class="nav-item nav-link">Appointment</a>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                     <div class="language-switcher ms-lg-auto my-3 my-lg-0 me-lg-3">
@@ -126,114 +123,193 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-5 mt-4">
-            <h1 class="display-2 text-white mb-3 animated slideInDown">Appointment</h1>
+            <h1 class="display-2 text-white mb-3 animated slideInDown">About</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item" aria-current="page">Appointment</li>
+                    <li class="breadcrumb-item" aria-current="page">About</li>
                 </ol>
             </nav>
         </div>
     </div>
     <!-- Page Header End -->
 
-    
-    <!-- Appointment Start -->
+
+    <!-- About Start -->
     <div class="container-fluid py-5">
         <div class="container">
             <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h1 class="display-6 mb-4">We Make Sure You Always Get the Best Results</h1>
-                    <p>The LabCongo mining laboratory schedules appointments to evaluate ore samples from new Congolese mining discoveries with a team of international experts.</p>
-                    <p class="mb-4">The analysis results will guide strategic decisions for sustainable mining development in Congo.</p>
-                    <div class="d-flex align-items-start wow fadeIn" data-wow-delay="0.3s">
-                        <div class="icon-box-primary">
-                            <i class="fa fa-map-marker-alt text-dark fs-1"></i>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="row g-0">
+                        <div class="col-6">
+                            <img class="img-fluid" src="img/about-1.jpg">
                         </div>
-                        <div class="ms-3">
-                            <h5>Kinshasa Office Address</h5>
-                            <span>No. 338 Avenue Mongololoa, Bandal, Kinshasa, DRC</span>
+                        <div class="col-6">
+                            <img class="img-fluid" src="img/about2.png">
                         </div>
-                    </div>
-                    <hr>
-                    <div class="d-flex align-items-start wow fadeIn" data-wow-delay="0.4s">
-                        <div class="icon-box-primary">
-                            <i class="fa fa-map-marker-alt text-dark fs-1"></i>
+                        <div class="col-6">
+                            <img class="img-fluid" src="img/about-3.jpg">
                         </div>
-                        <div class="ms-3">
-                            <h5>USA Address</h5>
-                            <span>120 Harrisburg Avenue, Unit 13, Westbrook, ME 04092, USA</span>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="d-flex align-items-start wow fadeIn" data-wow-delay="0.5s">
-                        <div class="icon-box-primary">
-                            <i class="fa fa-clock text-dark fs-1"></i>
-                        </div>
-                        <div class="ms-3">
-                            <h5>Opening Hours</h5>
-                            <span>Monday-Friday 8:00am-4:00pm, Saturday-Sunday Closed</span>
+                        <div class="col-6">
+                            <div class="bg-primary w-100 h-100 mt-n5 ms-n5 d-flex flex-column align-items-center justify-content-center">
+                                <div class="icon-box-light">
+                                    <i class="fa fa-award text-dark"></i>
+                                </div>
+                                <h1 class="display-1 text-white mb-0" data-toggle="counter-up">15</h1>
+                                <small class="fs-5 text-white">Years Experience</small>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <h2 class="mb-4">Online Appointment</h2>
-                    <form action="form-action.php" method="post" class="row g-3">
-                        <input type="hidden" name="form_type" value="appointment">
-                        <input type="hidden" name="_redirect" value="appoinment.html">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <h1 class="display-6 mb-4">Mining Analysis Experts and Modern Technologies</h1>
+                    <p class="mb-4">LabCongo is a mining laboratory specializing in the analysis and quality control of ores. We support schools and universities in training local talent, as well as mining companies and mining sector stakeholders in identifying, evaluating,
+                        and optimizing mineral resources.</p>
+                    <div class="row g-4 g-sm-5 justify-content-center">
                         <div class="col-sm-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
-                                <label for="name">Your Name</label>
+                            <div class="about-fact btn-square flex-column rounded-circle bg-primary ms-sm-auto">
+                                <p class="text-white mb-0">Awards</p>
+                                <h1 class="text-white mb-0" data-toggle="counter-up">9999</h1>
                             </div>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                                <input type="email" class="form-control" id="mail" name="email" placeholder="Your Email">
-                                <label for="mail">Your Email</label>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Your Mobile">
-                                <label for="mobile">Your Mobile</label>
+                        <div class="col-sm-6 text-start">
+                            <div class="about-fact btn-square flex-column rounded-circle bg-secondary me-sm-auto">
+                                <p class="text-white mb-0">Completed Projects</p>
+                                <h1 class="text-white mb-0" data-toggle="counter-up">9999</h1>
                             </div>
                         </div>
                         <div class="col-sm-6">
-                            <div class="form-floating">
-                                <select class="form-select" id="service" name="service">
-                                    <option value="Geochemical Analysis" selected>Geochemical Analysis</option>
-                                    <option value="Mineralogical Analysis">Mineralogical Analysis</option>
-                                    <option value="Metallurgical Testing">Metallurgical Testing</option>
-                                    <option value="Spectrometric Analysis">Spectrometric Analysis</option>
-                                    <option value="Sample Preparation">Sample Preparation</option>
-                                    <option value="Precious Metals Analysis">Precious Metals Analysis</option>
-                                    <option value="Quality Control (QA/QC)">Quality Control (QA/QC)</option>
-                                    <option value="Environmental Analysis">Environmental Analysis</option>
-                                </select>
-                                <label for="service">Choose a Service</label>
+                            <div class="about-fact mt-n130 btn-square flex-column rounded-circle bg-dark mx-sm-auto">
+                                <p class="text-white mb-0">Satisfied Clients</p>
+                                <h1 class="text-white mb-0" data-toggle="counter-up">9999</h1>
                             </div>
                         </div>
-                        <div class="col-12">
-                            <div class="form-floating">
-                                <textarea class="form-control" placeholder="Leave a message here" id="message" name="message"
-                                    style="height: 130px"></textarea>
-                                <label for="message">Message</label>
-                            </div>
-                        </div>
-                        <div class="col-12 text-center">
-                            <button class="btn btn-primary w-100 py-3" type="submit">Submit Now</button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Appointment Start -->
+    <!-- About End -->
+
+
+    <!-- Features Start -->
+    <div class="container-fluid feature my-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-6 pt-lg-5">
+                    <div class="bg-white p-5 mt-lg-5">
+                        <h1 class="display-6 mb-4 wow fadeIn" data-wow-delay="0.3s">The Best Mining Analysis and Control Solution</h1>
+                        <p class="mb-4 wow fadeIn" data-wow-delay="0.4s">Thanks to our qualified team and modern equipment, we provide reliable, accurate, and fast results in accordance with international standards. Through our expertise, we actively contribute to the development of the extractive sector.</p>
+                        <div class="row g-5 pt-2 mb-5">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="icon-box-primary mb-4">
+                                    <i class="fa fa-mountain text-dark"></i>
+                                </div>
+                                <h5 class="mb-3">Qualified Experts</h5>
+                                <span>We have an experienced team in mining analyses.</span>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                                <div class="icon-box-primary mb-4">
+                                    <i class="fa fa-microscope text-dark"></i>
+                                </div>
+                                <h5 class="mb-3">Advanced Technologies</h5>
+                                <span>We use state-of-the-art equipment to ensure accuracy.</span>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary py-3 px-5 wow fadeIn" data-wow-delay="0.5s" href="">Explore More</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row h-100 align-items-end">
+                        <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                            <div class="d-flex align-items-center justify-content-center" style="min-height: 300px;">
+                                <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="bg-primary p-5">
+                                <div class="experience mb-4 wow fadeIn" data-wow-delay="0.3s">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="text-white">Sample Preparation</span>
+                                        <span class="text-white">90%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="experience mb-4 wow fadeIn" data-wow-delay="0.4s">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="text-white">Result Accuracy</span>
+                                        <span class="text-white">95%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="experience mb-0 wow fadeIn" data-wow-delay="0.5s">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="text-white">Laboratory Equipment</span>
+                                        <span class="text-white">90%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- Team Start -->
+    <div class="container-fluid container-team py-5">
+        <div class="container pb-5">
+            <?php
+            require_once __DIR__ . '/inc/team-render.php';
+            lc_team_render_featured_member(lc_team_featured_member());
+            ?>
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h1 class="display-6 mb-3">Team Members</h1>
+                <p class="mb-0">Our team brings together committed professionals supporting LabCongo's mining analysis and laboratory services.</p>
+            </div>
+            <div class="team-carousel-wrapper wow fadeInUp" data-wow-delay="0.2s">
+                <div class="team-carousel owl-carousel">
+                    <?php lc_team_render_carousel(lc_team_members()); ?>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
 
 
     <!-- Footer Start -->
-    <div class="container-fluid footer position-relative bg-dark text-white-50 py-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid footer position-relative bg-dark text-white-50 py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container">
             <div class="row g-5 py-5">
                 <div class="col-lg-6 pe-lg-5">
@@ -274,7 +350,7 @@
                             <div class="w-100">
                                 <form action="form-action.php" method="post" class="input-group">
                                     <input type="hidden" name="form_type" value="newsletter">
-                                    <input type="hidden" name="_redirect" value="appoinment.html">
+                                    <input type="hidden" name="_redirect" value="about.php">
                                     <input type="email" name="email" class="form-control border-0 py-3 px-4" style="background: rgba(255, 255, 255, .1);" placeholder="Your Email Address" required><button class="btn btn-primary px-4" type="submit">Sign Up</button>
                                 </form>
                             </div>

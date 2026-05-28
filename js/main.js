@@ -13,15 +13,533 @@
 
 
     // Language selector
-    var savedLanguage = localStorage.getItem('labcongo_language') || 'en';
     var supportedLanguages = ['en', 'fr'];
+    var languageParams = new URLSearchParams(window.location.search);
+    var currentLanguage = languageParams.get('lang') || localStorage.getItem('labcongo_language') || 'en';
 
-    if (supportedLanguages.indexOf(savedLanguage) === -1) {
-        savedLanguage = 'en';
+    if (supportedLanguages.indexOf(currentLanguage) === -1) {
+        currentLanguage = 'en';
     }
 
-    document.documentElement.setAttribute('lang', savedLanguage);
-    $('#languageSelect').val(savedLanguage);
+    var translations = {
+        fr: {
+            'LabCongo': 'LabCongo',
+            'No. 338 Avenue Mongololoa, Bandal, Kinshasa, DRC': 'N° 338 Avenue Mongololoa, Bandal, Kinshasa, RDC',
+            'Monday-Friday 8am-4pm, Saturday-Sunday Closed': 'Lundi-vendredi 8h-16h, samedi-dimanche fermé',
+            'Monday-Friday 8:00am-4:00pm, Saturday-Sunday Closed': 'Lundi-vendredi 8h00-16h00, samedi-dimanche fermé',
+            'Call Now': 'Appelez-nous',
+            'Mail Now': 'Écrivez-nous',
+            'Home': 'Accueil',
+            'About': 'À propos',
+            'Services': 'Services',
+            'Our Team': 'Notre équipe',
+            'Appointment': 'Rendez-vous',
+            'Contact': 'Contact',
+            'Language': 'Langue',
+            'Previous': 'Précédent',
+            'Next': 'Suivant',
+            'Explore More': 'En savoir plus',
+            'Read More': 'Lire la suite',
+            'Submit Request': 'Envoyer la demande',
+            'Submit Now': 'Envoyer maintenant',
+            'Send a Message': 'Envoyer un message',
+            'Sign Up': "S'inscrire",
+            'Quick Links': 'Liens rapides',
+            'Popular Links': 'Liens populaires',
+            'Newsletter': 'Newsletter',
+            'About Us': 'À propos de nous',
+            'Contact Us': 'Nous contacter',
+            'Our Services': 'Nos services',
+            'Terms & Condition': 'Conditions générales',
+            'Support': 'Assistance',
+            '. All Rights Reserved.': '. Tous droits réservés.',
+            'Designed by': 'Conçu par',
+
+            'Reference Mining Laboratory - LabCongo': 'Laboratoire minier de référence - LabCongo',
+            'LabCongo is a laboratory specialized in mining analyses, providing reliable services that comply with international standards.': 'LabCongo est un laboratoire spécialisé dans les analyses minières, offrant des services fiables conformes aux normes internationales.',
+            'Experts In Mining Analysis & Qualified Technicians': 'Experts en analyses minières et techniciens qualifiés',
+            'Our team consists of highly qualified geologists, engineers, and technicians, ensuring rigorous analyses and reliable results for every processed sample.': 'Notre équipe est composée de géologues, d’ingénieurs et de techniciens hautement qualifiés, garantissant des analyses rigoureuses et des résultats fiables pour chaque échantillon traité.',
+            'Years Experience': "Années d'expérience",
+            'Reliable Experts & Advanced Analytical Technologies': 'Experts fiables et technologies analytiques avancées',
+            'Thanks to our expertise and the use of modern equipment, LabCongo delivers accurate results that meet the requirements of the mining industry and international standards.': 'Grâce à notre expertise et à l’utilisation d’équipements modernes, LabCongo fournit des résultats précis répondant aux exigences de l’industrie minière et aux normes internationales.',
+            'Completed Projects': 'Projets réalisés',
+            'Analyzed Samples': 'Échantillons analysés',
+            'Satisfied Clients': 'Clients satisfaits',
+            'Certified Laboratory': 'Laboratoire certifié',
+            'Strict compliance with international standards and laboratory best practices.': 'Respect strict des normes internationales et des meilleures pratiques de laboratoire.',
+            'Technical Experts': 'Experts techniques',
+            'An experienced team in geology, metallurgy, and chemical analysis.': 'Une équipe expérimentée en géologie, métallurgie et analyse chimique.',
+            'Competitive Pricing': 'Tarifs compétitifs',
+            'High-quality services at optimized costs.': 'Des services de haute qualité à des coûts optimisés.',
+            '24/7 Technical Support': 'Assistance technique 24/7',
+            'Continuous assistance to support your mining operations.': 'Une assistance continue pour soutenir vos opérations minières.',
+            'Complete Mining Analysis Solutions': 'Solutions complètes d’analyse minière',
+            'We provide a wide range of analytical services for mineral exploration, mining operations, and quality control of mineral resources.': 'Nous proposons une large gamme de services analytiques pour l’exploration minière, les opérations minières et le contrôle qualité des ressources minérales.',
+            'Experts in Geology & Metallurgy': 'Experts en géologie et métallurgie',
+            'In-depth ore analysis and reliable interpretation of results.': 'Analyse approfondie des minerais et interprétation fiable des résultats.',
+            'High-Tech Equipment': 'Équipements de haute technologie',
+            'Use of modern instruments to ensure precision and reproducibility.': 'Utilisation d’instruments modernes pour garantir précision et reproductibilité.',
+            'Sample Preparation': 'Préparation des échantillons',
+            'Analysis Accuracy': 'Précision des analyses',
+            'Equipment Capacity': 'Capacité des équipements',
+            'Reliable and Certified Mining Laboratory Services': 'Services de laboratoire minier fiables et certifiés',
+            'We guarantee accurate analyses through strict protocols and technologies adapted to the mining sector requirements.': 'Nous garantissons des analyses précises grâce à des protocoles stricts et des technologies adaptées aux exigences du secteur minier.',
+            'Geochemical Analysis': 'Analyse géochimique',
+            'Determination of the chemical composition of ores.': 'Détermination de la composition chimique des minerais.',
+            'Mineralogical Analysis': 'Analyse minéralogique',
+            'Identification of minerals present in samples.': 'Identification des minéraux présents dans les échantillons.',
+            'Metallurgical Testing': 'Essais métallurgiques',
+            'Evaluation of ore processing methods.': 'Évaluation des méthodes de traitement des minerais.',
+            'Spectrometric Analysis': 'Analyse spectrométrique',
+            'Precise measurement of trace and major elements.': 'Mesure précise des éléments traces et majeurs.',
+            'Grinding, crushing, and homogenization according to standards.': 'Broyage, concassage et homogénéisation selon les normes.',
+            'Precious Metals Analysis': 'Analyse des métaux précieux',
+            'Assay of gold, silver, and other valuable metals.': 'Dosage de l’or, de l’argent et d’autres métaux de valeur.',
+            'Quality Control (QA/QC)': 'Contrôle qualité (QA/QC)',
+            'Validation and reliability of analytical results.': 'Validation et fiabilité des résultats analytiques.',
+            'Environmental Analysis': 'Analyse environnementale',
+            'Monitoring environmental impacts related to mining activities.': 'Suivi des impacts environnementaux liés aux activités minières.',
+            'We Guarantee Reliable and Compliant Results': 'Nous garantissons des résultats fiables et conformes',
+            'LabCongo is committed to providing accurate, fast, and regulation-compliant results. Our team is dedicated to offering you high-quality service tailored to your specific needs and expectations.': 'LabCongo s’engage à fournir des résultats précis, rapides et conformes à la réglementation. Notre équipe vous offre un service de qualité adapté à vos besoins et attentes spécifiques.',
+            'Office Address': 'Adresse du bureau',
+            'Office Time': 'Horaires du bureau',
+            'Contact / Analysis Request': 'Contact / Demande d’analyse',
+            'Name': 'Nom',
+            'Your Email': 'Votre e-mail',
+            'Phone': 'Téléphone',
+            'Choose a Service': 'Choisir un service',
+            'Message': 'Message',
+            'Team Members': 'Membres de l’équipe',
+            "Our team brings together committed professionals supporting LabCongo's mining analysis and laboratory services.": 'Notre équipe réunit des professionnels engagés qui soutiennent les services d’analyse minière et de laboratoire de LabCongo.',
+            'What Our Partners Say About Our Services': 'Ce que nos partenaires disent de nos services',
+            'What Our Clients Say About Our Laboratory Services': 'Ce que nos clients disent de nos services de laboratoire',
+            'We work with mining companies that trust us for the quality and accuracy of our analyses.': 'Nous travaillons avec des sociétés minières qui nous font confiance pour la qualité et la précision de nos analyses.',
+            "I was truly impressed by the quality of LabCongo's analyses. Their team is highly professional and skilled. The results arrived on time and were accurate, and I appreciated their support throughout the process.": 'J’ai été réellement impressionné par la qualité des analyses de LabCongo. Leur équipe est très professionnelle et compétente. Les résultats ont été livrés à temps, avec précision, et j’ai apprécié leur accompagnement tout au long du processus.',
+            'Mining Partner': 'Partenaire minier',
+            'Mining Company': 'Société minière',
+            'LabCongo provided precise and reliable analyses for my mining project. Their team is competent and attentive, and I highly recommend their services.': 'LabCongo a fourni des analyses précises et fiables pour mon projet minier. Leur équipe est compétente et attentive, et je recommande vivement leurs services.',
+            'Project Partner': 'Partenaire de projet',
+            'Mining Project': 'Projet minier',
+            'LabCongo provides reliable mining analysis services aligned with international standards, supporting exploration, mining operations, and mineral quality control.': 'LabCongo fournit des services fiables d’analyse minière conformes aux normes internationales, en appui à l’exploration, aux opérations minières et au contrôle qualité des minerais.',
+
+            'Mining Analysis Experts and Modern Technologies': 'Experts en analyses minières et technologies modernes',
+            'LabCongo is a mining laboratory specializing in the analysis and quality control of ores. We support schools and universities in training local talent, as well as mining companies and mining sector stakeholders in identifying and promoting mineral resources.': 'LabCongo est un laboratoire minier spécialisé dans l’analyse et le contrôle qualité des minerais. Nous accompagnons les écoles et universités dans la formation des talents locaux, ainsi que les sociétés minières et acteurs du secteur dans l’identification et la valorisation des ressources minérales.',
+            'Awards': 'Distinctions',
+            'The Best Mining Analysis and Control Solution': 'La meilleure solution d’analyse et de contrôle minier',
+            'Thanks to our qualified team and modern equipment, we provide reliable, accurate, and fast results in accordance with international standards. Through our expertise, we actively contribute to the development of the extractive sector in the DRC.': 'Grâce à notre équipe qualifiée et à nos équipements modernes, nous fournissons des résultats fiables, précis et rapides conformément aux normes internationales. Par notre expertise, nous contribuons activement au développement du secteur extractif en RDC.',
+            'Qualified Experts': 'Experts qualifiés',
+            'We have an experienced team in mining analyses.': 'Nous disposons d’une équipe expérimentée en analyses minières.',
+            'Advanced Technologies': 'Technologies avancées',
+            'We use state-of-the-art equipment to ensure accuracy.': 'Nous utilisons des équipements de pointe pour garantir la précision.',
+            'Result Accuracy': 'Précision des résultats',
+            'Laboratory Equipment': 'Équipements de laboratoire',
+
+            'View All Biographies': 'Voir toutes les biographies',
+            'Team Biography': 'Biographie du membre',
+            'Team Biographies': 'Biographies de l’équipe',
+            'Biographies and Profiles': 'Biographies et profils',
+            "Meet the people supporting LabCongo's mission: reliable mining analysis, disciplined laboratory work, and trusted service for mining-sector partners.": 'Découvrez les personnes qui soutiennent la mission de LabCongo : des analyses minières fiables, un travail de laboratoire rigoureux et un service de confiance pour les partenaires du secteur minier.',
+            'Selected LabCongo team profile and biography.': 'Profil et biographie du membre sélectionné de LabCongo.',
+            'Back to Team': 'Retour à l’équipe',
+            'Biography Not Found': 'Biographie introuvable',
+            'The requested team member could not be found.': 'Le membre demandé est introuvable.',
+            'Read Full Biography': 'Lire la biographie complète',
+            'Biography': 'Biographie',
+            'Team Member': 'Membre de l’équipe',
+            'Co-Founder and COO': 'Co-fondateur et COO',
+
+            'Do You Have a Question? Feel Free to Contact Us': 'Vous avez une question ? Contactez-nous librement',
+            'The LabCongo mining laboratory is at your disposal for any request for information, collaboration, or services related to mining and geological analyses.': 'Le laboratoire minier LabCongo est à votre disposition pour toute demande d’information, de collaboration ou de services liés aux analyses minières et géologiques.',
+            'Call Us': 'Appelez-nous',
+            'Email Us': 'Écrivez-nous',
+            'Send us your request using the form below. Our team will review your message and get back to you as soon as possible.': 'Envoyez-nous votre demande via le formulaire ci-dessous. Notre équipe l’examinera et vous répondra dans les meilleurs délais.',
+            'Subject': 'Sujet',
+
+            'We Make Sure You Always Get the Best Results': 'Nous veillons à ce que vous obteniez toujours les meilleurs résultats',
+            'The LabCongo mining laboratory schedules appointments to evaluate ore samples from new Congolese mining discoveries with a team of international experts.': 'Le laboratoire minier LabCongo organise des rendez-vous pour évaluer les échantillons de minerais issus de nouvelles découvertes congolaises avec une équipe d’experts internationaux.',
+            'The analysis results will guide strategic decisions for sustainable mining development in Congo.': 'Les résultats d’analyse guideront les décisions stratégiques pour un développement minier durable au Congo.',
+            'Kinshasa Office Address': 'Adresse du bureau de Kinshasa',
+            'USA Address': 'Adresse aux États-Unis',
+            'Opening Hours': 'Heures d’ouverture',
+            'Online Appointment': 'Rendez-vous en ligne',
+            'Your Name': 'Votre nom',
+            'Your Mobile': 'Votre téléphone',
+
+            'Related Services': 'Services associés',
+            'Request an Appointment': 'Demander un rendez-vous',
+            'Contact LabCongo': 'Contacter LabCongo',
+            'More Testimonials': 'Plus de témoignages',
+            'We guarantee reliable and compliant results. LabCongo is committed to providing accurate, fast, and regulation-compliant results.': 'Nous garantissons des résultats fiables et conformes. LabCongo s’engage à fournir des résultats précis, rapides et conformes à la réglementation.',
+            'Geochemical Analysis - LabCongo': 'Analyse géochimique - LabCongo',
+            'Mineralogical Analysis - LabCongo': 'Analyse minéralogique - LabCongo',
+            'Metallurgical Testing - LabCongo': 'Essais métallurgiques - LabCongo',
+            'Spectrometric Analysis - LabCongo': 'Analyse spectrométrique - LabCongo',
+            'Sample Preparation - LabCongo': 'Préparation des échantillons - LabCongo',
+            'Precious Metals Analysis - LabCongo': 'Analyse des métaux précieux - LabCongo',
+            'Quality Control (QA/QC) - LabCongo': 'Contrôle qualité (QA/QC) - LabCongo',
+            'Environmental Analysis - LabCongo': 'Analyse environnementale - LabCongo',
+            'What This Service Covers': 'Ce que couvre ce service',
+            'Reports and Deliverables': 'Rapports et livrables',
+            'Accurate chemical characterization of rocks, soils, ores, and concentrates for exploration and mining decisions.': 'Caractérisation chimique précise des roches, sols, minerais et concentrés pour les décisions d’exploration et d’exploitation minière.',
+            'Identification and characterization of minerals to support exploration, processing, and metallurgical planning.': 'Identification et caractérisation des minéraux pour soutenir l’exploration, le traitement et la planification métallurgique.',
+            'Testing programs that evaluate ore behavior and support efficient mineral processing decisions.': 'Programmes d’essais évaluant le comportement des minerais et soutenant des décisions efficaces de traitement minéral.',
+            'Instrumental measurement of major and trace elements for reliable mining and geochemical data.': 'Mesure instrumentale des éléments majeurs et traces pour des données minières et géochimiques fiables.',
+            'Controlled crushing, pulverizing, splitting, and homogenization for representative analytical samples.': 'Concassage, pulvérisation, division et homogénéisation contrôlés pour obtenir des échantillons analytiques représentatifs.',
+            'Assay services for gold, silver, and other valuable metals in ores, concentrates, and process materials.': 'Services de dosage de l’or, de l’argent et d’autres métaux de valeur dans les minerais, concentrés et matériaux de procédé.',
+            'Quality-control programs that improve confidence, traceability, and reliability of laboratory results.': 'Programmes de contrôle qualité renforçant la confiance, la traçabilité et la fiabilité des résultats de laboratoire.',
+            'Environmental testing that supports responsible mining, monitoring, and regulatory compliance.': 'Essais environnementaux soutenant l’exploitation minière responsable, le suivi et la conformité réglementaire.',
+            'Major, minor, and trace element determination in rocks, soils, sediments, ores, and concentrates.': 'Détermination des éléments majeurs, mineurs et traces dans les roches, sols, sédiments, minerais et concentrés.',
+            'Support for exploration campaigns, resource evaluation, ore control, and mineral quality checks.': 'Appui aux campagnes d’exploration, à l’évaluation des ressources, au contrôle du minerai et aux vérifications de qualité minérale.',
+            'Analytical workflows adapted to the matrix, expected grade range, and reporting objective.': 'Flux analytiques adaptés à la matrice, à la gamme de teneurs attendue et à l’objectif de rapport.',
+            'Review of blanks, duplicates, and reference materials to strengthen confidence in the results.': 'Examen des blancs, doublons et matériaux de référence afin de renforcer la confiance dans les résultats.',
+            'Element concentration tables in a structured format.': 'Tableaux de concentrations élémentaires dans un format structuré.',
+            'Analytical report with sample references and applied methods.': 'Rapport analytique avec références des échantillons et méthodes appliquées.',
+            'QA/QC summary for data validation where required.': 'Synthèse QA/QC pour la validation des données lorsque nécessaire.',
+            'Technical guidance for interpretation and follow-up testing.': 'Orientation technique pour l’interprétation et les analyses complémentaires.',
+            'Identification of principal and accessory minerals in ore, rock, concentrate, and tailings samples.': 'Identification des minéraux principaux et accessoires dans les échantillons de minerai, roche, concentré et rejets.',
+            'Assessment of mineral associations, texture, alteration, and liberation indicators.': 'Évaluation des associations minérales, textures, altérations et indicateurs de libération.',
+            'Support for geometallurgical studies and ore variability programs.': 'Appui aux études géométallurgiques et aux programmes de variabilité des minerais.',
+            'Mineralogical description and interpreted findings.': 'Description minéralogique et résultats interprétés.',
+            'Summary of dominant mineral phases and relevant associations.': 'Résumé des phases minérales dominantes et des associations pertinentes.',
+            'Recommendations for complementary geochemical or metallurgical testing.': 'Recommandations pour des essais géochimiques ou métallurgiques complémentaires.',
+            'Preliminary ore response testing for processing route selection.': 'Essais préliminaires de réponse du minerai pour choisir la voie de traitement.',
+            'Assessment of concentrates, tailings, and intermediate process materials.': 'Évaluation des concentrés, rejets et matériaux intermédiaires de procédé.',
+            'Test conditions, observations, and measured results.': 'Conditions d’essai, observations et résultats mesurés.',
+            'Mass balance or recovery summaries where applicable.': 'Bilans de masse ou synthèses de récupération lorsque applicable.',
+            'Interpretation of processing behavior and limiting factors.': 'Interprétation du comportement au traitement et des facteurs limitants.',
+            'Measurement of major, minor, and trace elements depending on the sample matrix and project objective.': 'Mesure des éléments majeurs, mineurs et traces selon la matrice de l’échantillon et l’objectif du projet.',
+            'Instrumental analysis following suitable preparation and calibration procedures.': 'Analyse instrumentale suivant des procédures appropriées de préparation et d’étalonnage.',
+            'Quality checks using standards, blanks, duplicates, or internal controls as required.': 'Contrôles qualité avec standards, blancs, doublons ou contrôles internes selon les besoins.',
+            'Elemental result tables with sample IDs and units.': 'Tableaux de résultats élémentaires avec identifiants d’échantillons et unités.',
+            'Data files suitable for technical review and project databases.': 'Fichiers de données adaptés à la revue technique et aux bases de données de projet.',
+            'Sample reception and coding': 'Réception et codification des échantillons',
+            'Sample selection and preparation': 'Sélection et préparation des échantillons',
+            'Instrument calibration': 'Étalonnage des instruments',
+            'Spectrometric measurement': 'Mesure spectrométrique',
+            'Data validation and reporting': 'Validation des données et reporting',
+            'Receive and register samples': 'Recevoir et enregistrer les échantillons',
+            'Dry, crush, split, and pulverize': 'Sécher, concasser, diviser et pulvériser',
+            'Homogenize and package laboratory portions': 'Homogénéiser et conditionner les portions de laboratoire',
+            'Release samples for analysis or storage': 'Libérer les échantillons pour analyse ou stockage',
+            'Prepare representative sample portions': 'Préparer des portions d’échantillons représentatives',
+            'Select the appropriate assay route': 'Choisir la méthode de dosage appropriée',
+            'Analyze and verify results': 'Analyser et vérifier les résultats',
+            'Deliver certificate or technical report': 'Livrer un certificat ou un rapport technique',
+            'Define control strategy': 'Définir la stratégie de contrôle',
+            'Review laboratory and control data': 'Examiner les données de laboratoire et de contrôle',
+            'Identify risks and anomalies': 'Identifier les risques et anomalies',
+            'Report conclusions and recommendations': 'Présenter les conclusions et recommandations',
+            'Define monitoring objective': 'Définir l’objectif de suivi',
+            'Analyze relevant environmental parameters': 'Analyser les paramètres environnementaux pertinents',
+            'Report and support interpretation': 'Rapporter et accompagner l’interprétation',
+            'Send us your request and our team will help you define the right analytical workflow for your samples.': 'Envoyez-nous votre demande et notre équipe vous aidera à définir le flux analytique adapté à vos échantillons.',
+            'Team Biographies - LabCongo': 'Biographies de l’équipe - LabCongo'
+        }
+    };
+
+    var additionalFrenchTranslations = {
+        "LabCongo, Kinshasa, DRC": "LabCongo, Kinshasa, RDC",
+        "How We Work": "Notre méthode",
+        "Need this service?": "Besoin de ce service ?",
+        "Step 1": "Étape 1",
+        "Step 2": "Étape 2",
+        "Step 3": "Étape 3",
+        "Step 4": "Étape 4",
+        "A rigorous and committed professional with a strong team spirit, he has contributed to major initiatives related to transparency, mineral traceability, and the fight against mining fraud at both national and international levels.": "Professionnel rigoureux, engagé et doté d’un fort esprit d’équipe, il a contribué à de grandes initiatives liées à la transparence, à la traçabilité des minerais et à la lutte contre la fraude minière aux niveaux national et international.",
+        "An experienced lawyer and senior executive, Jean-Baptiste Otshudi Disashi Kalonda has more than 20 years of experience in law, public governance, and the mining sector in the Democratic Republic of Congo. Currently Legal Director and Director for the Fight Against Mining Fraud at CEEC, he is recognized for his deep command of mining law, litigation, and mechanisms for regulating and certifying natural resources.": "Juriste expérimenté et haut cadre dirigeant, Jean-Baptiste Otshudi Disashi Kalonda compte plus de 20 ans d’expérience en droit, gouvernance publique et secteur minier en République démocratique du Congo. Actuellement Directeur juridique et Directeur de la lutte contre la fraude minière au CEEC, il est reconnu pour sa maîtrise approfondie du droit minier, du contentieux et des mécanismes de régulation et de certification des ressources naturelles.",
+        "With a strong background in economic and social law from the University of Kinshasa, he has held several strategic positions within public institutions, including the National Assembly and various ministries. His career reflects recognized expertise in legal advisory work, regulatory drafting, and public affairs management.": "Fort d’une solide formation en droit économique et social à l’Université de Kinshasa, il a occupé plusieurs postes stratégiques au sein d’institutions publiques, notamment à l’Assemblée nationale et dans différents ministères. Son parcours reflète une expertise reconnue en conseil juridique, rédaction réglementaire et gestion des affaires publiques.",
+        "He is part of the team dedicated to dependable service, responsible mining support, and professional collaboration.": "Il fait partie de l’équipe engagée pour un service fiable, un accompagnement minier responsable et une collaboration professionnelle.",
+        "His contribution helps maintain traceability, communication, and practical organization across the activities that support analytical work.": "Sa contribution aide à maintenir la traçabilité, la communication et l’organisation pratique des activités qui soutiennent le travail analytique.",
+        "Manu is part of the collective effort behind LabCongo's reliable and professional mining laboratory services.": "Manu participe à l’effort collectif qui soutient les services fiables et professionnels de laboratoire minier de LabCongo.",
+        "Manu supports LabCongo's daily team activities and contributes to the practical organization of laboratory-service workflows.": "Manu soutient les activités quotidiennes de l’équipe de LabCongo et contribue à l’organisation pratique des flux de services de laboratoire.",
+        "This contribution helps the team maintain responsiveness, coordination, and consistency in the way client requests are followed.": "Cette contribution aide l’équipe à maintenir la réactivité, la coordination et la cohérence dans le suivi des demandes clients.",
+        "24/7 Support": "Assistance 24/7",
+        "An experienced lawyer and senior executive, Jean-Baptiste Otshudi Disashi Kalonda has more than 20 years of experience in law, public governance, and the mining sector in the Democratic Republic of the Congo. Currently Legal Director and Head of Mining Fraud Prevention at CEEC, he is recognized for his deep command of mining law, litigation, and mechanisms for regulating and certifying natural resources.": "Juriste expérimenté et haut cadre dirigeant, Jean-Baptiste Otshudi Disashi Kalonda compte plus de 20 ans d’expérience en droit, gouvernance publique et secteur minier en République démocratique du Congo. Actuellement Directeur juridique et Responsable de la prévention de la fraude minière au CEEC, il est reconnu pour sa maîtrise approfondie du droit minier, du contentieux et des mécanismes de régulation et de certification des ressources naturelles.",
+        "Benjamin Itamba Y'Onkos contributes to LabCongo's technical and operational support activities in the mining laboratory context.": "Benjamin Itamba Y’Onkos contribue aux activités de soutien technique et opérationnel de LabCongo dans le contexte du laboratoire minier.",
+        "He helps maintain practical follow-up around samples, project needs, and internal coordination so that the team can respond efficiently to client requests.": "Il aide à assurer le suivi pratique des échantillons, des besoins des projets et de la coordination interne afin que l’équipe réponde efficacement aux demandes des clients.",
+        "He is part of the team committed to reliable results, clear communication, and responsible service delivery for mining-sector clients.": "Il fait partie de l’équipe engagée pour des résultats fiables, une communication claire et un service responsable aux clients du secteur minier.",
+        "He is part of the team working to provide accurate, traceable, and client-oriented mining analysis services.": "Il fait partie de l’équipe qui travaille à fournir des services d’analyse minière précis, traçables et orientés client.",
+        "He supports the team in keeping project information clear, sample-related processes traceable, and operational priorities aligned with client needs.": "Il aide l’équipe à garder les informations de projet claires, les processus liés aux échantillons traçables et les priorités opérationnelles alignées sur les besoins des clients.",
+        "Her contribution helps the laboratory maintain organized communication, reliable documentation, and a professional service experience.": "Sa contribution aide le laboratoire à maintenir une communication organisée, une documentation fiable et une expérience de service professionnelle.",
+        "Her role helps reinforce the quality of the service experience and the internal discipline needed for reliable laboratory operations.": "Son rôle contribue à renforcer la qualité de l’expérience de service et la discipline interne nécessaire à des opérations de laboratoire fiables.",
+        "His contribution is connected to coordination, documentation, and the practical organization required for reliable laboratory work.": "Sa contribution est liée à la coordination, à la documentation et à l’organisation pratique nécessaires à un travail de laboratoire fiable.",
+        "His role reinforces LabCongo's focus on discipline, reliability, and teamwork in the mining laboratory environment.": "Son rôle renforce l’attention de LabCongo à la discipline, à la fiabilité et au travail d’équipe dans l’environnement du laboratoire minier.",
+        "His work helps strengthen sample follow-up, operational discipline, and collaboration between the technical team and project stakeholders.": "Son travail contribue à renforcer le suivi des échantillons, la discipline opérationnelle et la collaboration entre l’équipe technique et les parties prenantes du projet.",
+        "His work supports LabCongo's broader commitment to reliable analysis, disciplined processes, and continuous improvement.": "Son travail soutient l’engagement global de LabCongo envers des analyses fiables, des processus rigoureux et l’amélioration continue.",
+        "LabCongo is a mining laboratory specializing in the analysis and quality control of ores. We support schools and universities in training local talent, as well as mining companies and mining sector stakeholders in identifying, evaluating, and optimizing mineral resources.": "LabCongo est un laboratoire minier spécialisé dans l’analyse et le contrôle qualité des minerais. Nous accompagnons les écoles et universités dans la formation des talents locaux, ainsi que les sociétés minières et les acteurs du secteur dans l’identification, l’évaluation et l’optimisation des ressources minérales.",
+        "Rigorous, committed, and strongly team-oriented, he has contributed to major initiatives related to mineral transparency, traceability, and the fight against mining fraud at both national and international levels.": "Rigoureux, engagé et fortement orienté vers le travail d’équipe, il a contribué à de grandes initiatives liées à la transparence minérale, à la traçabilité et à la lutte contre la fraude minière aux niveaux national et international.",
+        "She is involved in the collective effort to make LabCongo a trusted partner for mining laboratory services.": "Elle participe à l’effort collectif visant à faire de LabCongo un partenaire de confiance pour les services de laboratoire minier.",
+        "She is part of LabCongo's commitment to professionalism, trust, and clear support for mining-sector partners.": "Elle s’inscrit dans l’engagement de LabCongo en faveur du professionnalisme, de la confiance et d’un accompagnement clair des partenaires du secteur minier.",
+        "Thanks to our qualified team and modern equipment, we provide reliable, accurate, and fast results in accordance with international standards. Through our expertise, we actively contribute to the development of the extractive sector.": "Grâce à notre équipe qualifiée et à nos équipements modernes, nous fournissons des résultats fiables, précis et rapides conformément aux normes internationales. Par notre expertise, nous contribuons activement au développement du secteur extractif.",
+        "Through professionalism, transparency, and innovation, we strive to build long-term partnerships based on trust and excellence. We are also committed to promoting sustainable and responsible mining practices that contribute to environmental protection and economic development.": "Par le professionnalisme, la transparence et l’innovation, nous œuvrons à bâtir des partenariats durables fondés sur la confiance et l’excellence. Nous nous engageons également à promouvoir des pratiques minières durables et responsables qui contribuent à la protection de l’environnement et au développement économique.",
+        "With solid training in economic and social law from the University of Kinshasa, he has held several strategic roles in public institutions, including the National Assembly and various ministries. His career reflects recognized expertise in legal advisory, drafting regulatory texts, and public affairs management.": "Avec une solide formation en droit économique et social à l’Université de Kinshasa, il a occupé plusieurs fonctions stratégiques dans des institutions publiques, notamment à l’Assemblée nationale et dans divers ministères. Son parcours reflète une expertise reconnue en conseil juridique, rédaction de textes réglementaires et gestion des affaires publiques.",
+        "404 Error": "Erreur 404",
+        "Advanced Equipment": "Équipements avancés",
+        "Analytical report with method notes and QA/QC information.": "Rapport analytique avec notes de méthode et informations QA/QC.",
+        "Analytical verification of feed, product, and residue streams.": "Vérification analytique des flux d’alimentation, de produits et de résidus.",
+        "Analyze products and report performance": "Analyser les produits et rapporter les performances",
+        "Assay support for gold, silver, and selected valuable metals depending on sample type and grade range.": "Appui au dosage de l’or, de l’argent et de certains métaux de valeur selon le type d’échantillon et la gamme de teneurs.",
+        "At the LabCongo mining laboratory, we use advanced equipment to provide accurate and reliable analyses. With years of experience in the field, our engineers are equipped to address the most complex challenges.": "Au laboratoire minier LabCongo, nous utilisons des équipements avancés pour fournir des analyses précises et fiables. Forts de plusieurs années d’expérience dans le domaine, nos ingénieurs sont prêts à relever les défis les plus complexes.",
+        "Born on 25/11/1968.": "Né le 25/11/1968.",
+        "By combining careful sample preparation with mineral observation and analytical interpretation, we help clients understand the mineral composition that influences recovery, processing behavior, and product quality.": "En combinant une préparation soigneuse des échantillons, l’observation minérale et l’interprétation analytique, nous aidons les clients à comprendre la composition minérale qui influence la récupération, le comportement au traitement et la qualité du produit.",
+        "Clear reporting for technical, regulatory, and project documentation.": "Rapports clairs pour la documentation technique, réglementaire et de projet.",
+        "Clear technical report for project and laboratory records.": "Rapport technique clair pour les dossiers de projet et de laboratoire.",
+        "Client": "Client",
+        "Comparison of mineral composition across zones, pits, campaigns, or process streams.": "Comparaison de la composition minérale entre zones, fosses, campagnes ou flux de procédé.",
+        "Contamination-control practices and equipment cleaning between sample batches.": "Pratiques de contrôle de la contamination et nettoyage des équipements entre les lots d’échantillons.",
+        "Continuous assistance, always available to support your mining operations.": "Assistance continue, toujours disponible pour soutenir vos opérations minières.",
+        "Controlled preparation to improve representativity for precious metal analysis.": "Préparation contrôlée pour améliorer la représentativité dans l’analyse des métaux précieux.",
+        "Data-quality comments for technical teams and project files.": "Commentaires sur la qualité des données pour les équipes techniques et les dossiers de projet.",
+        "Define test objective and sample requirements": "Définir l’objectif de l’essai et les exigences d’échantillonnage",
+        "Environmental analysis helps mining operators understand and manage the impact of their activities on surrounding ecosystems. LabCongo provides testing support for monitoring programs related to water, soil, sediment, and mine-affected materials.": "L’analyse environnementale aide les opérateurs miniers à comprendre et gérer l’impact de leurs activités sur les écosystèmes environnants. LabCongo fournit un appui analytique aux programmes de suivi liés à l’eau, aux sols, aux sédiments et aux matériaux affectés par l’exploitation minière.",
+        "Environmental analytical results with sample location or ID references.": "Résultats analytiques environnementaux avec références de localisation ou d’identification des échantillons.",
+        "Experienced Engineers": "Ingénieurs expérimentés",
+        "Experienced geochemists, metallurgical engineers, mineralogists, chemical laboratory technicians, and biologists.": "Géochimistes, ingénieurs métallurgistes, minéralogistes, techniciens de laboratoire chimique et biologistes expérimentés.",
+        "Expert Engineers": "Ingénieurs experts",
+        "Expert Geologists": "Géologues experts",
+        "Features": "Atouts",
+        "Final report and data delivery": "Rapport final et livraison des données",
+        "From routine sample batches to targeted investigation programs, our laboratory applies controlled preparation, calibrated methods, and documented QA/QC practices to deliver results that are clear, traceable, and useful for technical reporting.": "Des lots d’échantillons courants aux programmes d’investigation ciblés, notre laboratoire applique une préparation contrôlée, des méthodes étalonnées et des pratiques QA/QC documentées afin de fournir des résultats clairs, traçables et utiles aux rapports techniques.",
+        "Go Back To Home": "Retour à l’accueil",
+        "Handling of exploration, production, and process-control sample streams.": "Gestion des flux d’échantillons d’exploration, de production et de contrôle de procédé.",
+        "I was truly impressed by the quality of LabCongo's analyses. Their team is very professional and competent. The results were delivered on time and were accurate, and I appreciated their support throughout the process. Thank you, LabCongo.": "J’ai été réellement impressionné par la qualité des analyses de LabCongo. Leur équipe est très professionnelle et compétente. Les résultats ont été livrés à temps et avec précision, et j’ai apprécié leur accompagnement tout au long du processus. Merci, LabCongo.",
+        "Identification of parameters requiring follow-up or monitoring attention.": "Identification des paramètres nécessitant un suivi ou une attention particulière.",
+        "Identification of possible contamination, bias, outliers, or preparation issues.": "Identification des contaminations possibles, biais, valeurs aberrantes ou problèmes de préparation.",
+        "Instrumental analysis and QA/QC review": "Analyse instrumentale et revue QA/QC",
+        "Interpretation of mineral associations": "Interprétation des associations minérales",
+        "LabCongo is a mining laboratory specialized in mineral analysis, ensuring accuracy, reliability, and compliance with national standards.": "LabCongo est un laboratoire minier spécialisé dans l’analyse minérale, garantissant précision, fiabilité et conformité aux normes nationales.",
+        "LabCongo provided me with accurate and reliable analyses for my mining project. Their team is skilled and attentive, and I highly recommend their services.": "LabCongo m’a fourni des analyses précises et fiables pour mon projet minier. Leur équipe est compétente et attentive, et je recommande vivement leurs services.",
+        "LabCongo provides geochemical analysis designed for mineral exploration, grade control, ore characterization, and quality verification. Our work helps mining teams understand the elemental composition of samples and make decisions based on reliable data.": "LabCongo fournit des analyses géochimiques conçues pour l’exploration minière, le contrôle des teneurs, la caractérisation des minerais et la vérification de la qualité. Notre travail aide les équipes minières à comprendre la composition élémentaire des échantillons et à prendre des décisions fondées sur des données fiables.",
+        "MANGENZA Toussaint": "MANGENZA Toussaint",
+        "Metallurgical testing provides practical information on how an ore responds to processing. LabCongo supports clients who need to evaluate recovery potential, compare processing routes, and optimize operational parameters before or during production.": "Les essais métallurgiques fournissent des informations pratiques sur la manière dont un minerai réagit au traitement. LabCongo accompagne les clients qui doivent évaluer le potentiel de récupération, comparer des voies de traitement et optimiser les paramètres opérationnels avant ou pendant la production.",
+        "Method and instrument information in the analytical report.": "Informations sur la méthode et l’instrument dans le rapport analytique.",
+        "Mineral observation and classification": "Observation et classification minérales",
+        "Mineralogical analysis helps explain how valuable minerals are hosted, associated, and liberated in a sample. LabCongo uses this service to support ore characterization, beneficiation studies, and technical decisions across the mining value chain.": "L’analyse minéralogique aide à comprendre comment les minéraux de valeur sont contenus, associés et libérés dans un échantillon. LabCongo utilise ce service pour soutenir la caractérisation des minerais, les études de valorisation et les décisions techniques tout au long de la chaîne de valeur minière.",
+        "Monitoring of metals and relevant parameters associated with mining activity.": "Suivi des métaux et des paramètres pertinents associés à l’activité minière.",
+        "Our approach links sample preparation, controlled test conditions, and analytical verification so that metallurgical results can guide decisions on treatment methods, reagent use, recovery performance, and process improvement.": "Notre approche relie la préparation des échantillons, les conditions d’essai contrôlées et la vérification analytique afin que les résultats métallurgiques guident les décisions sur les méthodes de traitement, l’utilisation des réactifs, les performances de récupération et l’amélioration des procédés.",
+        "Our experienced mining engineers bring their expertise to your project for accurate and reliable results.": "Nos ingénieurs miniers expérimentés apportent leur expertise à votre projet pour des résultats précis et fiables.",
+        "Our partners testify to the quality of our analyses, our speed, and our professionalism.": "Nos partenaires témoignent de la qualité de nos analyses, de notre rapidité et de notre professionnalisme.",
+        "Our preparation workflow is adapted to rocks, ores, soils, concentrates, tailings, and other mining materials. Each step is organized to support consistent particle size, representative splitting, and clean handling.": "Notre flux de préparation est adapté aux roches, minerais, sols, concentrés, rejets et autres matériaux miniers. Chaque étape est organisée pour assurer une granulométrie constante, une division représentative et une manipulation propre.",
+        "Our qualified engineers ensure results that meet international mining industry standards.": "Nos ingénieurs qualifiés garantissent des résultats conformes aux normes internationales de l’industrie minière.",
+        "Our state-of-the-art tools detect fine elements and deliver fast, accurate results.": "Nos outils de pointe détectent les éléments fins et fournissent des résultats rapides et précis.",
+        "Our team remains continuously available to support your projects and respond to your needs.": "Notre équipe reste disponible en permanence pour soutenir vos projets et répondre à vos besoins.",
+        "Our work supports responsible mining practices by producing clear analytical information that can be used for compliance, baseline studies, operational monitoring, and remediation planning.": "Notre travail soutient les pratiques minières responsables en produisant des informations analytiques claires utilisables pour la conformité, les études de référence, le suivi opérationnel et la planification de la remédiation.",
+        "Page Not Found": "Page introuvable",
+        "Precious metal assay results with sample identification and units.": "Résultats de dosage des métaux précieux avec identification des échantillons et unités.",
+        "Precious metals require careful handling, representative preparation, and analytical discipline. LabCongo supports clients who need dependable assay information for gold, silver, and other valuable metals in mining samples.": "Les métaux précieux exigent une manipulation soigneuse, une préparation représentative et une discipline analytique. LabCongo accompagne les clients qui ont besoin d’informations de dosage fiables pour l’or, l’argent et d’autres métaux de valeur dans les échantillons miniers.",
+        "Preparation and digestion/fusion route selection": "Préparation et choix de la voie de digestion/fusion",
+        "Preparation of pulps, coarse rejects, and laboratory portions for downstream testing.": "Préparation de pulpes, rejets grossiers et portions de laboratoire pour les essais ultérieurs.",
+        "Preparation summary included with analytical work where applicable.": "Résumé de préparation inclus avec le travail analytique lorsque applicable.",
+        "Prepare representative feed material": "Préparer un matériau d’alimentation représentatif",
+        "Prepared analytical portions ready for requested laboratory methods.": "Portions analytiques préparées et prêtes pour les méthodes de laboratoire demandées.",
+        "Project Owner": "Porteur de projet",
+        "QA/QC is essential for credible mining data. LabCongo helps clients design, apply, and review quality-control practices that support reliable analytical results and transparent decision-making.": "Le QA/QC est essentiel pour produire des données minières crédibles. LabCongo aide les clients à concevoir, appliquer et examiner des pratiques de contrôle qualité qui soutiennent des résultats analytiques fiables et une prise de décision transparente.",
+        "QA/QC summary report with observations and conclusions.": "Rapport de synthèse QA/QC avec observations et conclusions.",
+        "Quality-control notes for validation and traceability.": "Notes de contrôle qualité pour la validation et la traçabilité.",
+        "Reasonable Prices": "Prix raisonnables",
+        "Recommendations for complementary analysis where appropriate.": "Recommandations d’analyses complémentaires lorsque approprié.",
+        "Recommendations for confirmatory or repeat analysis where needed.": "Recommandations d’analyses de confirmation ou de répétition lorsque nécessaire.",
+        "Recommendations for corrective action and improved laboratory workflows.": "Recommandations d’actions correctives et d’amélioration des flux de laboratoire.",
+        "Recommendations for further optimization or confirmatory testing.": "Recommandations pour une optimisation supplémentaire ou des essais de confirmation.",
+        "Recommendations for future sampling and analytical programs.": "Recommandations pour les futurs programmes d’échantillonnage et d’analyse.",
+        "Reference Laboratory": "Laboratoire de référence",
+        "Reliable laboratory results begin with proper sample preparation. LabCongo prepares mining samples through controlled procedures that reduce contamination, preserve traceability, and produce representative material for analysis.": "Des résultats de laboratoire fiables commencent par une bonne préparation des échantillons. LabCongo prépare les échantillons miniers au moyen de procédures contrôlées qui réduisent la contamination, préservent la traçabilité et produisent un matériau représentatif pour l’analyse.",
+        "Report summaries suitable for project and compliance files.": "Synthèses de rapport adaptées aux dossiers de projet et de conformité.",
+        "Reporting with recommendations": "Rapport avec recommandations",
+        "Retention of rejects or pulps according to client instructions.": "Conservation des rejets ou pulpes selon les instructions du client.",
+        "Review of standards, blanks, duplicates, repeats, and internal control performance.": "Examen des performances des standards, blancs, doublons, répétitions et contrôles internes.",
+        "Run controlled laboratory tests": "Réaliser des essais de laboratoire contrôlés",
+        "Sample preparation": "Préparation des échantillons",
+        "Sample preparation records and traceability information.": "Dossiers de préparation des échantillons et informations de traçabilité.",
+        "Sample reception, coding, drying, crushing, pulverizing, splitting, and homogenization.": "Réception, codification, séchage, concassage, pulvérisation, division et homogénéisation des échantillons.",
+        "Spectrometric analysis supports fast and precise measurement of elemental composition in mining samples. LabCongo uses this service for ores, concentrates, soils, rocks, and process materials where reliable elemental data is essential.": "L’analyse spectrométrique permet une mesure rapide et précise de la composition élémentaire des échantillons miniers. LabCongo utilise ce service pour les minerais, concentrés, sols, roches et matériaux de procédé lorsque des données élémentaires fiables sont essentielles.",
+        "Strategic pricing based on the local DRC market and project demand.": "Tarification stratégique basée sur le marché local de la RDC et les besoins du projet.",
+        "Strict compliance with international standards and good laboratory practices.": "Respect strict des normes internationales et des bonnes pratiques de laboratoire.",
+        "Support for baseline studies, operational monitoring, and environmental due diligence.": "Appui aux études de référence, au suivi opérationnel et à la diligence environnementale.",
+        "Support for comminution, concentration, leaching, and recovery studies according to project needs.": "Appui aux études de comminution, concentration, lixiviation et récupération selon les besoins du projet.",
+        "Support for comparison between feed, concentrate, and residue streams.": "Appui à la comparaison entre les flux d’alimentation, de concentré et de résidus.",
+        "Support for exploration screening, grade control, concentrate evaluation, and process monitoring.": "Appui au criblage d’exploration, au contrôle des teneurs, à l’évaluation des concentrés et au suivi des procédés.",
+        "Support for exploration, grade control, metallurgical, and environmental datasets.": "Appui aux jeux de données d’exploration, de contrôle des teneurs, métallurgiques et environnementaux.",
+        "Tables or charts showing control performance where applicable.": "Tableaux ou graphiques présentant les performances des contrôles lorsque applicable.",
+        "Testimonial": "Témoignage",
+        "Testing of ores, concentrates, tailings, process streams, and selected exploration samples.": "Essais sur minerais, concentrés, rejets, flux de procédé et échantillons d’exploration sélectionnés.",
+        "Testing support for water, soil, sediment, tailings, and mine-affected environmental samples.": "Appui analytique pour les échantillons d’eau, de sol, de sédiments, de rejets et d’environnements affectés par la mine.",
+        "The Best Laboratory Solution for Mineral Analysis": "La meilleure solution de laboratoire pour l’analyse minérale",
+        "The service is designed to provide consistent analytical data, with appropriate calibration, instrument control, and verification steps to reduce uncertainty and improve confidence in reported values.": "Le service est conçu pour fournir des données analytiques cohérentes, avec un étalonnage approprié, un contrôle des instruments et des étapes de vérification destinées à réduire l’incertitude et renforcer la confiance dans les valeurs rapportées.",
+        "The service is suited to exploration, production monitoring, concentrate evaluation, and verification programs where accuracy, traceability, and clear reporting are essential.": "Le service convient à l’exploration, au suivi de production, à l’évaluation des concentrés et aux programmes de vérification où précision, traçabilité et clarté des rapports sont essentielles.",
+        "This service can be integrated into analytical programs or delivered as a focused review of sample batches, controls, duplicate performance, contamination indicators, and data consistency.": "Ce service peut être intégré aux programmes analytiques ou livré comme une revue ciblée des lots d’échantillons, des contrôles, des performances des doublons, des indicateurs de contamination et de la cohérence des données.",
+        "Transparent Pricing": "Tarification transparente",
+        "Use of quality-control checks to support reliable grade reporting.": "Utilisation de contrôles qualité pour soutenir un rapport fiable des teneurs.",
+        "We guarantee accurate analyses through strict protocols and technologies adapted to the mining sector requirements. With LabCongo, benefit from precise analyses, quality testing, and expert guidance to optimize your mining operations efficiently and sustainably.": "Nous garantissons des analyses précises grâce à des protocoles stricts et à des technologies adaptées aux exigences du secteur minier. Avec LabCongo, bénéficiez d’analyses précises, d’essais de qualité et de conseils d’experts pour optimiser vos opérations minières de manière efficace et durable.",
+        "We provide accessible services with excellent value for all our clients.": "Nous fournissons des services accessibles avec un excellent rapport qualité-prix pour tous nos clients.",
+        "We’re sorry, the page you have looked for does not exist in our website! Maybe go to our home page or try to use a search?": "Nous sommes désolés, la page que vous recherchez n’existe pas sur notre site ! Vous pouvez retourner à la page d’accueil ou essayer une recherche.",
+        "Youtube Video": "Vidéo YouTube",
+        "Dir. Jean-Baptiste Otshudi": "Dir. Jean-Baptiste Otshudi",
+        "Dir. Jean-Baptiste Otshudi Disashi Kalonda": "Dir. Jean-Baptiste Otshudi Disashi Kalonda",
+        "Labcongo.org": "Labcongo.org",
+        "Team Biography - LabCongo": "Biographie du membre - LabCongo",
+        "Henri Christin Longendja Isamboyo contributes to LabCongo\'s mission by supporting the coordination of laboratory activities and mining-analysis workflows.": "Henri Christin Longendja Isamboyo contribue à la mission de LabCongo en soutenant la coordination des activités de laboratoire et des flux d’analyse minière.",
+        "Laelle Otshudi Akangambo supports LabCongo through team coordination, administrative follow-up, and attention to the quality of client-facing processes.": "Laelle Otshudi Akangambo soutient LabCongo par la coordination d’équipe, le suivi administratif et l’attention portée à la qualité des processus en contact avec les clients.",
+        "Gaby Mukendi Kabuya supports LabCongo\'s operational and project follow-up activities, helping the team maintain consistency in service delivery.": "Gaby Mukendi Kabuya soutient les activités opérationnelles et le suivi des projets de LabCongo, aidant l’équipe à maintenir la cohérence dans la prestation des services.",
+        "Roger Mungoba Balilia supports LabCongo through operational follow-up and coordination related to mining laboratory services.": "Roger Mungoba Balilia soutient LabCongo par le suivi opérationnel et la coordination liés aux services de laboratoire minier.",
+        "Germaine Otshudi contributes to LabCongo\'s team by supporting communication, organization, and client-oriented follow-up.": "Germaine Otshudi contribue à l’équipe de LabCongo en soutenant la communication, l’organisation et le suivi orienté client."
+};
+
+    Object.keys(additionalFrenchTranslations).forEach(function (key) {
+        translations.fr[key] = additionalFrenchTranslations[key];
+    });
+
+
+    var attributeTranslations = {
+        fr: {
+            'Name': 'Nom',
+            'Your Name': 'Votre nom',
+            'Your Email': 'Votre e-mail',
+            'Your Email Address': 'Votre adresse e-mail',
+            'Your Mobile': 'Votre téléphone',
+            'Phone': 'Téléphone',
+            'Subject': 'Sujet',
+            'Message': 'Message',
+            'Choose a Service': 'Choisir un service',
+            'Language selector': 'Sélecteur de langue',
+            'Close': 'Fermer',
+            'Leave a message here': 'Laissez votre message ici',
+            'breadcrumb animated slideInDown': 'Fil d\'Ariane',
+            'Youtube Video': 'Vidéo YouTube',
+            'Image': 'Image'
+        }
+    };
+
+    function preserveWhitespace(original, translated) {
+        var leading = original.match(/^\s*/)[0];
+        var trailing = original.match(/\s*$/)[0];
+        return leading + translated + trailing;
+    }
+
+    function translateTextNodes(root, dictionary) {
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+            acceptNode: function (node) {
+                if (!node.nodeValue.trim()) {
+                    return NodeFilter.FILTER_REJECT;
+                }
+
+                var parent = node.parentElement;
+                if (!parent || ['SCRIPT', 'STYLE', 'NOSCRIPT'].indexOf(parent.tagName) !== -1) {
+                    return NodeFilter.FILTER_REJECT;
+                }
+
+                return NodeFilter.FILTER_ACCEPT;
+            }
+        });
+        var nodes = [];
+
+        while (walker.nextNode()) {
+            nodes.push(walker.currentNode);
+        }
+
+        nodes.forEach(function (node) {
+            var normalized = node.nodeValue.replace(/\s+/g, ' ').trim();
+            if (dictionary[normalized]) {
+                node.nodeValue = preserveWhitespace(node.nodeValue, dictionary[normalized]);
+            }
+        });
+    }
+
+    function translateDynamicAttribute(value) {
+        if (currentLanguage !== 'fr') {
+            return value;
+        }
+
+        var dynamicTranslations = [
+            { pattern: /^Read biography of (.+)$/, replacement: 'Lire la biographie de $1' },
+            { pattern: /^Facebook profile for (.+)$/, replacement: 'Profil Facebook de $1' },
+            { pattern: /^Twitter profile for (.+)$/, replacement: 'Profil Twitter de $1' },
+            { pattern: /^Linkedin profile for (.+)$/, replacement: 'Profil LinkedIn de $1' },
+            { pattern: /^Youtube profile for (.+)$/, replacement: 'Profil YouTube de $1' }
+        ];
+
+        for (var index = 0; index < dynamicTranslations.length; index++) {
+            if (dynamicTranslations[index].pattern.test(value)) {
+                return value.replace(dynamicTranslations[index].pattern, dynamicTranslations[index].replacement);
+            }
+        }
+
+        return value;
+    }
+
+    function translateAttributes(root, dictionary) {
+        var attributes = ['placeholder', 'aria-label', 'title', 'value', 'alt'];
+
+        attributes.forEach(function (attribute) {
+            root.querySelectorAll('[' + attribute + ']').forEach(function (element) {
+                var value = element.getAttribute(attribute);
+                if (dictionary[value]) {
+                    element.setAttribute(attribute, dictionary[value]);
+                    return;
+                }
+
+                var translatedValue = translateDynamicAttribute(value);
+                if (translatedValue !== value) {
+                    element.setAttribute(attribute, translatedValue);
+                }
+            });
+        });
+    }
+
+    function localizeUrlValue(value, language) {
+        if (!value || value === '#' || value.indexOf('mailto:') === 0 || value.indexOf('tel:') === 0 || value.indexOf('javascript:') === 0) {
+            return value;
+        }
+
+        try {
+            var url = new URL(value, window.location.href);
+            if (url.origin !== window.location.origin || !/\.(html|php)$/i.test(url.pathname)) {
+                return value;
+            }
+
+            if (language === 'fr') {
+                url.searchParams.set('lang', 'fr');
+            } else {
+                url.searchParams.delete('lang');
+            }
+
+            return url.pathname.replace(/^\//, '') + url.search + url.hash;
+        } catch (error) {
+            return value;
+        }
+    }
+
+    function localizeInternalTargets(language) {
+        document.querySelectorAll('a[href]').forEach(function (link) {
+            link.setAttribute('href', localizeUrlValue(link.getAttribute('href'), language));
+        });
+
+        document.querySelectorAll('input[name="_redirect"]').forEach(function (input) {
+            input.value = localizeUrlValue(input.value, language);
+        });
+    }
+
+    function applyLanguage(language) {
+        document.documentElement.setAttribute('lang', language);
+        localizeInternalTargets(language);
+
+        if (language === 'fr') {
+            var dictionary = translations.fr;
+            var attrDictionary = attributeTranslations.fr;
+
+            if (dictionary[document.title]) {
+                document.title = dictionary[document.title];
+            }
+
+            translateTextNodes(document.body, dictionary);
+            translateAttributes(document, attrDictionary);
+        }
+    }
+
+    localStorage.setItem('labcongo_language', currentLanguage);
+    $('#languageSelect').val(currentLanguage);
+    applyLanguage(currentLanguage);
+
     $('#languageSelect').on('change', function () {
         var selectedLanguage = $(this).val();
 
@@ -30,42 +548,76 @@
         }
 
         localStorage.setItem('labcongo_language', selectedLanguage);
-        document.documentElement.setAttribute('lang', selectedLanguage);
+
+        var url = new URL(window.location.href);
+        if (selectedLanguage === 'fr') {
+            url.searchParams.set('lang', 'fr');
+        } else {
+            url.searchParams.delete('lang');
+        }
+
+        window.location.href = url.toString();
     });
 
 
     // Form feedback
     var formStatus = new URLSearchParams(window.location.search).get('form');
     var formMessages = {
-        success: {
-            type: 'success',
-            text: 'Thank you. Your message has been sent successfully.'
+        en: {
+            success: {
+                type: 'success',
+                text: 'Thank you. Your message has been sent successfully.'
+            },
+            logged: {
+                type: 'warning',
+                text: 'Thank you. Your message was received locally for testing. Local PHP may not deliver email; use the hosted server for the final email test.'
+            },
+            config: {
+                type: 'warning',
+                text: 'The form is connected, but SMTP is not configured yet. Add the email password in mail-config.php to send real messages.'
+            },
+            error: {
+                type: 'danger',
+                text: 'Sorry, your message could not be sent by SMTP. Please verify the email password and server settings.'
+            },
+            invalid: {
+                type: 'danger',
+                text: 'Invalid form request. Please submit the form again.'
+            }
         },
-        logged: {
-            type: 'warning',
-            text: 'Thank you. Your message was received locally for testing. Local PHP may not deliver email; use the hosted server for the final email test.'
-        },
-        config: {
-            type: 'warning',
-            text: 'The form is connected, but SMTP is not configured yet. Add the email password in mail-config.php to send real messages.'
-        },
-        error: {
-            type: 'danger',
-            text: 'Sorry, your message could not be sent by SMTP. Please verify the email password and server settings.'
-        },
-        invalid: {
-            type: 'danger',
-            text: 'Invalid form request. Please submit the form again.'
+        fr: {
+            success: {
+                type: 'success',
+                text: 'Merci. Votre message a été envoyé avec succès.'
+            },
+            logged: {
+                type: 'warning',
+                text: 'Merci. Votre message a été reçu localement pour le test. Le PHP local peut ne pas envoyer l’e-mail; utilisez le serveur hébergé pour le test final.'
+            },
+            config: {
+                type: 'warning',
+                text: 'Le formulaire est connecté, mais le SMTP n’est pas encore configuré. Ajoutez le mot de passe e-mail dans mail-config.php pour envoyer de vrais messages.'
+            },
+            error: {
+                type: 'danger',
+                text: 'Désolé, votre message n’a pas pu être envoyé par SMTP. Veuillez vérifier le mot de passe e-mail et les paramètres du serveur.'
+            },
+            invalid: {
+                type: 'danger',
+                text: 'Requête de formulaire invalide. Veuillez soumettre le formulaire à nouveau.'
+            }
         }
     };
 
-    if (formStatus && formMessages[formStatus]) {
-        var feedback = formMessages[formStatus];
+    var localizedFormMessages = formMessages[currentLanguage] || formMessages.en;
+
+    if (formStatus && localizedFormMessages[formStatus]) {
+        var feedback = localizedFormMessages[formStatus];
         var alert = $(
             '<div class="form-feedback" role="status" aria-live="polite">' +
                 '<div class="alert alert-' + feedback.type + ' shadow mb-0" role="alert">' +
                     '<span>' + feedback.text + '</span>' +
-                    '<button type="button" class="btn-close form-feedback-close" aria-label="Close"></button>' +
+                    '<button type="button" class="btn-close form-feedback-close" aria-label="' + (currentLanguage === 'fr' ? 'Fermer' : 'Close') + '"></button>' +
                 '</div>' +
             '</div>'
         );
@@ -87,7 +639,9 @@
         alert.find('.form-feedback-close').on('click', dismissFeedback);
 
         if (window.history.replaceState) {
-            window.history.replaceState({}, document.title, window.location.pathname);
+            var cleanUrl = new URL(window.location.href);
+            cleanUrl.searchParams.delete('form');
+            window.history.replaceState({}, document.title, cleanUrl.pathname + cleanUrl.search + cleanUrl.hash);
         }
     }
     

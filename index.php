@@ -544,170 +544,17 @@
     <!-- Team Start -->
     <div class="container-fluid container-team py-5">
         <div class="container pb-5">
-            <div class="row g-5 align-items-center mb-5">
-                <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">
-                    <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
-                </div>
-                <div class="col-md-6 wow fadeIn" data-wow-delay="0.5s">
-                    <h1 class="display-6 mb-3">Dir. Jean-Baptiste Otshudi Disashi Kalonda</h1>
-                    <p class="mb-1">Co-Founder and COO</p>
-                    <p class="mb-5">LabCongo, Kinshasa, DRC</p>
-                    <h3 class="mb-3">Biography</h3>
-                    <p class="mb-4 text-justify">An experienced lawyer and senior executive, Jean-Baptiste Otshudi Disashi Kalonda has more than 20 years of experience in law, public governance, and the mining sector in the Democratic Republic of the Congo. Currently Legal Director
-                        and Head of Mining Fraud Prevention at CEEC, he is recognized for his deep command of mining law, litigation, and mechanisms for regulating and certifying natural resources.</p>
-                    <p class="mb-4 text-justify">With solid training in economic and social law from the University of Kinshasa, he has held several strategic roles in public institutions, including the National Assembly and various ministries. His career reflects recognized expertise
-                        in legal advisory, drafting regulatory texts, and public affairs management.</p>
-                    <p class="mb-4 text-justify">Rigorous, committed, and strongly team-oriented, he has contributed to major initiatives related to mineral transparency, traceability, and the fight against mining fraud at both national and international levels.</p>
-                    <div class="d-flex">
-                        <a class="btn btn-lg-square btn-primary me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-lg-square btn-primary me-2" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-lg-square btn-primary me-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn btn-lg-square btn-primary me-2" href=""><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-            </div>
+            <?php
+            require_once __DIR__ . '/inc/team-render.php';
+            lc_team_render_featured_member(lc_team_featured_member());
+            ?>
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <h1 class="display-6 mb-3">Team Members</h1>
                 <p class="mb-0">Our team brings together committed professionals supporting LabCongo's mining analysis and laboratory services.</p>
             </div>
             <div class="team-carousel-wrapper wow fadeInUp" data-wow-delay="0.2s">
                 <div class="team-carousel owl-carousel">
-                    <div class="team-item team-member-card h-100">
-                        <a class="team-profile-link" href="team-biography.php?member=longendja-isamboyo-henri-christin" aria-label="Read biography of LONGENDJA ISAMBOYO Henri Christin">
-                            <div class="team-avatar-wrap">
-                                <div class="team-avatar bg-secondary">LI</div>
-                            </div>
-                        </a>
-                        <div class="team-social">
-                            <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-youtube"></i></a>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-1">LONGENDJA Henri Christin</h5>
-                            <span>Team Member</span>
-                        </div>
-                    </div>
-                    <div class="team-item team-member-card h-100">
-                        <a class="team-profile-link" href="team-biography.php?member=otshudi-akangambo-laelle" aria-label="Read biography of OTSHUDI AKANGAMBO Laelle">
-                            <div class="team-avatar-wrap">
-                                <div class="team-avatar bg-dark">OA</div>
-                            </div>
-                        </a>
-                        <div class="team-social">
-                            <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-youtube"></i></a>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-1">OTSHUDI Laelle</h5>
-                            <span>Team Member</span>
-                        </div>
-                    </div>
-                    <div class="team-item team-member-card h-100">
-                        <a class="team-profile-link" href="team-biography.php?member=toussaint-molenge-mangenza" aria-label="Read biography of Toussaint MOLENGE MANGENZA">
-                            <div class="team-avatar-wrap">
-                                <div class="team-avatar bg-primary">TM</div>
-                            </div>
-                        </a>
-                        <div class="team-social">
-                            <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-youtube"></i></a>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-1">MANGENZA Toussaint </h5>
-                            <span>Team Member</span>
-                        </div>
-                    </div>
-                    <div class="team-item team-member-card h-100">
-                        <a class="team-profile-link" href="team-biography.php?member=mukendi-kabuya-gaby" aria-label="Read biography of MUKENDI KABUYA Gaby">
-                            <div class="team-avatar-wrap">
-                                <div class="team-avatar bg-secondary">MK</div>
-                            </div>
-                        </a>
-                        <div class="team-social">
-                            <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-youtube"></i></a>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-1">MUKENDI Gaby</h5>
-                            <span>Team Member</span>
-                        </div>
-                    </div>
-                    <div class="team-item team-member-card h-100">
-                        <a class="team-profile-link" href="team-biography.php?member=itamba-yonkos-benjamin" aria-label="Read biography of ITAMBA Y&rsquo;ONKOS Benjamin">
-                            <div class="team-avatar-wrap">
-                                <div class="team-avatar bg-dark">IY</div>
-                            </div>
-                        </a>
-                        <div class="team-social">
-                            <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-youtube"></i></a>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-1">ITAMBA Benjamin</h5>
-                            <span>Team Member</span>
-                        </div>
-                    </div>
-                    <div class="team-item team-member-card h-100">
-                        <a class="team-profile-link" href="team-biography.php?member=mungoba-balilia-roger" aria-label="Read biography of MUNGOBA BALILIA Roger">
-                            <div class="team-avatar-wrap">
-                                <div class="team-avatar bg-primary">MB</div>
-                            </div>
-                        </a>
-                        <div class="team-social">
-                            <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-youtube"></i></a>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-1">MUNGOBA Roger</h5>
-                            <span>Team Member</span>
-                        </div>
-                    </div>
-                    <div class="team-item team-member-card h-100">
-                        <a class="team-profile-link" href="team-biography.php?member=otshudi-germaine" aria-label="Read biography of OTSHUDI Germaine">
-                            <div class="team-avatar-wrap">
-                                <div class="team-avatar bg-secondary">OG</div>
-                            </div>
-                        </a>
-                        <div class="team-social">
-                            <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-youtube"></i></a>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-1">OTSHUDI Germaine</h5>
-                            <span>Team Member</span>
-                        </div>
-                    </div>
-                    <div class="team-item team-member-card h-100">
-                        <a class="team-profile-link" href="team-biography.php?member=manu" aria-label="Read biography of MANU">
-                            <div class="team-avatar-wrap">
-                                <div class="team-avatar bg-dark">M</div>
-                            </div>
-                        </a>
-                        <div class="team-social">
-                            <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-youtube"></i></a>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-1">MANU</h5>
-                            <span>Team Member</span>
-                        </div>
-                    </div>
+                    <?php lc_team_render_carousel(lc_team_members()); ?>
                 </div>
             </div>
         </div>

@@ -44,8 +44,8 @@ function clean_header_value($value): string
 
 function redirect_with_status(string $target, string $status): void
 {
-    if (!preg_match('/^[a-z0-9_-]+\.html$/i', $target)) {
-        $target = 'index.html';
+    if (!preg_match('/^[a-z0-9_-]+\.(?:html|php)(?:\?[a-z0-9_-]+=[a-z0-9_-]+(?:&[a-z0-9_-]+=[a-z0-9_-]+)*)?$/i', $target)) {
+        $target = 'index.php';
     }
 
     $separator = strpos($target, '?') === false ? '?' : '&';
@@ -184,10 +184,10 @@ function smtp_send_mail(array $config, string $subject, string $body, string $re
 }
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    redirect_with_status('index.html', 'invalid');
+    redirect_with_status('index.php', 'invalid');
 }
 
-$redirectTarget = clean_header_value($_POST['_redirect'] ?? 'index.html');
+$redirectTarget = clean_header_value($_POST['_redirect'] ?? 'index.php');
 $formType = clean_header_value($_POST['form_type'] ?? 'website_form');
 
 $formLabels = [
