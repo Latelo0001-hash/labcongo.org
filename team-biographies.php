@@ -153,6 +153,9 @@
                 ?>
             </div>
         </div>
+        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 720px;">
+                <a class="btn btn-primary py-3 px-4" href="team.php">Back to Team</a>
+            </div>
     </div>
     <!-- Team Biographies End -->
 

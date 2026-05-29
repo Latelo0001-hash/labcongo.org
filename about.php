@@ -287,26 +287,6 @@
     <!-- Video Modal End -->
 
 
-    <!-- Team Start -->
-    <div class="container-fluid container-team py-5">
-        <div class="container pb-5">
-            <?php
-            require_once __DIR__ . '/inc/team-render.php';
-            lc_team_render_featured_member(lc_team_featured_member());
-            ?>
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h1 class="display-6 mb-3">Team Members</h1>
-                <p class="mb-0">Our team brings together committed professionals supporting LabCongo's mining analysis and laboratory services.</p>
-            </div>
-            <div class="team-carousel-wrapper wow fadeInUp" data-wow-delay="0.2s">
-                <div class="team-carousel owl-carousel">
-                    <?php lc_team_render_carousel(lc_team_members()); ?>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
-
 
     <!-- Footer Start -->
     <div class="container-fluid footer position-relative bg-dark text-white-50 py-5 wow fadeIn" data-wow-delay="0.1s">
