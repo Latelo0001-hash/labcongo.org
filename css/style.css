@@ -12,6 +12,19 @@
     font-weight: 500;
 }
 
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    font-family: "Red Rose", cursive;
+}
+
 
 /*** Spinner ***/
 #spinner {
@@ -890,24 +903,27 @@
     opacity: 1;
 }
 
-.team-member-card .team-social {
-    position: relative;
+.team-carousel .team-member-card .team-social {
+    position: relative !important;
     z-index: 3;
-    top: auto;
-    right: auto;
-    left: auto;
-    width: 100%;
-    height: auto;
+    inset: auto !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: max-content !important;
+    max-width: calc(100% - 32px);
+    height: auto !important;
     gap: 10px;
-    margin: 12px 0 0;
-    padding: 0 24px;
-    background: transparent;
+    margin: 12px auto 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
     pointer-events: auto;
 }
 
-.team-member-card:hover .team-social {
-    left: auto;
-    width: 100%;
+.team-carousel .team-member-card:hover .team-social {
+    left: auto !important;
+    width: max-content !important;
+    max-width: calc(100% - 32px);
 }
 
 .team-member-card .team-social .btn {
@@ -1055,6 +1071,10 @@ html.dark-mode body {
     background: #081225;
 }
 
+html.dark-mode body {
+    background-color: #081225;
+}
+
 html.dark-mode .bg-white,
 html.dark-mode .navbar,
 html.dark-mode .modal-content,
@@ -1082,7 +1102,7 @@ html.dark-mode .navbar.shadow-sm {
 }
 
 html.dark-mode .container-fluid.py-2,
-html.dark-mode .container-fluid.py-5,
+html.dark-mode .container-fluid.py-5:not(.page-header):not(.footer),
 html.dark-mode .container-fluid.my-5:not(.feature):not(.testimonial),
 html.dark-mode .container.py-5,
 html.dark-mode .container.pb-5,
@@ -1091,8 +1111,21 @@ html.dark-mode .container-team {
     background-color: #081225;
 }
 
+html.dark-mode .page-header {
+    background: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3)), url(../img/testimonial-mining-abstract.jpg) center center no-repeat !important;
+    background-size: cover !important;
+}
+
 html.dark-mode .navbar .navbar-nav {
     border-color: rgba(255, 255, 255, .1);
+}
+
+html.dark-mode .service-item,
+html.dark-mode .team-item,
+html.dark-mode .team-bio-card,
+html.dark-mode .modal-content,
+html.dark-mode .feature-row {
+    box-shadow: 0 0 45px rgba(0, 0, 0, .24);
 }
 
 html.dark-mode .navbar .navbar-nav .nav-link,
@@ -1223,6 +1256,10 @@ html.dark-mode .team-bio-photo-placeholder span {
     box-shadow: 0 18px 35px rgba(0, 0, 0, .28);
 }
 
+html.dark-mode .team-carousel .team-member-card .team-social {
+    background: transparent !important;
+}
+
 html.dark-mode .team-member-card .team-social .btn {
     color: #f4f7fb !important;
     background: #0b1629 !important;
@@ -1260,7 +1297,11 @@ html.dark-mode .testimonial-carousel .owl-nav .owl-next:hover {
     color: #ffffff;
 }
 
-html.dark-mode .footer,
+html.dark-mode .footer {
+    background: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3)), url(../img/footer.png) center center no-repeat !important;
+    background-size: contain !important;
+}
+
 html.dark-mode .copyright {
     background-color: #061027 !important;
 }
