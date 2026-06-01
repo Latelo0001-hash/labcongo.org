@@ -310,7 +310,15 @@
         "LabCongo is a mining laboratory specialized in mineral analysis, ensuring accuracy, reliability, and compliance with national standards.": "LabCongo est un laboratoire minier spécialisé dans l’analyse minérale, garantissant précision, fiabilité et conformité aux normes nationales.",
         "LabCongo provided me with accurate and reliable analyses for my mining project. Their team is skilled and attentive, and I highly recommend their services.": "LabCongo m’a fourni des analyses précises et fiables pour mon projet minier. Leur équipe est compétente et attentive, et je recommande vivement leurs services.",
         "LabCongo provides geochemical analysis designed for mineral exploration, grade control, ore characterization, and quality verification. Our work helps mining teams understand the elemental composition of samples and make decisions based on reliable data.": "LabCongo fournit des analyses géochimiques conçues pour l’exploration minière, le contrôle des teneurs, la caractérisation des minerais et la vérification de la qualité. Notre travail aide les équipes minières à comprendre la composition élémentaire des échantillons et à prendre des décisions fondées sur des données fiables.",
-        "MANGENZA Toussaint": "MANGENZA Toussaint",
+        "OTSHUDI DISHASHI Jean Baptiste": "OTSHUDI DISHASHI Jean Baptiste",
+        "LONGENDJA ISAMBOYO Henri Christian": "LONGENDJA ISAMBOYO Henri Christian",
+        "MUSOGA BAKAATO Kethia": "MUSOGA BAKAATO Kethia",
+        "ITAMBA Y'ONKOS Benjamin": "ITAMBA Y'ONKOS Benjamin",
+        "ITAMBA Y’ONKOS Benjamin": "ITAMBA Y’ONKOS Benjamin",
+        "LOMBI Evy": "LOMBI Evy",
+        "MICHEL DELAROSE MASUMUNA": "MICHEL DELAROSE MASUMUNA",
+        "MUSAU Ruth": "MUSAU Ruth",
+        "WASONGO KANDA Jorgen": "WASONGO KANDA Jorgen",
         "Metallurgical testing provides practical information on how an ore responds to processing. LabCongo supports clients who need to evaluate recovery potential, compare processing routes, and optimize operational parameters before or during production.": "Les essais métallurgiques fournissent des informations pratiques sur la manière dont un minerai réagit au traitement. LabCongo accompagne les clients qui doivent évaluer le potentiel de récupération, comparer des voies de traitement et optimiser les paramètres opérationnels avant ou pendant la production.",
         "Method and instrument information in the analytical report.": "Informations sur la méthode et l’instrument dans le rapport analytique.",
         "Mineral observation and classification": "Observation et classification minérales",
@@ -374,15 +382,20 @@
         "We provide accessible services with excellent value for all our clients.": "Nous fournissons des services accessibles avec un excellent rapport qualité-prix pour tous nos clients.",
         "We’re sorry, the page you have looked for does not exist in our website! Maybe go to our home page or try to use a search?": "Nous sommes désolés, la page que vous recherchez n’existe pas sur notre site ! Vous pouvez retourner à la page d’accueil ou essayer une recherche.",
         "Youtube Video": "Vidéo YouTube",
-        "Dir. Jean-Baptiste Otshudi": "Dir. Jean-Baptiste Otshudi",
-        "Dir. Jean-Baptiste Otshudi Disashi Kalonda": "Dir. Jean-Baptiste Otshudi Disashi Kalonda",
+        "Jean Baptiste Otshudi Dishashi is an experienced lawyer and senior executive with more than 20 years of experience in law, public governance, and the mining sector in the Democratic Republic of Congo.": "Jean Baptiste Otshudi Dishashi est un avocat et cadre expérimenté, avec plus de 20 ans d’expérience en droit, gouvernance publique et secteur minier en République démocratique du Congo.",
+        "He contributes to LabCongo through strategic leadership, legal insight, and a strong commitment to responsible mining-sector services.": "Il contribue à LabCongo par son leadership stratégique, son expertise juridique et son engagement envers des services responsables pour le secteur minier.",
+        "His profile reflects a focus on discipline, transparency, traceability, and professional collaboration in support of reliable laboratory operations.": "Son profil reflète un souci de discipline, de transparence, de traçabilité et de collaboration professionnelle au service d’opérations de laboratoire fiables.",
         "Labcongo.org": "Labcongo.org",
         "Team Biography - LabCongo": "Biographie du membre - LabCongo",
-        "Henri Christin Longendja Isamboyo contributes to LabCongo\'s mission by supporting the coordination of laboratory activities and mining-analysis workflows.": "Henri Christin Longendja Isamboyo contribue à la mission de LabCongo en soutenant la coordination des activités de laboratoire et des flux d’analyse minière.",
-        "Laelle Otshudi Akangambo supports LabCongo through team coordination, administrative follow-up, and attention to the quality of client-facing processes.": "Laelle Otshudi Akangambo soutient LabCongo par la coordination d’équipe, le suivi administratif et l’attention portée à la qualité des processus en contact avec les clients.",
-        "Gaby Mukendi Kabuya supports LabCongo\'s operational and project follow-up activities, helping the team maintain consistency in service delivery.": "Gaby Mukendi Kabuya soutient les activités opérationnelles et le suivi des projets de LabCongo, aidant l’équipe à maintenir la cohérence dans la prestation des services.",
-        "Roger Mungoba Balilia supports LabCongo through operational follow-up and coordination related to mining laboratory services.": "Roger Mungoba Balilia soutient LabCongo par le suivi opérationnel et la coordination liés aux services de laboratoire minier.",
-        "Germaine Otshudi contributes to LabCongo\'s team by supporting communication, organization, and client-oriented follow-up.": "Germaine Otshudi contribue à l’équipe de LabCongo en soutenant la communication, l’organisation et le suivi orienté client."
+        "LONGENDJA ISAMBOYO Henri Christian contributes to LabCongo's team and supports the company's mining laboratory services.": "LONGENDJA ISAMBOYO Henri Christian contribue à l’équipe de LabCongo et soutient les services de laboratoire minier de l’entreprise.",
+        "MUSOGA BAKAATO Kethia contributes to LabCongo's team and supports the company's mining laboratory services.": "MUSOGA BAKAATO Kethia contribue à l’équipe de LabCongo et soutient les services de laboratoire minier de l’entreprise.",
+        "ITAMBA Y'ONKOS Benjamin contributes to LabCongo's team and supports the company's mining laboratory services.": "ITAMBA Y'ONKOS Benjamin contribue à l’équipe de LabCongo et soutient les services de laboratoire minier de l’entreprise.",
+        "LOMBI Evy contributes to LabCongo's team and supports the company's mining laboratory services.": "LOMBI Evy contribue à l’équipe de LabCongo et soutient les services de laboratoire minier de l’entreprise.",
+        "MICHEL DELAROSE MASUMUNA contributes to LabCongo's team and supports the company's mining laboratory services.": "MICHEL DELAROSE MASUMUNA contribue à l’équipe de LabCongo et soutient les services de laboratoire minier de l’entreprise.",
+        "MUSAU Ruth contributes to LabCongo's team and supports the company's mining laboratory services.": "MUSAU Ruth contribue à l’équipe de LabCongo et soutient les services de laboratoire minier de l’entreprise.",
+        "WASONGO KANDA Jorgen contributes to LabCongo's team and supports the company's mining laboratory services.": "WASONGO KANDA Jorgen contribue à l’équipe de LabCongo et soutient les services de laboratoire minier de l’entreprise.",
+        "This profile is part of the official team list prepared for the LabCongo website.": "Ce profil fait partie de la liste officielle de l’équipe préparée pour le site web de LabCongo.",
+        "Additional responsibilities and detailed biography information can be added as the profile is completed.": "Les responsabilités et informations biographiques détaillées pourront être ajoutées lorsque le profil sera complété."
 };
 
     Object.keys(additionalFrenchTranslations).forEach(function (key) {
@@ -748,4 +761,3 @@
     });
     
 })(jQuery);
-
