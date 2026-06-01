@@ -107,6 +107,11 @@
                             <option value="fr">FR</option>
                         </select>
                     </div>
+                    <div class="theme-switcher my-3 my-lg-0 me-lg-3">
+                        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode" title="Switch to dark mode">
+                            <i class="fa fa-moon"></i>
+                        </button>
+                    </div>
                     <div class="d-none d-lg-flex">
                         <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-twitter"></i></a>
@@ -463,8 +468,8 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <h1 class="display-6 mb-4">We Guarantee Reliable and Compliant Results</h1>
-                    <p>LabCongo is committed to providing accurate, fast, and regulation-compliant results. Our team is dedicated to offering you high-quality service tailored to your specific needs and expectations.</p>
-                    <p class="mb-4">Through professionalism, transparency, and innovation, we strive to build long-term partnerships based on trust and excellence. We are also committed to promoting sustainable and responsible mining practices that contribute to environmental
+                    <p class="text-justify">LabCongo is committed to providing accurate, fast, and regulation-compliant results. Our team is dedicated to offering you high-quality service tailored to your specific needs and expectations.</p>
+                    <p class="mb-4 text-justify">Through professionalism, transparency, and innovation, we strive to build long-term partnerships based on trust and excellence. We are also committed to promoting sustainable and responsible mining practices that contribute to environmental
                         protection and economic development.</p>
                     <div class="d-flex align-items-start wow fadeIn" data-wow-delay="0.3s">
                         <div class="icon-box-primary">
@@ -578,7 +583,7 @@
                                 <div class="icon-box-primary mb-4">
                                     <i class="fa fa-quote-left text-dark"></i>
                                 </div>
-                                <p class="fs-5 mb-4">I was truly impressed by the quality of LabCongo's analyses. Their team is highly professional and skilled. The results arrived on time and were accurate, and I appreciated their support throughout the process.</p>
+                                <p class="fs-5 mb-4 text-justify">I was truly impressed by the quality of LabCongo's analyses. Their team is highly professional and skilled. The results arrived on time and were accurate, and I appreciated their support throughout the process.</p>
                                 <div class="d-flex align-items-center">
                                     <img class="flex-shrink-0" src="img/testimonial-1.jpg" alt="">
                                     <div class="ps-3">
@@ -591,7 +596,7 @@
                                 <div class="icon-box-primary mb-4">
                                     <i class="fa fa-quote-left text-dark"></i>
                                 </div>
-                                <p class="fs-5 mb-4">LabCongo provided precise and reliable analyses for my mining project. Their team is competent and attentive, and I highly recommend their services.</p>
+                                <p class="fs-5 mb-4 text-justify">LabCongo provided precise and reliable analyses for my mining project. Their team is competent and attentive, and I highly recommend their services.</p>
                                 <div class="d-flex align-items-center">
                                     <img class="flex-shrink-0" src="img/testimonial-2.jpg" alt="">
                                     <div class="ps-3">
@@ -617,7 +622,7 @@
                     <a href="index.php" class="navbar-brand logo-link logo-link--footer" aria-label="LabCongo">
                         <img src="img/Logo/PNG/LabCongo%20-%20logo-05.png" alt="LabCongo" class="brand-logo brand-logo-footer">
                     </a>
-                    <p class="fs-5 mb-4">LabCongo provides reliable mining analysis services aligned with international standards, supporting exploration, mining operations, and mineral quality control.</p>
+                    <p class="fs-5 mb-4 text-justify">LabCongo provides reliable mining analysis services aligned with international standards, supporting exploration, mining operations, and mineral quality control.</p>
                     <p><i class="fa fa-map-marker-alt me-2"></i>No. 338 Avenue Mongololoa, Bandal, Kinshasa, DRC</p>
                     <p><i class="fa fa-phone-alt me-2"></i>+243 81 599 86 92 / +1 207 800 6298</p>
                     <p><i class="fa fa-envelope me-2"></i>info@labcongo.org</p>

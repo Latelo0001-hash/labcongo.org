@@ -21,6 +21,35 @@
         currentLanguage = 'en';
     }
 
+    // Theme selector
+    var supportedThemes = ['light', 'dark'];
+    var currentTheme = localStorage.getItem('labcongo_theme') || 'light';
+
+    if (supportedThemes.indexOf(currentTheme) === -1) {
+        currentTheme = 'light';
+    }
+
+    function getThemeToggleLabel(theme) {
+        if (currentLanguage === 'fr') {
+            return theme === 'dark' ? 'Passer en mode clair' : 'Passer en mode sombre';
+        }
+
+        return theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
+    }
+
+    function applyTheme(theme) {
+        var isDark = theme === 'dark';
+        document.documentElement.classList.toggle('dark-mode', isDark);
+        document.body.classList.toggle('dark-mode', isDark);
+        document.documentElement.setAttribute('data-theme', theme);
+
+        $('[data-theme-toggle]').each(function () {
+            var label = getThemeToggleLabel(theme);
+            $(this).attr('aria-label', label).attr('title', label);
+            $(this).find('i').removeClass('fa-moon fa-sun').addClass(isDark ? 'fa-sun' : 'fa-moon');
+        });
+    }
+
     var translations = {
         fr: {
             'LabCongo': 'LabCongo',
@@ -419,7 +448,9 @@
             'Leave a message here': 'Laissez votre message ici',
             'breadcrumb animated slideInDown': 'Fil d\'Ariane',
             'Youtube Video': 'Vidéo YouTube',
-            'Image': 'Image'
+            'Image': 'Image',
+            'Switch to dark mode': 'Passer en mode sombre',
+            'Switch to light mode': 'Passer en mode clair'
         }
     };
 
@@ -550,8 +581,16 @@
     }
 
     localStorage.setItem('labcongo_language', currentLanguage);
+    localStorage.setItem('labcongo_theme', currentTheme);
     $('#languageSelect').val(currentLanguage);
+    applyTheme(currentTheme);
     applyLanguage(currentLanguage);
+
+    $('[data-theme-toggle]').on('click', function () {
+        currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        localStorage.setItem('labcongo_theme', currentTheme);
+        applyTheme(currentTheme);
+    });
 
     $('#languageSelect').on('change', function () {
         var selectedLanguage = $(this).val();

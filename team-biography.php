@@ -117,6 +117,11 @@ $redirectTarget = $selectedMember ? lc_team_biography_url($selectedMember) : 'te
                             <option value="fr">FR</option>
                         </select>
                     </div>
+                    <div class="theme-switcher my-3 my-lg-0 me-lg-3">
+                        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode" title="Switch to dark mode">
+                            <i class="fa fa-moon"></i>
+                        </button>
+                    </div>
                     <div class="d-none d-lg-flex">
                         <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-twitter"></i></a>

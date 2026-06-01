@@ -206,6 +206,35 @@
     box-shadow: 0 0 0 .15rem rgba(51, 102, 204, .18);
 }
 
+/*** Theme Toggle ***/
+.theme-switcher,
+.theme-toggle {
+    width: 42px;
+    height: 42px;
+}
+
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 2px solid rgba(3, 27, 78, .12);
+    border-radius: 50%;
+    color: var(--bs-dark);
+    background: var(--bs-white);
+    font-size: 16px;
+    line-height: 1;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus {
+    border-color: var(--bs-primary);
+    color: var(--bs-primary);
+    box-shadow: 0 0 0 .15rem rgba(51, 102, 204, .18);
+}
+
 .text-justify {
     text-align: justify;
     text-justify: inter-word;
@@ -272,6 +301,15 @@
     }
 }
 
+#header-carousel .carousel-item {
+    position: relative;
+    overflow: hidden;
+}
+
+#header-carousel .carousel-item img {
+    transition: filter .35s ease, transform .35s ease;
+}
+
 .carousel-caption {
     top: 0;
     left: 0;
@@ -280,7 +318,7 @@
     display: flex;
     align-items: center;
     background: rgba(3, 27, 78, .3);
-    z-index: 1;
+    z-index: 2;
 }
 
 .carousel-control-prev,
@@ -1009,3 +1047,227 @@
 .copyright a:hover {
     color: var(--bs-primary);
 }
+
+/*** Dark Mode ***/
+html.dark-mode,
+html.dark-mode body {
+    color: #d8e2f3;
+    background: #081225;
+}
+
+html.dark-mode .bg-white,
+html.dark-mode .navbar,
+html.dark-mode .modal-content,
+html.dark-mode .team-item,
+html.dark-mode .team-bio-card,
+html.dark-mode .service-item,
+html.dark-mode .feature-row,
+html.dark-mode .form-feedback .alert {
+    background-color: #111d33 !important;
+    color: #d8e2f3;
+}
+
+html.dark-mode .bg-light,
+html.dark-mode #spinner,
+html.dark-mode .container-service::before,
+html.dark-mode .container-team::before,
+html.dark-mode .team-bio-photo {
+    background-color: #0d1729 !important;
+}
+
+html.dark-mode .sticky-top.bg-white,
+html.dark-mode .navbar.shadow-sm {
+    background-color: #111d33 !important;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, .32) !important;
+}
+
+html.dark-mode .container-fluid.py-2,
+html.dark-mode .container-fluid.py-5,
+html.dark-mode .container-fluid.my-5:not(.feature):not(.testimonial),
+html.dark-mode .container.py-5,
+html.dark-mode .container.pb-5,
+html.dark-mode .container-service,
+html.dark-mode .container-team {
+    background-color: #081225;
+}
+
+html.dark-mode .navbar .navbar-nav {
+    border-color: rgba(255, 255, 255, .1);
+}
+
+html.dark-mode .navbar .navbar-nav .nav-link,
+html.dark-mode h1,
+html.dark-mode h2,
+html.dark-mode h3,
+html.dark-mode h4,
+html.dark-mode h5,
+html.dark-mode h6,
+html.dark-mode .text-dark,
+html.dark-mode .text-body {
+    color: #f4f7fb !important;
+}
+
+html.dark-mode p,
+html.dark-mode span,
+html.dark-mode small,
+html.dark-mode li,
+html.dark-mode .text-muted,
+html.dark-mode .team-member-card span,
+html.dark-mode .team-bio-content p {
+    color: #b8c6de !important;
+}
+
+html.dark-mode .text-primary,
+html.dark-mode .navbar .navbar-nav .nav-link:hover,
+html.dark-mode .navbar .navbar-nav .nav-link.active,
+html.dark-mode .footer .btn.btn-link:hover {
+    color: #74a4ff !important;
+}
+
+html.dark-mode .text-white,
+html.dark-mode .bg-primary .text-white,
+html.dark-mode .carousel-caption .text-white,
+html.dark-mode .page-header .text-white {
+    color: #ffffff !important;
+}
+
+html.dark-mode #header-carousel .carousel-item::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: linear-gradient(90deg, rgba(3, 10, 28, .82) 0%, rgba(3, 27, 78, .58) 46%, rgba(3, 10, 28, .42) 100%);
+}
+
+html.dark-mode #header-carousel .carousel-item img {
+    filter: brightness(.78) saturate(.86) contrast(1.08);
+}
+
+html.dark-mode #header-carousel .carousel-caption {
+    z-index: 2;
+    background: linear-gradient(90deg, rgba(3, 10, 28, .34), rgba(3, 27, 78, .18));
+}
+
+html.dark-mode #header-carousel .carousel-caption p {
+    color: #eef5ff !important;
+}
+
+html.dark-mode #header-carousel .carousel-control-prev,
+html.dark-mode #header-carousel .carousel-control-next {
+    z-index: 4;
+}
+
+html.dark-mode .bg-primary,
+html.dark-mode .btn-primary,
+html.dark-mode .carousel-control-prev-icon,
+html.dark-mode .carousel-control-next-icon,
+html.dark-mode .team-carousel .owl-nav .owl-prev,
+html.dark-mode .team-carousel .owl-nav .owl-next,
+html.dark-mode .back-to-top {
+    background-color: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+}
+
+html.dark-mode .brand-logo,
+html.dark-mode .footer .brand-logo {
+    filter: drop-shadow(0 8px 18px rgba(0, 0, 0, .28));
+}
+
+html.dark-mode .language-switcher .form-select,
+html.dark-mode .theme-toggle,
+html.dark-mode .form-control,
+html.dark-mode .form-select,
+html.dark-mode textarea {
+    color: #f4f7fb;
+    background-color: #0b1629;
+    border-color: rgba(255, 255, 255, .16);
+}
+
+html.dark-mode .language-switcher .form-select:hover,
+html.dark-mode .language-switcher .form-select:focus,
+html.dark-mode .theme-toggle:hover,
+html.dark-mode .theme-toggle:focus,
+html.dark-mode .form-control:focus,
+html.dark-mode .form-select:focus {
+    color: #ffffff;
+    border-color: #74a4ff;
+    box-shadow: 0 0 0 .15rem rgba(116, 164, 255, .22);
+}
+
+html.dark-mode .form-control::placeholder,
+html.dark-mode textarea::placeholder {
+    color: #8fa2bf;
+}
+
+html.dark-mode .form-select option {
+    color: #f4f7fb;
+    background-color: #0b1629;
+}
+
+html.dark-mode .service-item {
+    box-shadow: 0 18px 45px rgba(0, 0, 0, .24);
+}
+
+html.dark-mode .service-item:hover h5,
+html.dark-mode .service-item:hover p,
+html.dark-mode .service-item:hover span,
+html.dark-mode .service-item:hover .text-dark,
+html.dark-mode .service-item:hover .text-muted {
+    color: #ffffff !important;
+}
+
+html.dark-mode .team-avatar,
+html.dark-mode .team-lead-avatar,
+html.dark-mode .team-bio-photo-placeholder span {
+    box-shadow: 0 18px 35px rgba(0, 0, 0, .28);
+}
+
+html.dark-mode .team-member-card .team-social .btn {
+    color: #f4f7fb !important;
+    background: #0b1629 !important;
+    border-color: rgba(255, 255, 255, .16);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, .26);
+}
+
+html.dark-mode .team-member-card .team-social .btn:hover,
+html.dark-mode .team-member-card .team-social .btn:focus {
+    color: #ffffff !important;
+    background: var(--bs-primary) !important;
+}
+
+html.dark-mode .feature .bg-white,
+html.dark-mode .feature .bg-primary {
+    background-color: rgba(17, 29, 51, .94) !important;
+}
+
+html.dark-mode .experience .progress,
+html.dark-mode .progress {
+    background-color: rgba(255, 255, 255, .12);
+}
+
+html.dark-mode .modal-header,
+html.dark-mode .modal-body {
+    border-color: rgba(255, 255, 255, .12);
+}
+
+html.dark-mode .btn-close {
+    filter: invert(1) grayscale(100%);
+}
+
+html.dark-mode .testimonial-carousel .owl-nav .owl-prev:hover,
+html.dark-mode .testimonial-carousel .owl-nav .owl-next:hover {
+    color: #ffffff;
+}
+
+html.dark-mode .footer,
+html.dark-mode .copyright {
+    background-color: #061027 !important;
+}
+
+html.dark-mode .copyright,
+html.dark-mode .footer::after,
+html.dark-mode .copyright {
+    border-color: rgba(255, 255, 255, .14);
+}
+
