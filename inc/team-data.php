@@ -6,10 +6,10 @@ return [
         'slug' => 'otshudi-dishashi-jean-baptiste',
         'name' => 'OTSHUDI DISHASHI Jean Baptiste',
         'display_name' => 'OTSHUDI Jean Baptiste',
-        'initials' => 'O.D',
+        'initials' => 'JBO',
         'role' => 'Co-Founder and COO',
         'location' => 'LabCongo, Kinshasa, DRC',
-        'image' => 'img/team-1.jpg',
+        'image' => '',
         'avatar_class' => 'bg-primary',
         'socials' => [
             'facebook' => '#',

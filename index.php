@@ -28,7 +28,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css?v=20260601-team-social-clean" rel="stylesheet">
+    <link href="css/style.css?v=20260608-bio-links" rel="stylesheet">
 </head>
 
 <body>
@@ -297,7 +297,6 @@
                                 <span>Use of modern instruments to ensure precision and reproducibility.</span>
                             </div>
                         </div>
-                        <a class="btn btn-primary py-3 px-5 wow fadeIn" data-wow-delay="0.5s" href="">Explore More</a>
                     </div>
                 </div>
                 <div class="col-lg-6">

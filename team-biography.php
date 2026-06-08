@@ -36,7 +36,7 @@ $redirectTarget = $selectedMember ? lc_team_biography_url($selectedMember) : 'te
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css?v=20260601-team-social-clean" rel="stylesheet">
+    <link href="css/style.css?v=20260608-bio-links" rel="stylesheet">
 </head>
 
 <body>

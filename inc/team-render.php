@@ -147,11 +147,18 @@ function lc_team_render_biography_media(array $member): void
     echo '<div class="team-bio-photo team-bio-photo-placeholder"><span>' . lc_e($member['initials']) . '</span></div>' . PHP_EOL;
 }
 
-function lc_team_render_biography_card(array $member, int $index): void
+function lc_team_render_biography_card(array $member, int $index, bool $linked = false): void
 {
     $delay = $index % 2 === 0 ? '0.1s' : '0.3s';
+    $tag = $linked ? 'a' : 'div';
+    $classes = 'team-bio-card' . ($linked ? ' team-bio-card-link' : '') . ' wow fadeInUp';
+    $attributes = 'class="' . $classes . '" data-wow-delay="' . lc_e($delay) . '" id="' . lc_e($member['slug']) . '"';
 
-    echo '<div class="team-bio-card wow fadeInUp" data-wow-delay="' . lc_e($delay) . '" id="' . lc_e($member['slug']) . '">' . PHP_EOL;
+    if ($linked) {
+        $attributes .= ' href="' . lc_e(lc_team_biography_url($member)) . '" aria-label="Open biography for ' . lc_e($member['name']) . '"';
+    }
+
+    echo '<' . $tag . ' ' . $attributes . '>' . PHP_EOL;
     echo '    <div class="row g-0 align-items-stretch">' . PHP_EOL;
     echo '        <div class="col-lg-4">' . PHP_EOL;
     lc_team_render_biography_media($member);
@@ -167,13 +174,13 @@ function lc_team_render_biography_card(array $member, int $index): void
     echo '            </div>' . PHP_EOL;
     echo '        </div>' . PHP_EOL;
     echo '    </div>' . PHP_EOL;
-    echo '</div>' . PHP_EOL;
+    echo '</' . $tag . '>' . PHP_EOL;
 }
 
 function lc_team_render_biographies(array $profiles): void
 {
     foreach ($profiles as $index => $member) {
-        lc_team_render_biography_card($member, $index);
+        lc_team_render_biography_card($member, $index, true);
     }
 }
 
