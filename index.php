@@ -151,7 +151,7 @@
                                 <div class="col-lg-7 text-end">
                                     <h1 class="display-2 text-white animated slideInLeft mb-3">Experts In Mining Analysis & Qualified Technicians</h1>
                                     <p class="mb-5 animated slideInLeft">Our team consists of highly qualified geologists, engineers, and technicians, ensuring rigorous analyses and reliable results for every processed sample.</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInLeft">Explore More</a>
+                                    <a href="" class="btn btn-primary  py-3 px-5 animated slideInLeft">Explore More</a>
                                 </div>
                             </div>
                         </div>
@@ -208,13 +208,13 @@
                             </div>
                         </div>
                         <div class="col-sm-6 text-start">
-                            <div class="about-fact btn-square flex-column rounded-circle bg-secondary me-sm-auto">
+                            <div class="about-fact btn-square flex-column rounded-circle bg-danger me-sm-auto">
                                 <p class="text-white mb-0">Analyzed Samples</p>
                                 <h1 class="text-white mb-0" data-toggle="counter-up">9999</h1>
                             </div>
                         </div>
                         <div class="col-sm-6">
-                            <div class="about-fact mt-n130 btn-square flex-column rounded-circle bg-dark mx-sm-auto">
+                            <div class="about-fact mt-n130 btn-square flex-column rounded-circle bg-warning mx-sm-auto">
                                 <p class="text-white mb-0">Satisfied Clients</p>
                                 <h1 class="text-white mb-0" data-toggle="counter-up">9999</h1>
                             </div>
@@ -308,7 +308,9 @@
                                 </button>
                             </div>
                         </div>
+
                         <div class="col-12">
+                            <!--
                             <div class="bg-primary p-5">
                                 <div class="experience mb-4 wow fadeIn" data-wow-delay="0.3s">
                                     <div class="d-flex justify-content-between mb-2">
@@ -337,13 +339,17 @@
                                         <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
+                                
                             </div>
+                            -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
     <!-- Features End -->
 
 
@@ -582,11 +588,11 @@
                                 <div class="icon-box-primary mb-4">
                                     <i class="fa fa-quote-left text-dark"></i>
                                 </div>
-                                <p class="fs-5 mb-4 text-justify">I was truly impressed by the quality of LabCongo's analyses. Their team is highly professional and skilled. The results arrived on time and were accurate, and I appreciated their support throughout the process.</p>
+                                <p class="fs-5 mb-4 text-justify">"This laboratory now makes it possible to know the exact composition of minerals during exports. [...] It was set up with the aim of carrying out a sharp expert analysis of minerals to establish the identity and physicochemical characteristics of all commercial mining products for export."</p>
                                 <div class="d-flex align-items-center">
                                     <img class="flex-shrink-0" src="img/testimonial-1.jpg" alt="">
                                     <div class="ps-3">
-                                        <h5 class="mb-1">Mining Partner</h5>
+                                        <h5 class="mb-1">Krystian Ilunga Kazadi</h5>
                                         <span class="text-primary">Mining Company</span>
                                     </div>
                                 </div>
@@ -636,11 +642,11 @@
                     <div class="row g-5">
                         <div class="col-sm-6">
                             <h4 class="text-light mb-4">Quick Links</h4>
-                            <a class="btn btn-link" href="">About Us</a>
-                            <a class="btn btn-link" href="">Contact Us</a>
-                            <a class="btn btn-link" href="">Our Services</a>
-                            <a class="btn btn-link" href="">Terms & Condition</a>
-                            <a class="btn btn-link" href="">Support</a>
+                            <a class="btn btn-link" href="about.php">About Us</a>
+                            <a class="btn btn-link" href="contact.php">Contact Us</a>
+                            <a class="btn btn-link" href="services.php">Our Services</a>
+                            <a class="btn btn-link" href="terms.php">Terms & Condition</a>
+                            <a class="btn btn-link" href="support.php">Support</a>
                         </div>
                         <div class="col-sm-6">
                             <h4 class="text-light mb-4">Popular Links</h4>
