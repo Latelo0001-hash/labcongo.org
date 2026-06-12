@@ -854,6 +854,24 @@ form .btn-primary[type="submit"]:focus {
     min-height: 48px;
 }
 
+.team-member-card .team-more-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    color: var(--bs-primary);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color .3s, transform .3s;
+}
+
+.team-member-card .team-more-link:hover,
+.team-member-card .team-more-link:focus {
+    color: var(--bs-dark);
+    text-decoration: none;
+    transform: translateY(-1px);
+}
+
 .team-member-card .text-center {
     padding-top: 18px !important;
 }

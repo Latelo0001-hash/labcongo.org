@@ -28,7 +28,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css?v=20260608-bio-links" rel="stylesheet">
+    <link href="css/style.css?v=20260611-team-more-link" rel="stylesheet">
 </head>
 
 <body>
@@ -147,13 +147,13 @@
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                     <div class="row g-0">
                         <div class="col-6">
+                            <img class="img-fluid" src="img/about3.3.png">
+                        </div>
+                        <div class="col-6">
+                            <img class="img-fluid" src="img/about2.2.png">
+                        </div>
+                        <div class="col-6">
                             <img class="img-fluid" src="img/about-1.jpg">
-                        </div>
-                        <div class="col-6">
-                            <img class="img-fluid" src="img/about2.png">
-                        </div>
-                        <div class="col-6">
-                            <img class="img-fluid" src="img/about-3.jpg">
                         </div>
                         <div class="col-6">
                             <div class="bg-primary w-100 h-100 mt-n5 ms-n5 d-flex flex-column align-items-center justify-content-center">

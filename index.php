@@ -28,7 +28,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css?v=20260608-bio-links" rel="stylesheet">
+    <link href="css/style.css?v=20260611-team-more-link" rel="stylesheet">
 </head>
 
 <body>
@@ -588,11 +588,11 @@
                                 <div class="icon-box-primary mb-4">
                                     <i class="fa fa-quote-left text-dark"></i>
                                 </div>
-                                <p class="fs-5 mb-4 text-justify">"This laboratory now makes it possible to know the exact composition of minerals during exports. [...] It was set up with the aim of carrying out a sharp expert analysis of minerals to establish the identity and physicochemical characteristics of all commercial mining products for export."</p>
+                                <p class="fs-5 mb-4 text-justify">I was truly impressed by the quality of LabCongo's analyses. Their team is highly professional and skilled. The results arrived on time and were accurate, and I appreciated their support throughout the process.</p>
                                 <div class="d-flex align-items-center">
                                     <img class="flex-shrink-0" src="img/testimonial-1.jpg" alt="">
                                     <div class="ps-3">
-                                        <h5 class="mb-1">Krystian Ilunga Kazadi</h5>
+                                        <h5 class="mb-1">Mining Partner</h5>
                                         <span class="text-primary">Mining Company</span>
                                     </div>
                                 </div>

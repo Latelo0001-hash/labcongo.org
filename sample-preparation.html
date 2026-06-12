@@ -29,7 +29,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css?v=20260608-bio-links" rel="stylesheet">
+    <link href="css/style.css?v=20260611-team-more-link" rel="stylesheet">
 </head>
 
 <body>

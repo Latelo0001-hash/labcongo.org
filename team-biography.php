@@ -36,7 +36,7 @@ $redirectTarget = $selectedMember ? lc_team_biography_url($selectedMember) : 'te
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css?v=20260608-bio-links" rel="stylesheet">
+    <link href="css/style.css?v=20260611-team-more-link" rel="stylesheet">
 </head>
 
 <body>
@@ -155,16 +155,42 @@ $redirectTarget = $selectedMember ? lc_team_biography_url($selectedMember) : 'te
     <div class="container-fluid py-5">
         <div class="container py-5">
             <?php if ($selectedMember): ?>
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 720px;">
-                <h1 class="display-6 mb-3"><?php echo lc_e($selectedMember['name']); ?></h1>
-                <p class="mb-0">Selected LabCongo team profile and biography.</p>
-            </div>
-            <div class="team-bio-list">
-                <?php lc_team_render_single_biography($selectedMember); ?>
-            </div>
-            <div class="text-center mt-5">
-                <a class="btn btn-primary py-3 px-4" href="team.php">Back to Team</a>
-                <a class="btn btn-outline-primary py-3 px-4 ms-2" href="team-biographies.php">View All Biographies</a>
+            <?php
+            $otherMembers = [];
+            foreach (lc_team_profiles() as $member) {
+                if ($member['slug'] !== $selectedMember['slug']) {
+                    $otherMembers[] = $member;
+                }
+            }
+            ?>
+            <div class="row g-5">
+                <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="mb-5">
+                        <h1 class="display-6 mb-3"><?php echo lc_e($selectedMember['name']); ?></h1>
+                        <p class="fs-5 text-primary mb-0">Selected LabCongo team profile and biography.</p>
+                    </div>
+                    <div class="team-bio-list">
+                        <?php lc_team_render_single_biography($selectedMember); ?>
+                    </div>
+                    <div class="mt-5 d-flex flex-wrap gap-2">
+                        <a class="btn btn-primary py-3 px-4" href="team.php">Back to Team</a>
+                        <a class="btn btn-outline-primary py-3 px-4" href="team-biographies.php">View All Biographies</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-light p-4 mb-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <h4 class="mb-4">Other Members</h4>
+                        <?php foreach ($otherMembers as $member): ?>
+                        <a class="btn btn-link d-block text-start px-0" href="<?php echo lc_e(lc_team_biography_url($member)); ?>"><i class="fa fa-angle-right me-2"></i><?php echo lc_e($member['display_name']); ?></a>
+                        <?php endforeach; ?>
+                    </div>
+                    <div class="bg-primary p-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <h4 class="text-white mb-3">Need more information?</h4>
+                        <p class="text-white mb-4">Browse other LabCongo profiles or contact the team for official follow-up.</p>
+                        <a class="btn btn-light py-3 px-4 mb-2 w-100" href="team-biographies.php">View All Biographies</a>
+                        <a class="btn btn-outline-light py-3 px-4 w-100" href="contact.html">Contact LabCongo</a>
+                    </div>
+                </div>
             </div>
             <?php else: ?>
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 720px;">
