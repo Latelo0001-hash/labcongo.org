@@ -28,7 +28,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css?v=20260611-team-more-link" rel="stylesheet">
+    <link href="css/style.css?v=20260615-vision-fill" rel="stylesheet">
 </head>
 
 <body>
@@ -189,10 +189,9 @@
                         <div class="col-6">
                             <div class="bg-primary w-100 h-100 mt-n5 ms-n5 d-flex flex-column align-items-center justify-content-center">
                                 <div class="icon-box-light">
-                                    <i class="fa fa-award text-dark"></i>
+                                    <i class="fa fa-award text-dark "></i>
                                 </div>
-                                <h1 class="display-1 text-white mb-0" data-toggle="counter-up">15</h1>
-                                <small class="fs-5 text-white">Years Experience</small>
+                                <small class="fs-5 text-white">Expertise locale certifiée</small>
                             </div>
                         </div>
                     </div>
@@ -203,20 +202,18 @@
                     <div class="row g-4 g-sm-5 justify-content-center">
                         <div class="col-sm-6">
                             <div class="about-fact btn-square flex-column rounded-circle bg-primary ms-sm-auto">
-                                <p class="text-white mb-0">Completed Projects</p>
-                                <h1 class="text-white mb-0" data-toggle="counter-up">9999</h1>
+                                <h2 class="text-white mb-0">Conformité</h2>
                             </div>
                         </div>
                         <div class="col-sm-6 text-start">
                             <div class="about-fact btn-square flex-column rounded-circle bg-danger me-sm-auto">
-                                <p class="text-white mb-0">Analyzed Samples</p>
-                                <h1 class="text-white mb-0" data-toggle="counter-up">9999</h1>
+                                <h2 class="text-white mb-0">Précision</h2>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="about-fact mt-n130 btn-square flex-column rounded-circle bg-warning mx-sm-auto">
-                                <p class="text-white mb-0">Satisfied Clients</p>
-                                <h1 class="text-white mb-0" data-toggle="counter-up">9999</h1>
+                                <h2 class="text-white mb-0">Excellence</h2>
+                           
                             </div>
                         </div>
                     </div>
@@ -226,6 +223,81 @@
     </div>
     <!-- About End -->
 
+
+
+    <!-- Vision Objectives Start -->
+    <div class="container-fluid vision-objectives">
+        <div class="container py-5">
+            <div class="row g-5 align-items-stretch">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="vision-panel h-100">
+                        <div class="icon-box-primary vision-icon mb-4">
+                            <i class="fa fa-bullseye text-dark"></i>
+                        </div>
+                        <h1 class="display-6 mb-4">Vision and Objectives</h1>
+                        <p class="fs-5 text-primary mb-4">LabCongo&#39;s vision is to become a trusted reference laboratory for mining analysis in the DRC and the region.</p>
+                        <div class="vision-divider"></div>
+                        <p class="mb-4">We aim to support responsible mineral development by providing reliable, traceable, and timely analytical data that helps mining operators, institutions, universities, and communities make better technical decisions.</p>
+                        <p class="mb-0">Through modern methods, disciplined quality control, and local expertise, LabCongo wants to contribute to a stronger mining ecosystem where knowledge, transparency, and professional standards guide every stage of mineral evaluation.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="h-100 d-flex flex-column justify-content-center">
+                        <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 mb-4">
+                            <h4 class="mb-0">Our Objectives</h4>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="vision-objective h-100">
+                                    <div class="icon-box-primary vision-objective-icon mb-4">
+                                        <i class="fa fa-chart-line text-dark"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-3">Reliable Data</h5>
+                                        <p class="mb-0">Deliver accurate and traceable laboratory results that strengthen mining-sector decisions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="vision-objective h-100">
+                                    <div class="icon-box-primary vision-objective-icon mb-4">
+                                        <i class="fa fa-users text-dark"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-3">Local Capacity</h5>
+                                        <p class="mb-0">Strengthen Congolese technical capacity through training, collaboration, and applied laboratory practice.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="vision-objective h-100">
+                                    <div class="icon-box-primary vision-objective-icon mb-4">
+                                        <i class="fa fa-check-circle text-dark"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-3">Responsible Mining</h5>
+                                        <p class="mb-0">Support transparent, sustainable, and standards-based mineral development.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="vision-objective h-100">
+                                    <div class="icon-box-primary vision-objective-icon mb-4">
+                                        <i class="fa fa-sync-alt text-dark"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-3">Continuous Improvement</h5>
+                                        <p class="mb-0">Keep improving methods, equipment, and QA/QC processes to meet international expectations.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Vision Objectives End -->
 
     <!-- Features Start -->
     <div class="container-fluid py-5">
@@ -649,10 +721,10 @@
                             <a class="btn btn-link" href="support.php">Support</a>
                         </div>
                         <div class="col-sm-6">
-                            <h4 class="text-light mb-4">Popular Links</h4>
-                            <a class="btn btn-link" href="">About Us</a>
-                            <a class="btn btn-link" href="">Contact Us</a>
-                            <a class="btn btn-link" href="">Our Services</a>
+                            <h4 class="text-light mb-4">Other Links</h4>
+                            <a class="btn btn-link" href="">Partners</a>
+                            <a class="btn btn-link" href="">Projects</a>
+                            <a class="btn btn-link" href="">Our Activities</a>
                             <a class="btn btn-link" href="">Terms & Condition</a>
                             <a class="btn btn-link" href="">Support</a>
                         </div>

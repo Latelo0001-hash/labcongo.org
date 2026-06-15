@@ -28,7 +28,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css?v=20260611-team-more-link" rel="stylesheet">
+    <link href="css/style.css?v=20260615-vision-fill" rel="stylesheet">
 </head>
 
 <body>
@@ -197,6 +197,81 @@
     <!-- About End -->
 
 
+
+    <!-- Vision Objectives Start -->
+    <div class="container-fluid vision-objectives">
+        <div class="container py-5">
+            <div class="row g-5 align-items-stretch">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="vision-panel h-100">
+                        <div class="icon-box-primary vision-icon mb-4">
+                            <i class="fa fa-bullseye text-dark"></i>
+                        </div>
+                        <h1 class="display-6 mb-4">Vision and Objectives</h1>
+                        <p class="fs-5 text-primary mb-4">LabCongo&#39;s vision is to become a trusted reference laboratory for mining analysis in the DRC and the region.</p>
+                        <div class="vision-divider"></div>
+                        <p class="mb-4">We aim to support responsible mineral development by providing reliable, traceable, and timely analytical data that helps mining operators, institutions, universities, and communities make better technical decisions.</p>
+                        <p class="mb-0">Through modern methods, disciplined quality control, and local expertise, LabCongo wants to contribute to a stronger mining ecosystem where knowledge, transparency, and professional standards guide every stage of mineral evaluation.</p>
+                    </div>
+                </div>
+                <div class="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="h-100 d-flex flex-column justify-content-center">
+                        <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 mb-4">
+                            <h4 class="mb-0">Our Objectives</h4>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="vision-objective h-100">
+                                    <div class="icon-box-primary vision-objective-icon mb-4">
+                                        <i class="fa fa-chart-line text-dark"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-3">Reliable Data</h5>
+                                        <p class="mb-0">Deliver accurate and traceable laboratory results that strengthen mining-sector decisions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="vision-objective h-100">
+                                    <div class="icon-box-primary vision-objective-icon mb-4">
+                                        <i class="fa fa-users text-dark"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-3">Local Capacity</h5>
+                                        <p class="mb-0">Strengthen Congolese technical capacity through training, collaboration, and applied laboratory practice.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="vision-objective h-100">
+                                    <div class="icon-box-primary vision-objective-icon mb-4">
+                                        <i class="fa fa-check-circle text-dark"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-3">Responsible Mining</h5>
+                                        <p class="mb-0">Support transparent, sustainable, and standards-based mineral development.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="vision-objective h-100">
+                                    <div class="icon-box-primary vision-objective-icon mb-4">
+                                        <i class="fa fa-sync-alt text-dark"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-3">Continuous Improvement</h5>
+                                        <p class="mb-0">Keep improving methods, equipment, and QA/QC processes to meet international expectations.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Vision Objectives End -->
+
     <!-- Features Start -->
     <div class="container-fluid feature my-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
@@ -233,36 +308,7 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="bg-primary p-5">
-                                <div class="experience mb-4 wow fadeIn" data-wow-delay="0.3s">
-                                    <div class="d-flex justify-content-between mb-2">
-                                        <span class="text-white">Sample Preparation</span>
-                                        <span class="text-white">90%</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="experience mb-4 wow fadeIn" data-wow-delay="0.4s">
-                                    <div class="d-flex justify-content-between mb-2">
-                                        <span class="text-white">Result Accuracy</span>
-                                        <span class="text-white">95%</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="experience mb-0 wow fadeIn" data-wow-delay="0.5s">
-                                    <div class="d-flex justify-content-between mb-2">
-                                        <span class="text-white">Laboratory Equipment</span>
-                                        <span class="text-white">90%</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            
                     </div>
                 </div>
             </div>
@@ -292,7 +338,7 @@
 
 
 
-    <!-- Footer Start -->
+     <!-- Footer Start -->
     <div class="container-fluid footer position-relative bg-dark text-white-50 py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container">
             <div class="row g-5 py-5">
@@ -300,7 +346,7 @@
                     <a href="index.php" class="navbar-brand logo-link logo-link--footer" aria-label="LabCongo">
                         <img src="img/Logo/PNG/LabCongo%20-%20logo-05.png" alt="LabCongo" class="brand-logo brand-logo-footer">
                     </a>
-                    <p class="fs-5 mb-4">LabCongo provides reliable mining analysis services aligned with international standards, supporting exploration, mining operations, and mineral quality control.</p>
+                    <p class="fs-5 mb-4 text-justify">LabCongo provides reliable mining analysis services aligned with international standards, supporting exploration, mining operations, and mineral quality control.</p>
                     <p><i class="fa fa-map-marker-alt me-2"></i>No. 338 Avenue Mongololoa, Bandal, Kinshasa, DRC</p>
                     <p><i class="fa fa-phone-alt me-2"></i>+243 81 599 86 92 / +1 207 800 6298</p>
                     <p><i class="fa fa-envelope me-2"></i>info@labcongo.org</p>
@@ -315,17 +361,17 @@
                     <div class="row g-5">
                         <div class="col-sm-6">
                             <h4 class="text-light mb-4">Quick Links</h4>
-                            <a class="btn btn-link" href="">About Us</a>
-                            <a class="btn btn-link" href="">Contact Us</a>
-                            <a class="btn btn-link" href="">Our Services</a>
-                            <a class="btn btn-link" href="">Terms & Condition</a>
-                            <a class="btn btn-link" href="">Support</a>
+                            <a class="btn btn-link" href="about.php">About Us</a>
+                            <a class="btn btn-link" href="contact.php">Contact Us</a>
+                            <a class="btn btn-link" href="services.php">Our Services</a>
+                            <a class="btn btn-link" href="terms.php">Terms & Condition</a>
+                            <a class="btn btn-link" href="support.php">Support</a>
                         </div>
                         <div class="col-sm-6">
-                            <h4 class="text-light mb-4">Popular Links</h4>
-                            <a class="btn btn-link" href="">About Us</a>
-                            <a class="btn btn-link" href="">Contact Us</a>
-                            <a class="btn btn-link" href="">Our Services</a>
+                            <h4 class="text-light mb-4">Other Links</h4>
+                            <a class="btn btn-link" href="">Partners</a>
+                            <a class="btn btn-link" href="">Projects</a>
+                            <a class="btn btn-link" href="">Our Activities</a>
                             <a class="btn btn-link" href="">Terms & Condition</a>
                             <a class="btn btn-link" href="">Support</a>
                         </div>
@@ -334,7 +380,7 @@
                             <div class="w-100">
                                 <form action="form-action.php" method="post" class="input-group">
                                     <input type="hidden" name="form_type" value="newsletter">
-                                    <input type="hidden" name="_redirect" value="about.php">
+                                    <input type="hidden" name="_redirect" value="index.php">
                                     <input type="email" name="email" class="form-control border-0 py-3 px-4" style="background: rgba(255, 255, 255, .1);" placeholder="Your Email Address" required><button class="btn btn-primary px-4" type="submit">Sign Up</button>
                                 </form>
                             </div>

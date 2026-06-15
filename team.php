@@ -153,7 +153,6 @@
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <h1 class="display-6 mb-3">Team Members</h1>
                 <p class="mb-0">Our team brings together committed professionals supporting LabCongo's mining analysis and laboratory services.</p>
-                <a class="btn btn-primary py-3 px-4 mt-4" href="team-biographies.php">View All Biographies</a>
             </div>
             <div class="team-carousel-wrapper wow fadeInUp" data-wow-delay="0.2s">
                 <div class="team-carousel owl-carousel">

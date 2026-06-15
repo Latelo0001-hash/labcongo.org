@@ -28,7 +28,7 @@ return [
         [
             'slug' => 'longendja-isamboyo-henri-christin',
             'name' => 'LONGENDJA ISAMBOYO Henri Christin',
-            'display_name' => 'LONGENDJA ISAMBOYO Henri Christin',
+            'display_name' => 'LONGENDJA H.C',
             'initials' => 'L.I',
             'role' => 'Team Member',
             'link' => '#',
@@ -45,7 +45,7 @@ return [
         [
             'slug' => 'musoga-bakaato-kethia',
             'name' => 'MUSOGA BAKAATO Kethia',
-            'display_name' => 'MUSOGA BAKAATO Kethia',
+            'display_name' => 'MUSOGA Kethia',
             'initials' => 'M.B',
             'role' => 'Team Member',
             'link' => '#',
@@ -62,7 +62,7 @@ return [
         [
             'slug' => 'itamba-yonkos-benjamin',
             'name' => 'ITAMBA Y’ONKOS Benjamin',
-            'display_name' => 'ITAMBA Y’ONKOS Benjamin',
+            'display_name' => 'I.BENJAMIN',
             'initials' => 'I.Y',
             'role' => 'Team Member',
             'link' => '#',

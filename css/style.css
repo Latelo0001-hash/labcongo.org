@@ -522,6 +522,110 @@ form .btn-primary[type="submit"]:focus {
 }
 
 
+/*** Vision & Objectives ***/
+.vision-objectives {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    background: linear-gradient(180deg, #FFFFFF 0%, var(--lc-light) 100%);
+}
+
+.vision-objectives > .container {
+    background: transparent !important;
+}
+
+.vision-objectives + .container-fluid,
+.vision-objectives + .feature {
+    margin-top: 0 !important;
+}
+
+.vision-panel {
+    position: relative;
+    overflow: hidden;
+    padding: 48px;
+    background: #FFFFFF;
+    border-left: 5px solid var(--lc-blue);
+    box-shadow: 0 20px 45px rgba(3, 27, 78, .08);
+}
+
+.vision-panel::after {
+    position: absolute;
+    content: "";
+    width: 190px;
+    height: 190px;
+    right: -95px;
+    bottom: -95px;
+    border-radius: 50%;
+    background: rgba(var(--lc-blue-rgb), .08);
+}
+
+.vision-icon {
+    display: inline-block;
+}
+
+.vision-divider {
+    width: 70px;
+    height: 4px;
+    margin-bottom: 24px;
+    background: var(--lc-yellow);
+}
+
+.vision-count {
+    width: 52px;
+    height: 52px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: var(--lc-blue);
+    font-family: "Red Rose", cursive;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 50%;
+}
+
+.vision-objective {
+    display: flex;
+    flex-direction: column;
+    padding: 28px;
+    background: #FFFFFF;
+    border: 1px solid rgba(3, 27, 78, .06);
+    box-shadow: 0 16px 35px rgba(3, 27, 78, .07);
+    transition: .3s;
+}
+
+.vision-objective:hover {
+    transform: translateY(-4px);
+    border-color: rgba(var(--lc-blue-rgb), .35);
+}
+
+.vision-objective-icon {
+    display: inline-block;
+}
+
+.vision-objective-icon i {
+    font-size: 46px;
+}
+
+@media (max-width: 991.98px) {
+    .vision-panel {
+        padding: 38px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .vision-panel,
+    .vision-objective {
+        padding: 26px;
+    }
+
+    .vision-objective {
+        flex-direction: column;
+    }
+}
+
+
 /*** Features ***/
 .feature {
     background: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3)), url(../img/feature-mining-abstract.jpg) left center no-repeat;
@@ -1470,6 +1574,32 @@ html.dark-mode .team-member-card .team-social .btn:hover,
 html.dark-mode .team-member-card .team-social .btn:focus {
     color: #ffffff !important;
     background: var(--bs-primary) !important;
+}
+
+
+html.dark-mode .vision-objectives,
+html.dark-mode .vision-objectives > .container {
+    background: #071832 !important;
+}
+
+html.dark-mode .vision-panel,
+html.dark-mode .vision-objective {
+    background: #0D2142;
+    border-color: rgba(255, 255, 255, .08);
+    box-shadow: none;
+}
+
+html.dark-mode .vision-panel::after {
+    background: rgba(255, 255, 255, .04);
+}
+
+html.dark-mode .vision-icon i,
+html.dark-mode .vision-objective-icon i {
+    color: #FFFFFF !important;
+}
+
+html.dark-mode .vision-count {
+    background: var(--lc-blue);
 }
 
 html.dark-mode .feature .bg-white,
