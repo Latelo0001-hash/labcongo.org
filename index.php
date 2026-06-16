@@ -28,7 +28,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css?v=20260615-vision-fill" rel="stylesheet">
+    <link href="css/style.css?v=20260616-about-dark-footer" rel="stylesheet">
 </head>
 
 <body>
@@ -137,7 +137,7 @@
                                 <div class="col-lg-7 text-start">
                                     <h1 class="display-2 text-white animated slideInRight mb-3">Reference Mining Laboratory - LabCongo</h1>
                                     <p class="mb-5 animated slideInRight">LabCongo is a laboratory specialized in mining analyses, providing reliable services that comply with international standards.</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInRight">Explore More</a>
+                                    <a href="#about" class="btn btn-primary py-3 px-5 animated slideInRight">Explore More</a>
                                 </div>
                             </div>
                         </div>
@@ -151,7 +151,7 @@
                                 <div class="col-lg-7 text-end">
                                     <h1 class="display-2 text-white animated slideInLeft mb-3">Experts In Mining Analysis & Qualified Technicians</h1>
                                     <p class="mb-5 animated slideInLeft">Our team consists of highly qualified geologists, engineers, and technicians, ensuring rigorous analyses and reliable results for every processed sample.</p>
-                                    <a href="" class="btn btn-primary  py-3 px-5 animated slideInLeft">Explore More</a>
+                                    <a href="#about" class="btn btn-primary  py-3 px-5 animated slideInLeft">Explore More</a>
                                 </div>
                             </div>
                         </div>
@@ -172,7 +172,7 @@
 
 
     <!-- About Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5 " id="about">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
@@ -717,16 +717,13 @@
                             <a class="btn btn-link" href="about.php">About Us</a>
                             <a class="btn btn-link" href="contact.php">Contact Us</a>
                             <a class="btn btn-link" href="services.php">Our Services</a>
-                            <a class="btn btn-link" href="terms.php">Terms & Condition</a>
-                            <a class="btn btn-link" href="support.php">Support</a>
                         </div>
                         <div class="col-sm-6">
                             <h4 class="text-light mb-4">Other Links</h4>
-                            <a class="btn btn-link" href="">Partners</a>
-                            <a class="btn btn-link" href="">Projects</a>
-                            <a class="btn btn-link" href="">Our Activities</a>
-                            <a class="btn btn-link" href="">Terms & Condition</a>
-                            <a class="btn btn-link" href="">Support</a>
+                            <a class="btn btn-link" href="#">Partners</a>
+                            <a class="btn btn-link" href="#">Projects</a>
+                            <a class="btn btn-link" href="#">Our Activities</a>
+                            <a class="btn btn-link" href="#">Support</a>
                         </div>
                         <div class="col-sm-12">
                             <h4 class="text-light mb-4">Newsletter</h4>

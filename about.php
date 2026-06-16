@@ -28,7 +28,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css?v=20260615-vision-fill" rel="stylesheet">
+    <link href="css/style.css?v=20260616-about-dark-footer" rel="stylesheet">
 </head>
 
 <body>
@@ -338,7 +338,7 @@
 
 
 
-     <!-- Footer Start -->
+    <!-- Footer Start -->
     <div class="container-fluid footer position-relative bg-dark text-white-50 py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container">
             <div class="row g-5 py-5">
@@ -364,23 +364,20 @@
                             <a class="btn btn-link" href="about.php">About Us</a>
                             <a class="btn btn-link" href="contact.php">Contact Us</a>
                             <a class="btn btn-link" href="services.php">Our Services</a>
-                            <a class="btn btn-link" href="terms.php">Terms & Condition</a>
-                            <a class="btn btn-link" href="support.php">Support</a>
                         </div>
                         <div class="col-sm-6">
                             <h4 class="text-light mb-4">Other Links</h4>
-                            <a class="btn btn-link" href="">Partners</a>
-                            <a class="btn btn-link" href="">Projects</a>
-                            <a class="btn btn-link" href="">Our Activities</a>
-                            <a class="btn btn-link" href="">Terms & Condition</a>
-                            <a class="btn btn-link" href="">Support</a>
+                            <a class="btn btn-link" href="#">Partners</a>
+                            <a class="btn btn-link" href="#">Projects</a>
+                            <a class="btn btn-link" href="#">Our Activities</a>
+                            <a class="btn btn-link" href="#">Support</a>
                         </div>
                         <div class="col-sm-12">
                             <h4 class="text-light mb-4">Newsletter</h4>
                             <div class="w-100">
                                 <form action="form-action.php" method="post" class="input-group">
                                     <input type="hidden" name="form_type" value="newsletter">
-                                    <input type="hidden" name="_redirect" value="index.php">
+                                    <input type="hidden" name="_redirect" value="about.php">
                                     <input type="email" name="email" class="form-control border-0 py-3 px-4" style="background: rgba(255, 255, 255, .1);" placeholder="Your Email Address" required><button class="btn btn-primary px-4" type="submit">Sign Up</button>
                                 </form>
                             </div>

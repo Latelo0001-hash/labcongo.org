@@ -184,7 +184,7 @@ $redirectTarget = $selectedMember ? lc_team_biography_url($selectedMember) : 'te
                         <a class="btn btn-link d-block text-start px-0" href="<?php echo lc_e(lc_team_biography_url($member)); ?>"><i class="fa fa-angle-right me-2"></i><?php echo lc_e($member['display_name']); ?></a>
                         <?php endforeach; ?>
                     </div>
-                    <div class="bg-primary p-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="bg-primary p-3 wow fadeInUp" data-wow-delay="0.3s">
                         <h4 class="text-white mb-3">Need more information?</h4>
                         <p class="text-white mb-4">Browse other LabCongo profiles or contact the team for official follow-up.</p>
                         <a class="btn btn-light py-3 px-4 mb-2 w-100" href="team-biographies.php">View All Biographies</a>

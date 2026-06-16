@@ -62,7 +62,7 @@ return [
         [
             'slug' => 'itamba-yonkos-benjamin',
             'name' => 'ITAMBA Y’ONKOS Benjamin',
-            'display_name' => 'I.BENJAMIN',
+            'display_name' => 'ITAMBA Benjamin',
             'initials' => 'I.Y',
             'role' => 'Team Member',
             'link' => '#',

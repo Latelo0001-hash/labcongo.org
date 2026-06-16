@@ -535,10 +535,6 @@ form .btn-primary[type="submit"]:focus {
     background: transparent !important;
 }
 
-.vision-objectives + .container-fluid,
-.vision-objectives + .feature {
-    margin-top: 0 !important;
-}
 
 .vision-panel {
     position: relative;
@@ -1580,6 +1576,11 @@ html.dark-mode .team-member-card .team-social .btn:focus {
 html.dark-mode .vision-objectives,
 html.dark-mode .vision-objectives > .container {
     background: #071832 !important;
+}
+
+html.dark-mode .vision-objectives + .container-fluid,
+html.dark-mode .vision-objectives + .feature {
+    margin-top: 0 !important;
 }
 
 html.dark-mode .vision-panel,
