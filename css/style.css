@@ -2180,6 +2180,46 @@ html.dark-mode .footer form .btn-primary[type="submit"]:focus {
     color: var(--lc-yellow);
 }
 
+@media (max-width: 575.98px) {
+    .testimonial {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+
+    .testimonial .container {
+        padding-top: 0 !important;
+    }
+
+    .testimonial .bg-white {
+        padding: 18px !important;
+    }
+
+    .testimonial-carousel .testimonial-item {
+        padding: 18px;
+    }
+
+    .testimonial-carousel .testimonial-item p.fs-5 {
+        font-size: 1.1rem !important;
+        line-height: 1.75;
+    }
+
+    .testimonial-carousel .testimonial-avatar {
+        width: 52px !important;
+        height: 52px !important;
+        border-radius: 52px;
+    }
+
+    .testimonial-carousel .testimonial-item h5 {
+        font-size: 1.05rem;
+    }
+
+    .testimonial-carousel .testimonial-item span,
+    .testimonial-carousel .testimonial-item a {
+        font-size: .92rem;
+        line-height: 1.45;
+    }
+}
+
 .testimonial-item-avatar {
     display: inline-flex;
     align-items: center;
@@ -2295,4 +2335,23 @@ html.dark-mode hr {
 
 html.dark-mode .border {
     border-color: rgba(255, 255, 255, .1) !important;
+}
+
+/*** Utility Overrides ***/
+.shadow-none,
+html.dark-mode .shadow-none,
+.testimonial-carousel .testimonial-item.shadow-none,
+html.dark-mode .testimonial-carousel .testimonial-item.shadow-none,
+.testimonial-carousel .owl-item.center .testimonial-item.shadow-none,
+html.dark-mode .testimonial-carousel .owl-item.center .testimonial-item.shadow-none {
+    box-shadow: none !important;
+}
+
+.testimonial-clean,
+.testimonial-clean *,
+html.dark-mode .testimonial-clean,
+html.dark-mode .testimonial-clean * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
 }

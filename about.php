@@ -160,7 +160,7 @@
                                 <div class="icon-box-light text-center">
                                     <i class="fa fa-award text-dark"></i>
                                 </div>
-                                <small class="fs-5 text-white">Certified Local Expertise</small>
+                                <small class="fs-5 text-center text-white">Certified Local Expertise</small>
                             </div>
                         </div>
                     </div>
@@ -188,7 +188,7 @@
                             </div>
                         </div>
                         <div class="mb-4">
-                            <h3>However</h3>
+                            <h5>However</h5>
                             <p>Major challenges remain: many analyses are still performed abroad, resulting in long lead times, high costs, technical dependency, and limited local scientific value creation.</p>
                         </div>
                     </div>
@@ -275,7 +275,7 @@
     <!-- Vision Objectives End -->
 
     <!-- Features Start -->
-    <div class="container-fluid feature my-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container-fluid feature mt-0 mb-0 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="row g-0">
                 <div class="col-lg-6 pt-lg-5">
@@ -339,9 +339,7 @@
     </div>
     <!-- Video Modal End -->
 
-
-
-    <!-- Footer Start -->
+<!-- Footer Start -->
     <div class="container-fluid footer position-relative bg-dark text-white-50 py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container">
             <div class="row g-5 py-5">
@@ -365,15 +363,14 @@
                         <div class="col-sm-6">
                             <h4 class="text-light mb-4">Quick Links</h4>
                             <a class="btn btn-link" href="about.php">About Us</a>
-                            <a class="btn btn-link" href="contact.php">Contact Us</a>
-                            <a class="btn btn-link" href="services.php">Our Services</a>
+                            <a class="btn btn-link" href="contact.html">Contact Us</a>
+                            <a class="btn btn-link" href="service.html">Our Services</a>
                         </div>
                         <div class="col-sm-6">
                             <h4 class="text-light mb-4">Other Links</h4>
-                            <a class="btn btn-link" href="#">Partners</a>
-                            <a class="btn btn-link" href="#">Projects</a>
-                            <a class="btn btn-link" href="#">Our Activities</a>
-                            <a class="btn btn-link" href="#">Support</a>
+                            <a class="btn btn-link" href="partners.html">Partners</a>
+                            <a class="btn btn-link" href="projects.html">Projects</a>
+                            <a class="btn btn-link" href="activities.html">Our Activities</a>
                         </div>
                         <div class="col-sm-12">
                             <h4 class="text-light mb-4">Newsletter</h4>
@@ -410,7 +407,9 @@
     <!-- Copyright End -->
 
 
-    <!-- Back to Top -->
+    
+
+<!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
 
 

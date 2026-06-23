@@ -28,7 +28,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css?v=20260616-about-dark-footer" rel="stylesheet">
+    <link href="css/style.css?v=20260623-testimonial-mobile" rel="stylesheet">
 </head>
 
 <body>
@@ -191,7 +191,7 @@
                                 <div class="icon-box-light">
                                     <i class="fa fa-award text-dark"></i>
                                 </div>
-                                <small class="fs-5 text-center text-white">Certified Local Expertise</small>
+                                <small class="fs-5 text-center font-bold text-white">Certified Local Expertise</small>
                             </div>
                         </div>
                     </div>
@@ -219,7 +219,7 @@
                             </div>
                         </div>
                         <div class="mb-4">
-                            <h3>However</h3>
+                            <h5>However</h5>
                             <p>Major challenges remain: many analyses are still performed abroad, resulting in long lead times, high costs, technical dependency, and limited local scientific value creation.</p>
                         </div>
                     </div>
@@ -651,7 +651,7 @@
 
 
     <!-- Testimonial Start -->
-    <div class="container-fluid testimonial py-5">
+    <div class="container-fluid testimonial testimonial-clean py-5">
         <div class="container pt-5">
             <div class="row gy-5 gx-0">
                 <div class="col-lg-6 pe-lg-5 wow fadeIn" data-wow-delay="0.3s">
@@ -700,8 +700,7 @@
     </div>
     <!-- Testimonial End -->
 
-
-    <!-- Footer Start -->
+<!-- Footer Start -->
     <div class="container-fluid footer position-relative bg-dark text-white-50 py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container">
             <div class="row g-5 py-5">
@@ -733,7 +732,6 @@
                             <a class="btn btn-link" href="partners.html">Partners</a>
                             <a class="btn btn-link" href="projects.html">Projects</a>
                             <a class="btn btn-link" href="activities.html">Our Activities</a>
-                            <a class="btn btn-link" href="contact.html">Support</a>
                         </div>
                         <div class="col-sm-12">
                             <h4 class="text-light mb-4">Newsletter</h4>
@@ -770,7 +768,9 @@
     <!-- Copyright End -->
 
 
-    <!-- Back to Top -->
+    
+
+<!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
 
 
