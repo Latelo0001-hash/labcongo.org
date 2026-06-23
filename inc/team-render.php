@@ -105,7 +105,7 @@ function lc_team_render_carousel(array $members): void
         echo '    </div>' . PHP_EOL;
         echo '    <div class="text-center p-4">' . PHP_EOL;
         echo '        <h5 class="mb-1">' . lc_e($member['display_name']) . '</h5>' . PHP_EOL;
-        echo '        <a class="team-more-link" href="' . lc_e(lc_team_biography_url($member)) . '" aria-label="Read biography of ' . lc_e($member['name']) . '">voir plus</a>' . PHP_EOL;
+        echo '        <a class="team-more-link" href="' . lc_e(lc_team_biography_url($member)) . '" aria-label="Read biography of ' . lc_e($member['name']) . '">Read More</a>' . PHP_EOL;
         echo '    </div>' . PHP_EOL;
         echo '</div>' . PHP_EOL;
     }

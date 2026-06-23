@@ -308,17 +308,7 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Features End -->
-
-
-    <!-- Video Modal Start -->
-    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal modal-video fade py-5" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content rounded-0">
                 <div class="modal-header">
@@ -334,6 +324,18 @@
             </div>
         </div>
     </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+
+    <!-- Video Modal Start -->
+
+    
     <!-- Video Modal End -->
 
 
@@ -362,15 +364,15 @@
                         <div class="col-sm-6">
                             <h4 class="text-light mb-4">Quick Links</h4>
                             <a class="btn btn-link" href="about.php">About Us</a>
-                            <a class="btn btn-link" href="contact.php">Contact Us</a>
-                            <a class="btn btn-link" href="services.php">Our Services</a>
+                            <a class="btn btn-link" href="contact.html">Contact Us</a>
+                            <a class="btn btn-link" href="service.html">Our Services</a>
                         </div>
                         <div class="col-sm-6">
                             <h4 class="text-light mb-4">Other Links</h4>
-                            <a class="btn btn-link" href="#">Partners</a>
-                            <a class="btn btn-link" href="#">Projects</a>
-                            <a class="btn btn-link" href="#">Our Activities</a>
-                            <a class="btn btn-link" href="#">Support</a>
+                            <a class="btn btn-link" href="partners.html">Partners</a>
+                            <a class="btn btn-link" href="projects.html">Projects</a>
+                            <a class="btn btn-link" href="activities.html">Our Activities</a>
+                            <a class="btn btn-link" href="contact.html">Support</a>
                         </div>
                         <div class="col-sm-12">
                             <h4 class="text-light mb-4">Newsletter</h4>

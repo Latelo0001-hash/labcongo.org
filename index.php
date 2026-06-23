@@ -191,7 +191,7 @@
                                 <div class="icon-box-light">
                                     <i class="fa fa-award text-dark "></i>
                                 </div>
-                                <small class="fs-5 text-white">Expertise locale certifiée</small>
+                                <small class="fs-5 text-white">Certified Local Expertise</small>
                             </div>
                         </div>
                     </div>
@@ -202,12 +202,12 @@
                     <div class="row g-4 g-sm-5 justify-content-center">
                         <div class="col-sm-6">
                             <div class="about-fact btn-square flex-column rounded-circle bg-primary ms-sm-auto">
-                                <h2 class="text-white mb-0">Conformité</h2>
+                                <h2 class="text-white mb-0">Compliance</h2>
                             </div>
                         </div>
                         <div class="col-sm-6 text-start">
                             <div class="about-fact btn-square flex-column rounded-circle bg-danger me-sm-auto">
-                                <h2 class="text-white mb-0">Précision</h2>
+                                <h2 class="text-white mb-0">Precision</h2>
                             </div>
                         </div>
                         <div class="col-sm-6">
@@ -304,7 +304,7 @@
         <div class="container">
             <div class="row g-0 feature-row">
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="feature-item border h-100 p-5">
+                    <div class="feature-item circle-accent-card border h-100 p-5">
                         <div class="icon-box-primary mb-4">
                             <i class="fa fa-award text-dark"></i>
                         </div>
@@ -322,7 +322,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="feature-item border h-100 p-5">
+                    <div class="feature-item circle-accent-card border h-100 p-5">
                         <div class="icon-box-primary mb-4">
                             <i class="fa fa-coins text-dark"></i>
                         </div>
@@ -649,8 +649,8 @@
         <div class="container pt-5">
             <div class="row gy-5 gx-0">
                 <div class="col-lg-6 pe-lg-5 wow fadeIn" data-wow-delay="0.3s">
-                    <h1 class="display-6 text-white mb-4">What Our Partners Say About Our Services</h1>
-                    <p class="text-white mb-5">We work with mining companies that trust us for the quality and accuracy of our analyses.</p>
+                    <h1 class="display-6 text-white mb-4">What people think about geological laboratories in the DRC</h1>
+                    <p class="text-white mb-5">People see DRC geological laboratories as essential tools for growth. They do not just analyze rocks. They secure investments, speed up mine development, and help unlock the true wealth of the country.</p>
                     
                 </div>
                 <div class="col-lg-6 mb-n5 wow fadeIn" data-wow-delay="0.5s">
@@ -660,12 +660,14 @@
                                 <div class="icon-box-primary mb-4">
                                     <i class="fa fa-quote-left text-dark"></i>
                                 </div>
-                                <p class="fs-5 mb-4 text-justify">I was truly impressed by the quality of LabCongo's analyses. Their team is highly professional and skilled. The results arrived on time and were accurate, and I appreciated their support throughout the process.</p>
+                                <p class="fs-5 mb-4 text-justify">The evaluation and determination of the real value of our minerals pose a challenge. Congolese environmentalists and engineers demand the creation of a comprehensive national mineralogical laboratory in the DRC to define the physical properties and exact composition of minerals on site.</p>
                                 <div class="d-flex align-items-center">
-                                    <img class="flex-shrink-0" src="img/testimonial-1.jpg" alt="">
+                                    <div class="testimonial-avatar testimonial-avatar--person flex-shrink-0" aria-hidden="true">
+                                        <i class="fa fa-user"></i>
+                                    </div>
                                     <div class="ps-3">
-                                        <h5 class="mb-1">Mining Partner</h5>
-                                        <span class="text-primary">Mining Company</span>
+                                        <h5 class="mb-1">Jean Mpongo</h5>
+                                        <span class="text-primary"><a href="https://acp.cd/economie/un-expert-en-environnement-et-ingenierie-en-mine-plaide-pour-la-creation-dun-laboratoire-mineralogique-en-rdc/" target="_blank">Environmental and Mining Engineering Expert (Official statement to the ACP).</a></span>
                                     </div>
                                 </div>
                             </div>
@@ -673,12 +675,14 @@
                                 <div class="icon-box-primary mb-4">
                                     <i class="fa fa-quote-left text-dark"></i>
                                 </div>
-                                <p class="fs-5 mb-4 text-justify">LabCongo provided precise and reliable analyses for my mining project. Their team is competent and attentive, and I highly recommend their services.</p>
+                                <p class="fs-5 mb-4 text-justify">Historically dominated by foreign experts, the field of geological exploration in the DRC must open up massively to national geoscientists. Equipping Congolese engineers with modern tools is key for the country to finally understand, explore, and master the true extent of its mineral reserves.</p>
                                 <div class="d-flex align-items-center">
-                                    <img class="flex-shrink-0" src="img/testimonial-2.jpg" alt="">
+                                    <div class="testimonial-avatar testimonial-avatar--institution flex-shrink-0" aria-hidden="true">
+                                        <i class="fa fa-university"></i>
+                                    </div>
                                     <div class="ps-3">
-                                        <h5 class="mb-1">Project Partner</h5>
-                                        <span class="text-primary">Mining Project</span>
+                                        <h5 class="mb-1">Institutional Reference</h5>
+                                        <span class="text-primary"><a href="https://mines.gouv.cd/" target="_blank">Based on mineral sovereignty guidelines from the Ministry of Mines of the DRC.</a></span>
                                     </div>
                                 </div>
                             </div>
@@ -715,15 +719,15 @@
                         <div class="col-sm-6">
                             <h4 class="text-light mb-4">Quick Links</h4>
                             <a class="btn btn-link" href="about.php">About Us</a>
-                            <a class="btn btn-link" href="contact.php">Contact Us</a>
-                            <a class="btn btn-link" href="services.php">Our Services</a>
+                            <a class="btn btn-link" href="contact.html">Contact Us</a>
+                            <a class="btn btn-link" href="service.html">Our Services</a>
                         </div>
                         <div class="col-sm-6">
                             <h4 class="text-light mb-4">Other Links</h4>
-                            <a class="btn btn-link" href="#">Partners</a>
-                            <a class="btn btn-link" href="#">Projects</a>
-                            <a class="btn btn-link" href="#">Our Activities</a>
-                            <a class="btn btn-link" href="#">Support</a>
+                            <a class="btn btn-link" href="partners.html">Partners</a>
+                            <a class="btn btn-link" href="projects.html">Projects</a>
+                            <a class="btn btn-link" href="activities.html">Our Activities</a>
+                            <a class="btn btn-link" href="contact.html">Support</a>
                         </div>
                         <div class="col-sm-12">
                             <h4 class="text-light mb-4">Newsletter</h4>
