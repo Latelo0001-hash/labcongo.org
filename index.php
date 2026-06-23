@@ -189,9 +189,9 @@
                         <div class="col-6">
                             <div class="bg-primary w-100 h-100 mt-n5 ms-n5 d-flex flex-column align-items-center justify-content-center">
                                 <div class="icon-box-light">
-                                    <i class="fa fa-award text-dark "></i>
+                                    <i class="fa fa-award text-dark"></i>
                                 </div>
-                                <small class="fs-5 text-white">Certified Local Expertise</small>
+                                <small class="fs-5 text-center text-white">Certified Local Expertise</small>
                             </div>
                         </div>
                     </div>
@@ -199,22 +199,28 @@
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                     <h1 class="display-6 mb-4">Reliable Experts & Advanced Analytical Technologies</h1>
                     <p class="mb-4">Thanks to our expertise and the use of modern equipment, LabCongo delivers accurate results that meet the requirements of the mining industry and international standards.</p>
-                    <div class="row g-4 g-sm-5 justify-content-center">
-                        <div class="col-sm-6">
-                            <div class="about-fact btn-square flex-column rounded-circle bg-primary ms-sm-auto">
-                                <h2 class="text-white mb-0">Compliance</h2>
+                    <p class="mb-4">The Democratic Republic of the Congo (DRC) is one of the world's richest countries in strategic mineral resources, including copper, cobalt, gold, and coltan.</p>
+
+                    <div class="mining-context">
+                        <div class="row g-3 mb-4">
+                            <div class="col-sm-6">
+                                <div class="mining-stat">
+                                    <span class="mining-stat-value">70%</span>
+                                    <span class="mining-stat-label">of global cobalt production</span>
+                                    <small>Source: U.S. Geological Survey, Mineral Commodity Summary - Cobalt (2024)</small>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="mining-stat mining-stat-alt">
+                                    <span class="mining-stat-value">170,000 t</span>
+                                    <span class="mining-stat-label">of cobalt produced in the DRC in 2023</span>
+                                    <small>Source: U.S. Geological Survey (USGS 2024)</small>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 text-start">
-                            <div class="about-fact btn-square flex-column rounded-circle bg-danger me-sm-auto">
-                                <h2 class="text-white mb-0">Precision</h2>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="about-fact mt-n130 btn-square flex-column rounded-circle bg-warning mx-sm-auto">
-                                <h2 class="text-white mb-0">Excellence</h2>
-                           
-                            </div>
+                        <div class="mb-4">
+                            <h3>However</h3>
+                            <p>Major challenges remain: many analyses are still performed abroad, resulting in long lead times, high costs, technical dependency, and limited local scientific value creation.</p>
                         </div>
                     </div>
                 </div>
@@ -660,7 +666,7 @@
                                 <div class="icon-box-primary mb-4">
                                     <i class="fa fa-quote-left text-dark"></i>
                                 </div>
-                                <p class="fs-5 mb-4 text-justify">The evaluation and determination of the real value of our minerals pose a challenge. Congolese environmentalists and engineers demand the creation of a comprehensive national mineralogical laboratory in the DRC to define the physical properties and exact composition of minerals on site.</p>
+                                <p class="fs-5 mb-4 ">The evaluation and determination of the real value of our minerals pose a challenge. Congolese environmentalists and engineers demand the creation of a comprehensive national mineralogical laboratory in the DRC to define the physical properties and exact composition of minerals on site.</p>
                                 <div class="d-flex align-items-center">
                                     <div class="testimonial-avatar testimonial-avatar--person flex-shrink-0" aria-hidden="true">
                                         <i class="fa fa-user"></i>
@@ -675,7 +681,7 @@
                                 <div class="icon-box-primary mb-4">
                                     <i class="fa fa-quote-left text-dark"></i>
                                 </div>
-                                <p class="fs-5 mb-4 text-justify">Historically dominated by foreign experts, the field of geological exploration in the DRC must open up massively to national geoscientists. Equipping Congolese engineers with modern tools is key for the country to finally understand, explore, and master the true extent of its mineral reserves.</p>
+                                <p class="fs-5 mb-4 ">Historically dominated by foreign experts, the field of geological exploration in the DRC must open up massively to national geoscientists. Equipping Congolese engineers with modern tools is key for the country to finally understand, explore, and master the true extent of its mineral reserves.</p>
                                 <div class="d-flex align-items-center">
                                     <div class="testimonial-avatar testimonial-avatar--institution flex-shrink-0" aria-hidden="true">
                                         <i class="fa fa-university"></i>

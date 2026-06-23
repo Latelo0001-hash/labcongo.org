@@ -157,37 +157,39 @@
                         </div>
                         <div class="col-6">
                             <div class="bg-primary w-100 h-100 mt-n5 ms-n5 d-flex flex-column align-items-center justify-content-center">
-                                <div class="icon-box-light">
+                                <div class="icon-box-light text-center">
                                     <i class="fa fa-award text-dark"></i>
                                 </div>
-                                <h1 class="display-1 text-white mb-0" data-toggle="counter-up">15</h1>
-                                <small class="fs-5 text-white">Years Experience</small>
+                                <small class="fs-5 text-white">Certified Local Expertise</small>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <h1 class="display-6 mb-4">Mining Analysis Experts and Modern Technologies</h1>
-                    <p class="mb-4">LabCongo is a mining laboratory specializing in the analysis and quality control of ores. We support schools and universities in training local talent, as well as mining companies and mining sector stakeholders in identifying, evaluating,
-                        and optimizing mineral resources.</p>
-                    <div class="row g-4 g-sm-5 justify-content-center">
-                        <div class="col-sm-6">
-                            <div class="about-fact btn-square flex-column rounded-circle bg-primary ms-sm-auto">
-                                <p class="text-white mb-0">Awards</p>
-                                <h1 class="text-white mb-0" data-toggle="counter-up">9999</h1>
+                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <h1 class="display-6 mb-4">Reliable Experts & Advanced Analytical Technologies</h1>
+                    <p class="mb-4">Thanks to our expertise and the use of modern equipment, LabCongo delivers accurate results that meet the requirements of the mining industry and international standards.</p>
+                    <p class="mb-4">The Democratic Republic of the Congo (DRC) is one of the world's richest countries in strategic mineral resources, including copper, cobalt, gold, and coltan.</p>
+
+                    <div class="mining-context">
+                        <div class="row g-3 mb-4">
+                            <div class="col-sm-6">
+                                <div class="mining-stat">
+                                    <span class="mining-stat-value">70%</span>
+                                    <span class="mining-stat-label">of global cobalt production</span>
+                                    <small>Source: U.S. Geological Survey, Mineral Commodity Summary - Cobalt (2024)</small>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="mining-stat mining-stat-alt">
+                                    <span class="mining-stat-value">170,000 t</span>
+                                    <span class="mining-stat-label">of cobalt produced in the DRC in 2023</span>
+                                    <small>Source: U.S. Geological Survey (USGS 2024)</small>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 text-start">
-                            <div class="about-fact btn-square flex-column rounded-circle bg-secondary me-sm-auto">
-                                <p class="text-white mb-0">Completed Projects</p>
-                                <h1 class="text-white mb-0" data-toggle="counter-up">9999</h1>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="about-fact mt-n130 btn-square flex-column rounded-circle bg-dark mx-sm-auto">
-                                <p class="text-white mb-0">Satisfied Clients</p>
-                                <h1 class="text-white mb-0" data-toggle="counter-up">9999</h1>
-                            </div>
+                        <div class="mb-4">
+                            <h3>However</h3>
+                            <p>Major challenges remain: many analyses are still performed abroad, resulting in long lead times, high costs, technical dependency, and limited local scientific value creation.</p>
                         </div>
                     </div>
                 </div>
@@ -308,7 +310,18 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="modal modal-video fade py-5" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+
+    <!-- Video Modal Start -->
+    
+    <div class="modal modal-video fade py-5" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content rounded-0">
                 <div class="modal-header">
@@ -324,18 +337,6 @@
             </div>
         </div>
     </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Features End -->
-
-
-    <!-- Video Modal Start -->
-
-    
     <!-- Video Modal End -->
 
 
@@ -364,15 +365,15 @@
                         <div class="col-sm-6">
                             <h4 class="text-light mb-4">Quick Links</h4>
                             <a class="btn btn-link" href="about.php">About Us</a>
-                            <a class="btn btn-link" href="contact.html">Contact Us</a>
-                            <a class="btn btn-link" href="service.html">Our Services</a>
+                            <a class="btn btn-link" href="contact.php">Contact Us</a>
+                            <a class="btn btn-link" href="services.php">Our Services</a>
                         </div>
                         <div class="col-sm-6">
                             <h4 class="text-light mb-4">Other Links</h4>
-                            <a class="btn btn-link" href="partners.html">Partners</a>
-                            <a class="btn btn-link" href="projects.html">Projects</a>
-                            <a class="btn btn-link" href="activities.html">Our Activities</a>
-                            <a class="btn btn-link" href="contact.html">Support</a>
+                            <a class="btn btn-link" href="#">Partners</a>
+                            <a class="btn btn-link" href="#">Projects</a>
+                            <a class="btn btn-link" href="#">Our Activities</a>
+                            <a class="btn btn-link" href="#">Support</a>
                         </div>
                         <div class="col-sm-12">
                             <h4 class="text-light mb-4">Newsletter</h4>
