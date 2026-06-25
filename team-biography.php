@@ -178,13 +178,16 @@ $redirectTarget = $selectedMember ? lc_team_biography_url($selectedMember) : 'te
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="bg-light p-4 mb-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="partner-category-nav p-4 mb-4 wow fadeInUp" data-wow-delay="0.2s">
                         <h4 class="mb-4">Other Members</h4>
                         <?php foreach ($otherMembers as $member): ?>
-                        <a class="btn btn-link d-block text-start px-0" href="<?php echo lc_e(lc_team_biography_url($member)); ?>"><i class="fa fa-angle-right me-2"></i><?php echo lc_e($member['display_name']); ?></a>
+                        <a class="partner-category-link" href="<?php echo lc_e(lc_team_biography_url($member)); ?>">
+                            <span class="partner-category-link-icon"><i class="fa fa-angle-right"></i></span>
+                            <span><?php echo lc_e($member['display_name']); ?></span>
+                        </a>
                         <?php endforeach; ?>
                     </div>
-                    <div class="bg-primary p-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="partner-sidebar-cta wow fadeInUp" data-wow-delay="0.3s">
                         <h4 class="text-white mb-3">Need more information?</h4>
                         <p class="text-white mb-4">Browse other LabCongo profiles or contact the team for official follow-up.</p>
                         <a class="btn btn-light py-3 px-4 mb-2 w-100" href="team-biographies.php">View All Biographies</a>
@@ -230,12 +233,6 @@ $redirectTarget = $selectedMember ? lc_team_biography_url($selectedMember) : 'te
                             <a class="btn btn-link" href="contact.html">Contact Us</a>
                             <a class="btn btn-link" href="service.html">Our Services</a>
                         </div>
-                        <div class="col-sm-6">
-                            <h4 class="text-light mb-4">Other Links</h4>
-                            <a class="btn btn-link" href="partners.html">Partners</a>
-                            <a class="btn btn-link" href="projects.html">Projects</a>
-                            <a class="btn btn-link" href="activities.html">Our Activities</a>
-                        </div>
                         <div class="col-sm-12">
                             <h4 class="text-light mb-4">Newsletter</h4>
                             <div class="w-100">
@@ -262,7 +259,6 @@ $redirectTarget = $selectedMember ? lc_team_biography_url($selectedMember) : 'te
                     <p class="mb-0">&copy; 2026 <a href="index.php">LabCongo</a>. All Rights Reserved.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                     <p class="mb-0">Designed by <a href="index.php">LabCongo</a></p>
                 </div>
             </div>

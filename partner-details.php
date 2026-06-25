@@ -1,9 +1,250 @@
+<?php
+// -------------------------------------------------------------------
+// Partner categories data
+// -------------------------------------------------------------------
+$partner_categories = [
+    'mining-operators' => [
+        'slug'  => 'mining-operators',
+        'label' => 'Mining Operators and Project Owners',
+        'icon'  => 'fa-mountain',
+        'intro' => 'Partners in this category are mining operators, exploration teams, and project owners who need reliable analytical information for technical decisions.',
+        'focus' => [
+            'Exploration and sample analysis programs',
+            'Production support and quality control',
+            'Project evaluation and technical reporting',
+        ],
+        'cards' => [
+            ['icon' => 'fa-industry',        'label' => 'Mining operations'],
+            ['icon' => 'fa-map-marked-alt',  'label' => 'Exploration projects'],
+            ['icon' => 'fa-clipboard-check', 'label' => 'Quality-control programs'],
+        ],
+        'partners' => [
+            [
+                'name' => 'Kivu Mineral Resources',
+                'type' => 'Mining operations',
+                'photo' => 'img/fully-equipped-male-astronaut-holding-two-rocks.jpg',
+                'logo' => 'img/Logo/PNG/LabCongo%20-%20logo-01.png',
+                'summary' => 'Kivu Mineral Resources works with LabCongo for exploration support, routine ore characterization, and production quality control across active mining sites.',
+                'website' => 'https://www.labcongo.org',
+                'socials' => [
+                    ['label' => 'LinkedIn', 'icon' => 'fab fa-linkedin-in', 'url' => 'https://www.linkedin.com/'],
+                    ['label' => 'Facebook', 'icon' => 'fab fa-facebook-f', 'url' => 'https://www.facebook.com/'],
+                ],
+            ],
+            [
+                'name' => 'Katanga Exploration Group',
+                'type' => 'Exploration projects',
+                'photo' => 'img/male-scientist-doing-research-work-burnt-field.jpg',
+                'logo' => 'img/Logo/PNG/LabCongo%20-%20logo-02.png',
+                'summary' => 'Katanga Exploration Group relies on LabCongo for sample preparation planning, geochemical screening, and technical reporting that supports resource evaluation.',
+                'website' => 'https://www.labcongo.org',
+                'socials' => [
+                    ['label' => 'X', 'icon' => 'fab fa-twitter', 'url' => 'https://x.com/'],
+                    ['label' => 'LinkedIn', 'icon' => 'fab fa-linkedin-in', 'url' => 'https://www.linkedin.com/'],
+                ],
+            ],
+            [
+                'name' => 'Copperbelt QA Alliance',
+                'type' => 'Quality-control programs',
+                'photo' => 'img/feature-mining-abstract.jpg',
+                'logo' => 'img/Logo/PNG/LabCongo%20-%20logo-03.png',
+                'summary' => 'Copperbelt QA Alliance partners with LabCongo to verify assay consistency, monitor turnaround discipline, and document traceable laboratory controls.',
+                'website' => 'https://www.labcongo.org',
+                'socials' => [
+                    ['label' => 'YouTube', 'icon' => 'fab fa-youtube', 'url' => 'https://www.youtube.com/'],
+                    ['label' => 'Facebook', 'icon' => 'fab fa-facebook-f', 'url' => 'https://www.facebook.com/'],
+                ],
+            ],
+        ],
+    ],
+    'academic-training' => [
+        'slug'  => 'academic-training',
+        'label' => 'Academic and Training Institutions',
+        'icon'  => 'fa-university',
+        'intro' => 'Partners in this category include schools, universities, and training organizations that support local technical skills and laboratory learning.',
+        'focus' => [
+            'Student exposure to laboratory practice',
+            'Technical training for technicians and engineers',
+            'Research, exchange, and capacity building',
+        ],
+        'cards' => [
+            ['icon' => 'fa-school',               'label' => 'Universities and schools'],
+            ['icon' => 'fa-user-graduate',         'label' => 'Training centers'],
+            ['icon' => 'fa-chalkboard-teacher',    'label' => 'Technical exchange programs'],
+        ],
+        'partners' => [
+            [
+                'name' => 'Institut Minier de Kinshasa',
+                'type' => 'Universities and schools',
+                'photo' => 'img/science-day-celebration-with-kids-learning-laboratory.jpg',
+                'logo' => 'img/Logo/PNG/LabCongo%20-%20logo-04.png',
+                'summary' => 'Institut Minier de Kinshasa collaborates with LabCongo to expose students to laboratory methods, mineral analysis workflows, and applied mining science.',
+                'website' => 'https://www.labcongo.org',
+                'socials' => [
+                    ['label' => 'Facebook', 'icon' => 'fab fa-facebook-f', 'url' => 'https://www.facebook.com/'],
+                    ['label' => 'LinkedIn', 'icon' => 'fab fa-linkedin-in', 'url' => 'https://www.linkedin.com/'],
+                ],
+            ],
+            [
+                'name' => 'Congo Technical Training Hub',
+                'type' => 'Training centers',
+                'photo' => 'img/research-innovation-items-world-science-day-celebration.jpg',
+                'logo' => 'img/Logo/PNG/LabCongo%20-%20logo-05.png',
+                'summary' => 'Congo Technical Training Hub develops technician upskilling programs with LabCongo around sampling discipline, safety, and analytical best practices.',
+                'website' => 'https://www.labcongo.org',
+                'socials' => [
+                    ['label' => 'Instagram', 'icon' => 'fab fa-instagram', 'url' => 'https://www.instagram.com/'],
+                    ['label' => 'LinkedIn', 'icon' => 'fab fa-linkedin-in', 'url' => 'https://www.linkedin.com/'],
+                ],
+            ],
+            [
+                'name' => 'Great Lakes Research Exchange',
+                'type' => 'Technical exchange programs',
+                'photo' => 'img/woman-lab-working-with-microscope.jpg',
+                'logo' => 'img/Logo/PNG/LabCongo%20-%20logo-06.png',
+                'summary' => 'Great Lakes Research Exchange supports joint projects, technical seminars, and practical laboratory immersion tied to local mining-sector needs.',
+                'website' => 'https://www.labcongo.org',
+                'socials' => [
+                    ['label' => 'X', 'icon' => 'fab fa-twitter', 'url' => 'https://x.com/'],
+                    ['label' => 'YouTube', 'icon' => 'fab fa-youtube', 'url' => 'https://www.youtube.com/'],
+                ],
+            ],
+        ],
+    ],
+    'public-regulatory' => [
+        'slug'  => 'public-regulatory',
+        'label' => 'Public and Regulatory Stakeholders',
+        'icon'  => 'fa-balance-scale',
+        'intro' => 'Partners in this category are institutions and stakeholders connected to traceability, compliance, mineral evaluation, and responsible sector development.',
+        'focus' => [
+            'Traceability and standards-based information',
+            'Compliance support and technical documentation',
+            'Responsible mining-sector development',
+        ],
+        'cards' => [
+            ['icon' => 'fa-landmark', 'label' => 'Public institutions'],
+            ['icon' => 'fa-gavel',    'label' => 'Regulatory bodies'],
+            ['icon' => 'fa-route',    'label' => 'Traceability programs'],
+        ],
+        'partners' => [
+            [
+                'name' => 'DRC Mineral Governance Office',
+                'type' => 'Public institutions',
+                'photo' => 'img/page-header-mining-lab.jpg',
+                'logo' => 'img/Logo/PNG/LabCongo%20-%20logo-01.png',
+                'summary' => 'The DRC Mineral Governance Office engages LabCongo for traceable technical information, mineral verification support, and sector documentation.',
+                'website' => 'https://www.labcongo.org',
+                'socials' => [
+                    ['label' => 'LinkedIn', 'icon' => 'fab fa-linkedin-in', 'url' => 'https://www.linkedin.com/'],
+                    ['label' => 'Facebook', 'icon' => 'fab fa-facebook-f', 'url' => 'https://www.facebook.com/'],
+                ],
+            ],
+            [
+                'name' => 'Responsible Mining Standards Forum',
+                'type' => 'Regulatory bodies',
+                'photo' => 'img/feature.jpg',
+                'logo' => 'img/Logo/PNG/LabCongo%20-%20logo-02.png',
+                'summary' => 'Responsible Mining Standards Forum works with LabCongo on compliance-linked technical evidence, reference documentation, and quality-driven reporting.',
+                'website' => 'https://www.labcongo.org',
+                'socials' => [
+                    ['label' => 'X', 'icon' => 'fab fa-twitter', 'url' => 'https://x.com/'],
+                    ['label' => 'LinkedIn', 'icon' => 'fab fa-linkedin-in', 'url' => 'https://www.linkedin.com/'],
+                ],
+            ],
+            [
+                'name' => 'Chain of Custody Initiative',
+                'type' => 'Traceability programs',
+                'photo' => 'img/testimonial-mining-abstract.jpg',
+                'logo' => 'img/Logo/PNG/LabCongo%20-%20logo-03.png',
+                'summary' => 'Chain of Custody Initiative partners with LabCongo to reinforce traceability workflows, analytical recordkeeping, and responsible supply-chain controls.',
+                'website' => 'https://www.labcongo.org',
+                'socials' => [
+                    ['label' => 'YouTube', 'icon' => 'fab fa-youtube', 'url' => 'https://www.youtube.com/'],
+                    ['label' => 'Facebook', 'icon' => 'fab fa-facebook-f', 'url' => 'https://www.facebook.com/'],
+                ],
+            ],
+        ],
+    ],
+    'technology-equipment' => [
+        'slug'  => 'technology-equipment',
+        'label' => 'Technology and Equipment Providers',
+        'icon'  => 'fa-microscope',
+        'intro' => 'Partners in this category help strengthen analytical workflows, equipment reliability, laboratory capacity, maintenance, and calibration discipline.',
+        'focus' => [
+            'Laboratory equipment and analytical technologies',
+            'Maintenance, calibration, and technical support',
+            'Workflow improvement and capacity development',
+        ],
+        'cards' => [
+            ['icon' => 'fa-tools', 'label' => 'Equipment suppliers'],
+            ['icon' => 'fa-vial',  'label' => 'Analytical technology'],
+            ['icon' => 'fa-cogs',  'label' => 'Maintenance and calibration'],
+        ],
+        'partners' => [
+            [
+                'name' => 'Precision Lab Systems',
+                'type' => 'Equipment suppliers',
+                'photo' => 'img/laboratory-laboratories-conduct-experiments-chemical-laboratory-transparent-flasks-output-formulas.jpg',
+                'logo' => 'img/Logo/PNG/LabCongo%20-%20logo-04.png',
+                'summary' => 'Precision Lab Systems supports LabCongo with laboratory equipment deployment, replacement planning, and operational continuity for core analytical tools.',
+                'website' => 'https://www.labcongo.org',
+                'socials' => [
+                    ['label' => 'LinkedIn', 'icon' => 'fab fa-linkedin-in', 'url' => 'https://www.linkedin.com/'],
+                    ['label' => 'Instagram', 'icon' => 'fab fa-instagram', 'url' => 'https://www.instagram.com/'],
+                ],
+            ],
+            [
+                'name' => 'GeoAnalytics Instruments',
+                'type' => 'Analytical technology',
+                'photo' => 'img/biologist-woman-looking-test-sample-microscope-working-gmo-experiment.jpg',
+                'logo' => 'img/Logo/PNG/LabCongo%20-%20logo-05.png',
+                'summary' => 'GeoAnalytics Instruments collaborates with LabCongo on analytical upgrades, method reliability, and technology adoption for mining laboratory workflows.',
+                'website' => 'https://www.labcongo.org',
+                'socials' => [
+                    ['label' => 'X', 'icon' => 'fab fa-twitter', 'url' => 'https://x.com/'],
+                    ['label' => 'LinkedIn', 'icon' => 'fab fa-linkedin-in', 'url' => 'https://www.linkedin.com/'],
+                ],
+            ],
+            [
+                'name' => 'Calibration Support Africa',
+                'type' => 'Maintenance and calibration',
+                'photo' => 'img/african-woman-biochemist-researcher-checking-manifestations-vaccine-working-modern-equipped-laboratory-multiethnic-doctors-examining-virus-evolution-using-high-tech-researching-diagnosis.jpg',
+                'logo' => 'img/Logo/PNG/LabCongo%20-%20logo-06.png',
+                'summary' => 'Calibration Support Africa helps LabCongo maintain equipment performance through preventive maintenance, calibration discipline, and technical interventions.',
+                'website' => 'https://www.labcongo.org',
+                'socials' => [
+                    ['label' => 'Facebook', 'icon' => 'fab fa-facebook-f', 'url' => 'https://www.facebook.com/'],
+                    ['label' => 'YouTube', 'icon' => 'fab fa-youtube', 'url' => 'https://www.youtube.com/'],
+                ],
+            ],
+        ],
+    ],
+];
+
+// -------------------------------------------------------------------
+// Resolve the requested category (same pattern as team-biography.php)
+// -------------------------------------------------------------------
+$slug = isset($_GET['category']) ? preg_replace('/[^a-z0-9-]/', '', strtolower(trim($_GET['category']))) : '';
+// Fallback : si aucun slug valide, afficher la première catégorie
+if (!$slug || !isset($partner_categories[$slug])) {
+    reset($partner_categories);
+    $slug = key($partner_categories);
+}
+$category  = $partner_categories[$slug];
+$pageTitle = $category['label'] . ' - Partners - LabCongo';
+
+// Helper: HTML-safe output
+function lc_e($str) { return htmlspecialchars($str, ENT_QUOTES, 'UTF-8'); }
+function lc_safe_url($url) {
+    return filter_var($url, FILTER_VALIDATE_URL) ? $url : '#';
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Partner Details - LabCongo</title>
+    <title><?php echo lc_e($pageTitle); ?></title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="LabCongo partner details, mining partners, academic partners, regulatory partners, laboratory equipment partners" name="keywords">
     <meta content="Review LabCongo partner categories for mining operators, academic institutions, public stakeholders, and technology providers." name="description">
@@ -20,7 +261,7 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css?v=20260616-about-dark-footer" rel="stylesheet">
+    <link href="css/style.css?v=20260625-partners-theme" rel="stylesheet">
 </head>
 
 <body>
@@ -114,14 +355,16 @@
     <!-- Navbar End -->
 
     <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5 wow fadeIn bg-transparent" data-wow-delay="0.1s">
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn bg-transparent" data-wow-delay="0.1s">
         <div class="container text-center py-5 mt-4 bg-transparent">
             <h1 class="display-2 text-white mb-3 animated slideInDown">Partner Details</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a href="index.php">Home</a></li>
                     <li class="breadcrumb-item"><a href="partners.php">Partners</a></li>
-                    <li class="breadcrumb-item" aria-current="page">Partner Details</li>
+                    <li class="breadcrumb-item" aria-current="page">
+                        <?php echo $category ? lc_e($category['label']) : 'Partner Details'; ?>
+                    </li>
                 </ol>
             </nav>
         </div>
@@ -130,213 +373,78 @@
 
     <!-- Partner Details Start -->
     <div class="container-fluid py-5">
-        <div class="container py-5">
+        <div class="container pb-5">
             <div class="row g-5">
 
-                <!-- Main Content col-lg-8 (same pattern as team-biography.php) -->
+                <!-- Main Content col-lg-8 -->
                 <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="partner-detail-hero mb-5">
+                        <div class="row g-4 align-items-stretch">
+                            <div class="col-lg-12">
+                                <div class="vision-panel h-100">
+                                    <div class="icon-box-primary vision-icon mb-4">
+                                        <i class="fa <?php echo lc_e($category['icon']); ?> text-dark"></i>
+                                    </div>
+                                    <h1 class="display-6 mb-4"><?php echo lc_e($category['label']); ?></h1>
+                                    <p class="fs-5 text-primary mb-4">LabCongo partner category, collaboration scope, and validated organization profile.</p>
+                                    <div class="vision-divider"></div>
+                                    <p class="mb-0 text-justify"><?php echo lc_e($category['intro']); ?></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                   
 
                     <div class="mb-5">
-                        <h1 class="display-6 mb-3">Partner Category Directory</h1>
-                        <p class="fs-5 text-primary mb-0">LabCongo's active partner categories and the organizations connected to each group.</p>
+                        <span class="partner-eyebrow">Category partners</span>
+                        <h2 class="display-6 mb-3">Partners in this category</h2>
+                        <p class="mb-0 text-justify">Each category shows its partner organizations with a presentation text, a partner photo, a logo, and direct links to the official website and social networks.</p>
                     </div>
 
-                    <!-- Category nav -->
-                    <div class="partner-category-nav bg-light p-4 mb-5">
-                        <h5 class="mb-3">Jump to a category</h5>
-                        <div class="d-flex flex-wrap gap-3">
-                            <a class="btn btn-outline-primary btn-sm" href="#mining-operators">Mining Operators</a>
-                            <a class="btn btn-outline-primary btn-sm" href="#academic-training">Academic & Training</a>
-                            <a class="btn btn-outline-primary btn-sm" href="#public-regulatory">Public & Regulatory</a>
-                            <a class="btn btn-outline-primary btn-sm" href="#technology-equipment">Technology & Equipment</a>
+                    <div class="row g-4 mb-5">
+                        <?php foreach ($category['partners'] as $partner): ?>
+                        <div class="col-xl-6">
+                            <div class="partner-profile-card h-100">
+                                <div class="partner-profile-photo">
+                                    <img src="<?php echo lc_e($partner['photo']); ?>" alt="<?php echo lc_e($partner['name']); ?>">
+                                </div>
+                                <div class="partner-profile-body">
+                                    <div class="partner-profile-head">
+                                        <div class="partner-profile-logo">
+                                            <img src="<?php echo lc_e($partner['logo']); ?>" alt="<?php echo lc_e($partner['name']); ?> logo">
+                                        </div>
+                                        <div>
+                                            <span class="partner-detail-label mb-2"><?php echo lc_e($partner['type']); ?></span>
+                                            <h4 class="mb-2"><?php echo lc_e($partner['name']); ?></h4>
+                                        </div>
+                                    </div>
+                                    <p class="mb-4"><?php echo lc_e($partner['summary']); ?></p>
+                                    <div class="partner-profile-links">
+                                        <a class="partner-website-link" href="<?php echo lc_e(lc_safe_url($partner['website'])); ?>" target="_blank" rel="noopener noreferrer">
+                                            <i class="fa fa-globe me-2"></i>Website
+                                        </a>
+                                        <div class="partner-social-links">
+                                            <?php foreach ($partner['socials'] as $social): ?>
+                                            <a href="<?php echo lc_e(lc_safe_url($social['url'])); ?>" target="_blank" rel="noopener noreferrer" aria-label="<?php echo lc_e($social['label'] . ' - ' . $partner['name']); ?>" title="<?php echo lc_e($social['label']); ?>">
+                                                <i class="<?php echo lc_e($social['icon']); ?>"></i>
+                                            </a>
+                                            <?php endforeach; ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <?php endforeach; ?>
                     </div>
 
-                    <!-- Section 1: Mining Operators -->
-                    <section class="partner-detail-section py-4 border-bottom mb-4" id="mining-operators">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="btn-lg-square bg-primary rounded-circle me-3 flex-shrink-0" style="width:50px;height:50px;display:flex;align-items:center;justify-content:center;">
-                                <i class="fa fa-mountain text-white"></i>
-                            </div>
-                            <h2 class="display-6 mb-0">Mining Operators and Project Owners</h2>
-                        </div>
-                        <p class="mb-4 text-justify">Partners in this category are mining operators, exploration teams, and project owners who need reliable analytical information for technical decisions.</p>
-                        <div class="partner-focus-list bg-light p-4 mb-4">
-                            <h5 class="mb-3">Collaboration focus</h5>
-                            <ul class="mb-0">
-                                <li>Exploration and sample analysis programs</li>
-                                <li>Production support and quality control</li>
-                                <li>Project evaluation and technical reporting</li>
-                            </ul>
-                        </div>
-                        <div class="row g-4">
-                            <div class="col-md-4">
-                                <div class="partner-list-card h-100">
-                                    <div class="partner-logo-placeholder"><i class="fa fa-industry"></i></div>
-                                    <h5 class="mb-2">Validated partner</h5>
-                                    <p class="mb-3">Partner name, logo, and collaboration details will be added here after validation.</p>
-                                    <span class="partner-detail-label">Mining operations</span>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="partner-list-card h-100">
-                                    <div class="partner-logo-placeholder"><i class="fa fa-map-marked-alt"></i></div>
-                                    <h5 class="mb-2">Validated partner</h5>
-                                    <p class="mb-3">Partner name, logo, and collaboration details will be added here after validation.</p>
-                                    <span class="partner-detail-label">Exploration projects</span>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="partner-list-card h-100">
-                                    <div class="partner-logo-placeholder"><i class="fa fa-clipboard-check"></i></div>
-                                    <h5 class="mb-2">Validated partner</h5>
-                                    <p class="mb-3">Partner name, logo, and collaboration details will be added here after validation.</p>
-                                    <span class="partner-detail-label">Quality-control programs</span>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+                   
 
-                    <!-- Section 2: Academic and Training -->
-                    <section class="partner-detail-section py-4 border-bottom mb-4" id="academic-training">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="btn-lg-square bg-primary rounded-circle me-3 flex-shrink-0" style="width:50px;height:50px;display:flex;align-items:center;justify-content:center;">
-                                <i class="fa fa-university text-white"></i>
-                            </div>
-                            <h2 class="display-6 mb-0">Academic and Training Institutions</h2>
-                        </div>
-                        <p class="mb-4 text-justify">Partners in this category include schools, universities, and training organizations that support local technical skills and laboratory learning.</p>
-                        <div class="partner-focus-list bg-light p-4 mb-4">
-                            <h5 class="mb-3">Collaboration focus</h5>
-                            <ul class="mb-0">
-                                <li>Student exposure to laboratory practice</li>
-                                <li>Technical training for technicians and engineers</li>
-                                <li>Research, exchange, and capacity building</li>
-                            </ul>
-                        </div>
-                        <div class="row g-4">
-                            <div class="col-md-4">
-                                <div class="partner-list-card h-100">
-                                    <div class="partner-logo-placeholder"><i class="fa fa-school"></i></div>
-                                    <h5 class="mb-2">Validated partner</h5>
-                                    <p class="mb-3">Partner name, logo, and collaboration details will be added here after validation.</p>
-                                    <span class="partner-detail-label">Universities and schools</span>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="partner-list-card h-100">
-                                    <div class="partner-logo-placeholder"><i class="fa fa-user-graduate"></i></div>
-                                    <h5 class="mb-2">Validated partner</h5>
-                                    <p class="mb-3">Partner name, logo, and collaboration details will be added here after validation.</p>
-                                    <span class="partner-detail-label">Training centers</span>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="partner-list-card h-100">
-                                    <div class="partner-logo-placeholder"><i class="fa fa-chalkboard-teacher"></i></div>
-                                    <h5 class="mb-2">Validated partner</h5>
-                                    <p class="mb-3">Partner name, logo, and collaboration details will be added here after validation.</p>
-                                    <span class="partner-detail-label">Technical exchange programs</span>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Section 3: Public and Regulatory -->
-                    <section class="partner-detail-section py-4 border-bottom mb-4" id="public-regulatory">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="btn-lg-square bg-primary rounded-circle me-3 flex-shrink-0" style="width:50px;height:50px;display:flex;align-items:center;justify-content:center;">
-                                <i class="fa fa-balance-scale text-white"></i>
-                            </div>
-                            <h2 class="display-6 mb-0">Public and Regulatory Stakeholders</h2>
-                        </div>
-                        <p class="mb-4 text-justify">Partners in this category are institutions and stakeholders connected to traceability, compliance, mineral evaluation, and responsible sector development.</p>
-                        <div class="partner-focus-list bg-light p-4 mb-4">
-                            <h5 class="mb-3">Collaboration focus</h5>
-                            <ul class="mb-0">
-                                <li>Traceability and standards-based information</li>
-                                <li>Compliance support and technical documentation</li>
-                                <li>Responsible mining-sector development</li>
-                            </ul>
-                        </div>
-                        <div class="row g-4">
-                            <div class="col-md-4">
-                                <div class="partner-list-card h-100">
-                                    <div class="partner-logo-placeholder"><i class="fa fa-landmark"></i></div>
-                                    <h5 class="mb-2">Validated partner</h5>
-                                    <p class="mb-3">Partner name, logo, and collaboration details will be added here after validation.</p>
-                                    <span class="partner-detail-label">Public institutions</span>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="partner-list-card h-100">
-                                    <div class="partner-logo-placeholder"><i class="fa fa-gavel"></i></div>
-                                    <h5 class="mb-2">Validated partner</h5>
-                                    <p class="mb-3">Partner name, logo, and collaboration details will be added here after validation.</p>
-                                    <span class="partner-detail-label">Regulatory bodies</span>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="partner-list-card h-100">
-                                    <div class="partner-logo-placeholder"><i class="fa fa-route"></i></div>
-                                    <h5 class="mb-2">Validated partner</h5>
-                                    <p class="mb-3">Partner name, logo, and collaboration details will be added here after validation.</p>
-                                    <span class="partner-detail-label">Traceability programs</span>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Section 4: Technology and Equipment -->
-                    <section class="partner-detail-section py-4 mb-4" id="technology-equipment">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="btn-lg-square bg-primary rounded-circle me-3 flex-shrink-0" style="width:50px;height:50px;display:flex;align-items:center;justify-content:center;">
-                                <i class="fa fa-microscope text-white"></i>
-                            </div>
-                            <h2 class="display-6 mb-0">Technology and Equipment Providers</h2>
-                        </div>
-                        <p class="mb-4 text-justify">Partners in this category help strengthen analytical workflows, equipment reliability, laboratory capacity, maintenance, and calibration discipline.</p>
-                        <div class="partner-focus-list bg-light p-4 mb-4">
-                            <h5 class="mb-3">Collaboration focus</h5>
-                            <ul class="mb-0">
-                                <li>Laboratory equipment and analytical technologies</li>
-                                <li>Maintenance, calibration, and technical support</li>
-                                <li>Workflow improvement and capacity development</li>
-                            </ul>
-                        </div>
-                        <div class="row g-4">
-                            <div class="col-md-4">
-                                <div class="partner-list-card h-100">
-                                    <div class="partner-logo-placeholder"><i class="fa fa-tools"></i></div>
-                                    <h5 class="mb-2">Validated partner</h5>
-                                    <p class="mb-3">Partner name, logo, and collaboration details will be added here after validation.</p>
-                                    <span class="partner-detail-label">Equipment suppliers</span>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="partner-list-card h-100">
-                                    <div class="partner-logo-placeholder"><i class="fa fa-vial"></i></div>
-                                    <h5 class="mb-2">Validated partner</h5>
-                                    <p class="mb-3">Partner name, logo, and collaboration details will be added here after validation.</p>
-                                    <span class="partner-detail-label">Analytical technology</span>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="partner-list-card h-100">
-                                    <div class="partner-logo-placeholder"><i class="fa fa-cogs"></i></div>
-                                    <h5 class="mb-2">Validated partner</h5>
-                                    <p class="mb-3">Partner name, logo, and collaboration details will be added here after validation.</p>
-                                    <span class="partner-detail-label">Maintenance and calibration</span>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Bottom CTA buttons (same pattern as team-biography.php) -->
                     <div class="mt-5 d-flex flex-wrap gap-2">
                         <a class="btn btn-primary py-3 px-4" href="partners.php">Back to Partners</a>
                         <a class="btn btn-outline-primary py-3 px-4" href="contact.html">Discuss a Partnership</a>
                     </div>
+
 
                 </div>
                 <!-- Main Content End -->
@@ -345,24 +453,19 @@
                 <div class="col-lg-4">
 
                     <!-- Categories quick nav (same as "Other Members" sidebar) -->
-                    <div class="bg-light p-4 mb-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="partner-category-nav p-4 mb-4 wow fadeInUp" data-wow-delay="0.2s">
                         <h4 class="mb-4">Partner Categories</h4>
-                        <a class="btn btn-link d-block text-start px-0" href="#mining-operators">
-                            <i class="fa fa-angle-right me-2"></i>Mining Operators and Project Owners
+                        <?php foreach ($partner_categories as $cat): ?>
+                        <a class="partner-category-link<?php echo ($cat['slug'] === $slug) ? ' active' : ''; ?>"
+                           href="partner-details.php?category=<?php echo lc_e($cat['slug']); ?>">
+                            <span class="partner-category-link-icon"><i class="fa <?php echo lc_e($cat['icon']); ?>"></i></span>
+                            <span><?php echo lc_e($cat['label']); ?></span>
                         </a>
-                        <a class="btn btn-link d-block text-start px-0" href="#academic-training">
-                            <i class="fa fa-angle-right me-2"></i>Academic and Training Institutions
-                        </a>
-                        <a class="btn btn-link d-block text-start px-0" href="#public-regulatory">
-                            <i class="fa fa-angle-right me-2"></i>Public and Regulatory Stakeholders
-                        </a>
-                        <a class="btn btn-link d-block text-start px-0" href="#technology-equipment">
-                            <i class="fa fa-angle-right me-2"></i>Technology and Equipment Providers
-                        </a>
+                        <?php endforeach; ?>
                     </div>
 
                     <!-- CTA block (same as "Need more information?" sidebar) -->
-                    <div class="bg-primary p-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="partner-sidebar-cta wow fadeInUp" data-wow-delay="0.3s">
                         <h4 class="text-white mb-3">Want to become a partner?</h4>
                         <p class="text-white mb-4">Contact LabCongo to discuss a technical, institutional, training, or project-based partnership.</p>
                         <a class="btn btn-light py-3 px-4 mb-2 w-100" href="partners.php">Back to Partners</a>
@@ -376,22 +479,6 @@
         </div>
     </div>
     <!-- Partner Details End -->
-
-    <!-- Footer CTA Start -->
-    <div class="container-fluid bg-primary text-white py-5">
-        <div class="container py-4">
-            <div class="row g-4 align-items-center">
-                <div class="col-lg-8">
-                    <h2 class="text-white mb-3">Want to collaborate with LabCongo?</h2>
-                    <p class="mb-0">Contact our team to discuss a technical, institutional, training, or project-based partnership.</p>
-                </div>
-                <div class="col-lg-4 text-lg-end">
-                    <a class="btn btn-light py-3 px-4" href="contact.html">Contact LabCongo</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer CTA End -->
 
     <!-- Footer Start -->
     <div class="container-fluid footer position-relative bg-dark text-white-50 py-5 wow fadeIn" data-wow-delay="0.1s">
@@ -419,12 +506,6 @@
                             <a class="btn btn-link" href="about.php">About Us</a>
                             <a class="btn btn-link" href="contact.html">Contact Us</a>
                             <a class="btn btn-link" href="service.html">Our Services</a>
-                        </div>
-                        <div class="col-sm-6">
-                            <h4 class="text-light mb-4">Other Links</h4>
-                            <a class="btn btn-link" href="partners.php">Partners</a>
-                            <a class="btn btn-link" href="projects.html">Projects</a>
-                            <a class="btn btn-link" href="activities.html">Our Activities</a>
                         </div>
                         <div class="col-sm-12">
                             <h4 class="text-light mb-4">Newsletter</h4>

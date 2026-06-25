@@ -20,7 +20,7 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css?v=20260616-about-dark-footer" rel="stylesheet">
+    <link href="css/style.css?v=20260625-partners-theme" rel="stylesheet">
 </head>
 
 <body>
@@ -114,7 +114,7 @@
     <!-- Navbar End -->
 
     <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5 wow fadeIn bg-transparent" data-wow-delay="0.1s">
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn bg-transparent" data-wow-delay="0.1s">
         <div class="container text-center py-5 mt-4 bg-transparent">
             <h1 class="display-2 text-white mb-3 animated slideInDown">Partners</h1>
             <nav aria-label="breadcrumb animated slideInDown">
@@ -129,36 +129,49 @@
 
     <!-- Partners Intro Start -->
     <div class="container-fluid py-5">
-        <div class="container py-5">
+        <div class="container pb-5">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <img class="img-fluid w-100" src="img/teamworking-lab-colleagues-inspecting-liquids-test-tube-looking-breakthroughs-clinical.jpg" alt="LabCongo partners and laboratory collaboration">
+                    <div class="partner-hero-media">
+                        <img class="img-fluid w-100" src="img/teamworking-lab-colleagues-inspecting-liquids-test-tube-looking-breakthroughs-clinical.jpg" alt="LabCongo partners and laboratory collaboration">
+                        <div class="partner-hero-badge">
+                            <span class="partner-eyebrow">Partnership network</span>
+                            <h5 class="mb-2">Collaboration that strengthens mining analysis in the DRC</h5>
+                            <p class="mb-0">Technical partnerships, institutional support, and local capacity building aligned with LabCongo standards.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="icon-box-primary mb-4">
+                        <i class="fa fa-handshake text-dark"></i>
+                    </div>
                     <h1 class="display-6 mb-4">Partners Supporting Reliable Mining Analysis</h1>
                     <p class="mb-4 text-justify">LabCongo works with organizations that share the same commitment to reliable data, responsible mineral development, local capacity, and transparent laboratory practices.</p>
                     <p class="mb-4 text-justify">Our partnerships are designed to strengthen the mining analysis ecosystem in the DRC through technical collaboration, practical training, quality control, equipment reliability, and project support.</p>
                     <div class="row g-3 mb-4">
                         <div class="col-sm-4">
-                            <div class="bg-light h-100 p-3">
+                            <div class="partner-stat-card h-100">
+                                <span class="partner-stat-icon"><i class="fa fa-shield-alt"></i></span>
                                 <h5 class="mb-2">Trust</h5>
                                 <p class="mb-0 small">Traceable laboratory data and disciplined communication.</p>
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="bg-light h-100 p-3">
+                            <div class="partner-stat-card h-100">
+                                <span class="partner-stat-icon"><i class="fa fa-flask"></i></span>
                                 <h5 class="mb-2">Expertise</h5>
                                 <p class="mb-0 small">Technical depth in mining analysis and laboratory methods.</p>
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="bg-light h-100 p-3">
+                            <div class="partner-stat-card h-100">
+                                <span class="partner-stat-icon"><i class="fa fa-users"></i></span>
                                 <h5 class="mb-2">Local Impact</h5>
                                 <p class="mb-0 small">Capacity building and skills development rooted in the DRC.</p>
                             </div>
                         </div>
                     </div>
-                    <a class="btn btn-primary py-3 px-4" href="partner-details.php">View Partner Categories</a>
+                    <a class="btn btn-primary py-3 px-4" href="partner-details.php?category=mining-operators">View Partner Categories</a>
                 </div>
             </div>
         </div>
@@ -169,54 +182,89 @@
     <div class="container-fluid bg-light py-5">
         <div class="container py-5">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <span class="partner-eyebrow justify-content-center">Structured ecosystem</span>
                 <h1 class="display-6 mb-3">Partner Categories</h1>
                 <p class="mb-0">LabCongo's partner ecosystem spans four key areas that support mining analysis, local capacity, and responsible sector development.</p>
             </div>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="bg-white h-100 p-4 text-center">
-                        <div class="btn-lg-square bg-primary rounded-circle mx-auto mb-4" style="width:60px;height:60px;display:flex;align-items:center;justify-content:center;">
-                            <i class="fa fa-mountain text-white fs-4"></i>
+                    <div class="service-item partner-category-card d-flex flex-column h-100">
+                        <div class="icon-box-primary mb-4">
+                            <i class="fa fa-mountain text-dark"></i>
                         </div>
                         <h5 class="mb-3">Mining Operators</h5>
                         <p class="mb-3 small">Exploration teams, mining operators, and project owners needing reliable analytical data.</p>
-                        <a href="partner-details.php#mining-operators" class="btn btn-outline-primary btn-sm">Learn more</a>
+                        <div class="partner-card-panel">
+                            <div class="partner-card-title mb-2">Main contribution</div>
+                            <ul class="list-unstyled mb-0 small">
+                                <li><i class="fa fa-angle-right text-primary me-2"></i>Exploration support</li>
+                                <li><i class="fa fa-angle-right text-primary me-2"></i>Production QA/QC</li>
+                                <li><i class="fa fa-angle-right text-primary me-2"></i>Technical reporting</li>
+                            </ul>
+                            <p class="partner-card-note mb-0">Reliable analytical results for operational decisions.</p>
+                        </div>
+                        <a href="partner-details.php?category=mining-operators" class="btn btn-light px-3 mt-4 partner-card-action">Learn More<i class="fa fa-angle-double-right ms-1"></i></a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="bg-white h-100 p-4 text-center">
-                        <div class="btn-lg-square bg-primary rounded-circle mx-auto mb-4" style="width:60px;height:60px;display:flex;align-items:center;justify-content:center;">
-                            <i class="fa fa-university text-white fs-4"></i>
+                    <div class="service-item partner-category-card d-flex flex-column h-100">
+                        <div class="icon-box-primary mb-4">
+                            <i class="fa fa-university text-dark"></i>
                         </div>
                         <h5 class="mb-3">Academic & Training</h5>
                         <p class="mb-3 small">Schools, universities, and training organizations supporting local technical skills.</p>
-                        <a href="partner-details.php#academic-training" class="btn btn-outline-primary btn-sm">Learn more</a>
+                        <div class="partner-card-panel">
+                            <div class="partner-card-title mb-2">Main contribution</div>
+                            <ul class="list-unstyled mb-0 small">
+                                <li><i class="fa fa-angle-right text-primary me-2"></i>Student exposure</li>
+                                <li><i class="fa fa-angle-right text-primary me-2"></i>Technician training</li>
+                                <li><i class="fa fa-angle-right text-primary me-2"></i>Research exchange</li>
+                            </ul>
+                            <p class="partner-card-note mb-0">Practical skills anchored in the Congolese mining context.</p>
+                        </div>
+                        <a href="partner-details.php?category=academic-training" class="btn btn-light px-3 mt-4 partner-card-action">Learn More<i class="fa fa-angle-double-right ms-1"></i></a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="bg-white h-100 p-4 text-center">
-                        <div class="btn-lg-square bg-primary rounded-circle mx-auto mb-4" style="width:60px;height:60px;display:flex;align-items:center;justify-content:center;">
-                            <i class="fa fa-balance-scale text-white fs-4"></i>
+                    <div class="service-item partner-category-card d-flex flex-column h-100">
+                        <div class="icon-box-primary mb-4">
+                            <i class="fa fa-balance-scale text-dark"></i>
                         </div>
                         <h5 class="mb-3">Public & Regulatory</h5>
                         <p class="mb-3 small">Institutions connected to traceability, compliance, and responsible sector development.</p>
-                        <a href="partner-details.php#public-regulatory" class="btn btn-outline-primary btn-sm">Learn more</a>
+                        <div class="partner-card-panel">
+                            <div class="partner-card-title mb-2">Main contribution</div>
+                            <ul class="list-unstyled mb-0 small">
+                                <li><i class="fa fa-angle-right text-primary me-2"></i>Traceability inputs</li>
+                                <li><i class="fa fa-angle-right text-primary me-2"></i>Compliance support</li>
+                                <li><i class="fa fa-angle-right text-primary me-2"></i>Sector governance</li>
+                            </ul>
+                            <p class="partner-card-note mb-0">Better documentation and stronger responsible mining practices.</p>
+                        </div>
+                        <a href="partner-details.php?category=public-regulatory" class="btn btn-light px-3 mt-4 partner-card-action">Learn More<i class="fa fa-angle-double-right ms-1"></i></a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="bg-white h-100 p-4 text-center">
-                        <div class="btn-lg-square bg-primary rounded-circle mx-auto mb-4" style="width:60px;height:60px;display:flex;align-items:center;justify-content:center;">
-                            <i class="fa fa-microscope text-white fs-4"></i>
+                    <div class="service-item partner-category-card d-flex flex-column h-100">
+                        <div class="icon-box-primary mb-4">
+                            <i class="fa fa-microscope text-dark"></i>
                         </div>
                         <h5 class="mb-3">Technology & Equipment</h5>
                         <p class="mb-3 small">Providers strengthening analytical workflows, equipment reliability, and calibration.</p>
-                        <a href="partner-details.php#technology-equipment" class="btn btn-outline-primary btn-sm">Learn more</a>
+                        <div class="partner-card-panel">
+                            <div class="partner-card-title mb-2">Main contribution</div>
+                            <ul class="list-unstyled mb-0 small">
+                                <li><i class="fa fa-angle-right text-primary me-2"></i>Equipment supply</li>
+                                <li><i class="fa fa-angle-right text-primary me-2"></i>Calibration support</li>
+                                <li><i class="fa fa-angle-right text-primary me-2"></i>Workflow improvement</li>
+                            </ul>
+                            <p class="partner-card-note mb-0">More stable laboratory performance and technical continuity.</p>
+                        </div>
+                        <a href="partner-details.php?category=technology-equipment" class="btn btn-light px-3 mt-4 partner-card-action">Learn More<i class="fa fa-angle-double-right ms-1"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-5 wow fadeInUp" data-wow-delay="0.2s">
-                <a class="btn btn-primary py-3 px-5" href="partner-details.php">View All Partner Details</a>
-            </div>
+            
         </div>
     </div>
     <!-- Partner Categories Overview End -->
@@ -226,49 +274,56 @@
         <div class="container py-5">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h1 class="display-6 mb-4">What Partnerships Mean at LabCongo</h1>
-                    <p class="mb-4 text-justify">Every partnership at LabCongo is grounded in shared technical discipline and a common goal: better data for better decisions in the DRC mining sector.</p>
-                    <div class="row g-4">
-                        <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="d-flex">
-                                <div class="btn-sm-square bg-primary rounded-circle me-3 flex-shrink-0"><i class="fa fa-check text-white"></i></div>
-                                <div>
-                                    <h5 class="mb-2">Analytical Collaboration</h5>
-                                    <p class="mb-0">Sample campaigns, mineral characterization, QA/QC review, and reporting support.</p>
-                                </div>
-                            </div>
+                    <div class="vision-panel h-100">
+                        <div class="icon-box-primary vision-icon mb-4">
+                            <i class="fa fa-network-wired text-dark"></i>
                         </div>
-                        <div class="col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                            <div class="d-flex">
-                                <div class="btn-sm-square bg-primary rounded-circle me-3 flex-shrink-0"><i class="fa fa-check text-white"></i></div>
-                                <div>
-                                    <h5 class="mb-2">Training Pathways</h5>
-                                    <p class="mb-0">Practical exposure for students, technicians, engineers, and laboratory teams.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="d-flex">
-                                <div class="btn-sm-square bg-primary rounded-circle me-3 flex-shrink-0"><i class="fa fa-check text-white"></i></div>
-                                <div>
-                                    <h5 class="mb-2">Technical Standards</h5>
-                                    <p class="mb-0">Shared discipline around traceability, method selection, data quality, and documentation.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-                            <div class="d-flex">
-                                <div class="btn-sm-square bg-primary rounded-circle me-3 flex-shrink-0"><i class="fa fa-check text-white"></i></div>
-                                <div>
-                                    <h5 class="mb-2">Responsible Mining Support</h5>
-                                    <p class="mb-0">Reliable information for transparency, compliance, environmental awareness, and better decisions.</p>
-                                </div>
-                            </div>
-                        </div>
+                        <h1 class="display-6 mb-4">What Partnerships Mean at LabCongo</h1>
+                        <p class="fs-5 text-primary mb-4">Every partnership is built around technical discipline, shared accountability, and measurable local value.</p>
+                        <div class="vision-divider"></div>
+                        <p class="mb-4 text-justify">Every partnership at LabCongo is grounded in a common goal: better data for better decisions in the DRC mining sector.</p>
+                        <p class="mb-0 text-justify">We value collaborations that improve analysis quality, strengthen professional skills, and support a more transparent and responsible mining ecosystem.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <img class="img-fluid w-100" src="img/teamworking-lab-colleagues-inspecting-liquids-test-tube-looking-breakthroughs-clinical.jpg" alt="LabCongo partnership values">
+                    <div class="row g-4">
+                        <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="vision-objective circle-accent-card h-100">
+                                <div class="vision-objective-icon icon-box-primary mb-3">
+                                    <i class="fa fa-vials text-dark"></i>
+                                </div>
+                                <h5 class="mb-2">Analytical Collaboration</h5>
+                                <p class="mb-0">Sample campaigns, mineral characterization, QA/QC review, and reporting support.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="vision-objective circle-accent-card h-100">
+                                <div class="vision-objective-icon icon-box-primary mb-3">
+                                    <i class="fa fa-user-graduate text-dark"></i>
+                                </div>
+                                <h5 class="mb-2">Training Pathways</h5>
+                                <p class="mb-0">Practical exposure for students, technicians, engineers, and laboratory teams.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="vision-objective circle-accent-card h-100">
+                                <div class="vision-objective-icon icon-box-primary mb-3">
+                                    <i class="fa fa-clipboard-check text-dark"></i>
+                                </div>
+                                <h5 class="mb-2">Technical Standards</h5>
+                                <p class="mb-0">Shared discipline around traceability, method selection, data quality, and documentation.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="vision-objective circle-accent-card h-100">
+                                <div class="vision-objective-icon icon-box-primary mb-3">
+                                    <i class="fa fa-leaf text-dark"></i>
+                                </div>
+                                <h5 class="mb-2">Responsible Mining Support</h5>
+                                <p class="mb-0">Reliable information for transparency, compliance, environmental awareness, and better decisions.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -276,15 +331,25 @@
     <!-- Partnership Values End -->
 
     <!-- CTA Start -->
-    <div class="container-fluid bg-primary text-white py-5">
-        <div class="container py-4">
+    <div class="container-fluid py-5">
+        <div class="container">
             <div class="row g-4 align-items-center">
-                <div class="col-lg-8">
-                    <h2 class="text-white mb-3">Want to collaborate with LabCongo?</h2>
-                    <p class="mb-0">Contact our team to discuss a technical, institutional, training, or project-based partnership.</p>
-                </div>
-                <div class="col-lg-4 text-lg-end">
-                    <a class="btn btn-light py-3 px-4" href="contact.html">Contact LabCongo</a>
+                <div class="col-12">
+                    <div class="partner-cta-banner wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-lg-7">
+                                <span class="partner-eyebrow text-white">Build with us</span>
+                                <h2 class="text-white mb-3">Want to collaborate with LabCongo?</h2>
+                                <p class="mb-0 text-white">Contact our team to discuss a technical, institutional, training, or project-based partnership.</p>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="partner-cta-actions">
+                                <a class="btn btn-light py-3 px-4" href="contact.html">Contact LabCongo</a>
+                                <a class="btn btn-outline-light py-3 px-4" href="partner-details.php?category=mining-operators">Explore Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -317,12 +382,6 @@
                             <a class="btn btn-link" href="about.php">About Us</a>
                             <a class="btn btn-link" href="contact.html">Contact Us</a>
                             <a class="btn btn-link" href="service.html">Our Services</a>
-                        </div>
-                        <div class="col-sm-6">
-                            <h4 class="text-light mb-4">Other Links</h4>
-                            <a class="btn btn-link" href="partners.php">Partners</a>
-                            <a class="btn btn-link" href="projects.html">Projects</a>
-                            <a class="btn btn-link" href="activities.html">Our Activities</a>
                         </div>
                         <div class="col-sm-12">
                             <h4 class="text-light mb-4">Newsletter</h4>
